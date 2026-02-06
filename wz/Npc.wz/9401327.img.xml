@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<imgdir name="9401327.img">
+<imgdir name="info">
+<int name="hide" value="1"/>
+</imgdir>
+<imgdir name="stand">
+<canvas name="0" width="63" height="86">
+<vector name="origin" x="35" y="84"/>
+<int name="z" value="0"/>
+<int name="delay" value="1500"/>
+</canvas>
+<canvas name="1" width="63" height="86">
+<vector name="origin" x="35" y="84"/>
+<int name="z" value="0"/>
+<int name="delay" value="150"/>
+</canvas>
+<canvas name="2" width="63" height="86">
+<vector name="origin" x="35" y="84"/>
+<int name="z" value="0"/>
+<int name="delay" value="150"/>
+</canvas>
+<canvas name="3" width="63" height="86">
+<vector name="origin" x="35" y="84"/>
+<int name="z" value="0"/>
+<int name="delay" value="150"/>
+</canvas>
+<canvas name="4" width="63" height="86">
+<vector name="origin" x="35" y="84"/>
+<int name="z" value="0"/>
+<int name="delay" value="150"/>
+</canvas>
+</imgdir>
+<imgdir name="say">
+<canvas name="0" width="63" height="86">
+<vector name="origin" x="35" y="84"/>
+<int name="z" value="0"/>
+<int name="delay" value="150"/>
+</canvas>
+<canvas name="1" width="63" height="86">
+<vector name="origin" x="35" y="84"/>
+<int name="z" value="0"/>
+<int name="delay" value="150"/>
+</canvas>
+<canvas name="2" width="63" height="86">
+<vector name="origin" x="35" y="84"/>
+<int name="z" value="0"/>
+<int name="delay" value="150"/>
+</canvas>
+<canvas name="3" width="63" height="86">
+<vector name="origin" x="35" y="84"/>
+<int name="z" value="0"/>
+<int name="delay" value="150"/>
+</canvas>
+<canvas name="4" width="63" height="86">
+<vector name="origin" x="35" y="84"/>
+<int name="z" value="0"/>
+<int name="delay" value="150"/>
+</canvas>
+<canvas name="5" width="63" height="86">
+<vector name="origin" x="35" y="84"/>
+<int name="z" value="0"/>
+<int name="delay" value="150"/>
+</canvas>
+<canvas name="6" width="63" height="86">
+<vector name="origin" x="35" y="84"/>
+<int name="z" value="0"/>
+<int name="delay" value="150"/>
+</canvas>
+</imgdir>
+<imgdir name="condition1">
+<uol name="stand" value="../stand"/>
+<uol name="say" value="../say"/>
+<int name="65946" value="2"/>
+<int name="hide" value="1"/>
+</imgdir>
+<imgdir name="condition2">
+<uol name="stand" value="../stand"/>
+<uol name="say" value="../say"/>
+<int name="65944" value="2"/>
+</imgdir>
+</imgdir>

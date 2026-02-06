@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<imgdir name="9401344.img">
+<imgdir name="info">
+<int name="hide" value="1"/>
+</imgdir>
+<imgdir name="stand">
+<canvas name="0" width="104" height="121">
+<vector name="origin" x="40" y="120"/>
+<int name="z" value="0"/>
+<int name="delay" value="1200"/>
+</canvas>
+<canvas name="1" width="104" height="121">
+<vector name="origin" x="40" y="120"/>
+<int name="z" value="0"/>
+<int name="delay" value="150"/>
+</canvas>
+<canvas name="2" width="104" height="121">
+<vector name="origin" x="40" y="120"/>
+<int name="z" value="0"/>
+<int name="delay" value="150"/>
+</canvas>
+<uol name="3" value="1"/>
+</imgdir>
+<imgdir name="say">
+<canvas name="0" width="104" height="121">
+<vector name="origin" x="40" y="120"/>
+<int name="z" value="0"/>
+<int name="delay" value="150"/>
+</canvas>
+<canvas name="1" width="104" height="121">
+<vector name="origin" x="40" y="120"/>
+<int name="z" value="0"/>
+<int name="delay" value="150"/>
+</canvas>
+<canvas name="2" width="104" height="121">
+<vector name="origin" x="40" y="120"/>
+<int name="z" value="0"/>
+<int name="delay" value="150"/>
+</canvas>
+<canvas name="3" width="104" height="121">
+<vector name="origin" x="40" y="120"/>
+<int name="z" value="0"/>
+<int name="delay" value="150"/>
+</canvas>
+<canvas name="4" width="104" height="121">
+<vector name="origin" x="40" y="120"/>
+<int name="z" value="0"/>
+<int name="delay" value="150"/>
+</canvas>
+<canvas name="5" width="104" height="121">
+<vector name="origin" x="40" y="120"/>
+<int name="z" value="0"/>
+<int name="delay" value="150"/>
+</canvas>
+<canvas name="6" width="104" height="121">
+<vector name="origin" x="40" y="120"/>
+<int name="z" value="0"/>
+<int name="delay" value="150"/>
+</canvas>
+<canvas name="7" width="104" height="121">
+<vector name="origin" x="40" y="120"/>
+<int name="z" value="0"/>
+<int name="delay" value="150"/>
+</canvas>
+</imgdir>
+<imgdir name="condition1">
+<uol name="stand" value="../stand"/>
+<uol name="say" value="../say"/>
+<int name="65973" value="1"/>
+</imgdir>
+</imgdir>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><imgdir name="2258.img"><imgdir name="QuestInfo"><string name="name" value="낮 말은 미요캐츠가 듣는다."/><int name="area" value="44"/><string name="0" value="낙타 택시에세 버섯의 성에 대하여 물어보자."/><string name="1" value="미요캐츠는 소문을 퍼트려 악소문으로 만드는 재주를 가지고 있다고 한다. 제한 시간 이내에 미요캐츠를 잡아 소문이 퍼지는 것을 막자.
+
+#o2100108# #a22581#
+"/><int name="timeLimit" value="300"/><string name="timerUI" value="default"/><string name="demandSummary" value="
+"/><string name="rewardSummary" value="&apos;밤 말은 스콜피온이 못 듣는다.&apos; 퀘스트로 진행 가능
+"/><string name="parent" value="버섯의 성에 관하여..."/><int name="order" value="4"/><int name="blocked" value="1"/></imgdir><imgdir name="Check"><imgdir name="0"><int name="npc" value="2110005"/><string name="startscript" value="q2258s"/><imgdir name="quest"><imgdir name="0"><int name="id" value="2257"/><int name="state" value="2"/></imgdir></imgdir></imgdir><imgdir name="1"><int name="npc" value="2110005"/><string name="endscript" value="q2258e"/><imgdir name="mob"><imgdir name="0"><int name="id" value="2100108"/><int name="count" value="40"/></imgdir></imgdir></imgdir></imgdir><imgdir name="Act"><imgdir name="0"></imgdir><imgdir name="1"></imgdir></imgdir><imgdir name="Say"><imgdir name="0"></imgdir><imgdir name="1"></imgdir></imgdir></imgdir>

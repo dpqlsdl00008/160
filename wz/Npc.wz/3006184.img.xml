@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<imgdir name="3006184.img">
+<imgdir name="info">
+<imgdir name="script">
+<imgdir name="0">
+<string name="script" value="npc_3006184"/>
+</imgdir>
+</imgdir>
+<canvas name="default" width="70" height="115">
+<vector name="origin" x="36" y="103"/>
+<int name="z" value="0"/>
+<string name="_hash" value="2fa7a6f3f5b3d301ca345b741f5f92c0f523f9b176d81c3cef28fe1a0b17fe89"/>
+</canvas>
+<int name="dcLeft" value="-100"/>
+<int name="dcTop" value="-500"/>
+<int name="dcRight" value="100"/>
+<int name="dcBottom" value="0"/>
+</imgdir>
+<imgdir name="stand">
+<canvas name="0" width="1" height="1">
+</canvas>
+<vector name="head" x="55" y="-545"/>
+</imgdir>
+<imgdir name="">
+<imgdir name="38390">
+<imgdir name="0">
+<string name="key" value="84"/>
+<string name="value" value="h0"/>
+</imgdir>
+</imgdir>
+<int name="hide" value="1"/>
+<uol name="stand" value="../stand"/>
+</imgdir>
+<imgdir name="">
+<imgdir name="38390">
+<imgdir name="0">
+<string name="key" value="84"/>
+<string name="value" value="h1"/>
+</imgdir>
+</imgdir>
+<uol name="stand" value="../stand"/>
+</imgdir>
+</imgdir>

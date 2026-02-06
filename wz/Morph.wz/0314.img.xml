@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<imgdir name="0314.img">
+<imgdir name="info">
+<int name="speed" value="120"/>
+<int name="jump" value="120"/>
+<float name="fs" value="10.0"/>
+<float name="swim" value="100.0"/>
+<int name="noCancelDamage" value="1"/>
+</imgdir>
+<imgdir name="walk">
+<canvas name="0" width="92" height="107">
+<vector name="origin" x="31" y="105"/>
+<int name="z" value="0"/>
+<string name="_hash" value="669b08f58682badd9aa1e2e12e5d0e83398ac7eb278bd01bb026ee03159e09a6"/>
+</canvas>
+<canvas name="1" width="92" height="108">
+<vector name="origin" x="31" y="106"/>
+<int name="z" value="0"/>
+<string name="_hash" value="906cde452442eacc2c19478df67361fd566596a90c3627b403108a898b18c1c4"/>
+</canvas>
+<canvas name="2" width="92" height="107">
+<vector name="origin" x="31" y="105"/>
+<int name="z" value="0"/>
+<string name="_hash" value="a97929ac505f807ece89dbbfc12091c2c8b6e389d28f34614880fd7cef2c78ab"/>
+</canvas>
+<canvas name="3" width="92" height="108">
+<vector name="origin" x="31" y="106"/>
+<int name="z" value="0"/>
+<string name="_hash" value="89b8e485893f900cee58efa15c2de9bc1b740faa9e5258c27c60814078b1912c"/>
+</canvas>
+</imgdir>
+<imgdir name="stand">
+<canvas name="0" width="92" height="107">
+<vector name="origin" x="31" y="105"/>
+<int name="z" value="0"/>
+<string name="_hash" value="fc27f10a2574828b32f76b0b150463d0eb95b2d30e6ad0dc30dfd3071e98a41a"/>
+</canvas>
+<canvas name="1" width="92" height="107">
+<vector name="origin" x="31" y="105"/>
+<int name="z" value="0"/>
+</canvas>
+<canvas name="2" width="92" height="107">
+<vector name="origin" x="31" y="105"/>
+<int name="z" value="0"/>
+</canvas>
+<canvas name="3" width="92" height="107">
+<vector name="origin" x="31" y="105"/>
+<int name="z" value="0"/>
+</canvas>
+<canvas name="4" width="92" height="107">
+<vector name="origin" x="31" y="105"/>
+<int name="z" value="0"/>
+<int name="delay" value="500"/>
+</canvas>
+<canvas name="5" width="92" height="107">
+<vector name="origin" x="31" y="105"/>
+<int name="z" value="0"/>
+</canvas>
+<canvas name="6" width="92" height="107">
+<vector name="origin" x="31" y="105"/>
+<int name="z" value="0"/>
+<string name="_hash" value="df6437d986a349088def6db147dadcad846ed62d08c8d55735d4a05c2e153340"/>
+</canvas>
+<canvas name="7" width="92" height="107">
+<vector name="origin" x="31" y="105"/>
+<int name="z" value="0"/>
+<string name="_hash" value="594795b1fca8f486922df1c4b97c2bd6930a12bce6429d355f66f81566a97d94"/>
+</canvas>
+<canvas name="8" width="92" height="107">
+<vector name="origin" x="31" y="105"/>
+<int name="z" value="0"/>
+<string name="_hash" value="6bb00e5d79ad8665b014e94989c4bdc5dfaeac642656fbddcd40e6ca47826ea7"/>
+</canvas>
+<canvas name="9" width="92" height="107">
+<vector name="origin" x="31" y="105"/>
+<int name="z" value="0"/>
+</canvas>
+</imgdir>
+<imgdir name="jump">
+<canvas name="0" width="82" height="136">
+<vector name="origin" x="31" y="134"/>
+<int name="z" value="0"/>
+<string name="_hash" value="23e9acda2b58612fe1802863559e688f4a8255857f7e47251b2b81965838ccb9"/>
+</canvas>
+</imgdir>
+<imgdir name="prone">
+<canvas name="0" width="92" height="107">
+<vector name="origin" x="31" y="105"/>
+<int name="z" value="0"/>
+</canvas>
+</imgdir>
+<imgdir name="hit">
+<canvas name="0" width="92" height="107">
+<vector name="origin" x="31" y="105"/>
+<int name="z" value="0"/>
+</canvas>
+</imgdir>
+<imgdir name="fly">
+<canvas name="0" width="82" height="136">
+<vector name="origin" x="31" y="134"/>
+<int name="z" value="0"/>
+</canvas>
+</imgdir>
+<imgdir name="sit">
+<canvas name="0" width="92" height="107">
+<vector name="origin" x="31" y="105"/>
+<int name="z" value="0"/>
+</canvas>
+</imgdir>
+<imgdir name="rope">
+<canvas name="0" width="1" height="1">
+<vector name="origin" x="0" y="0"/>
+<vector name="head" x="1" y="-1500"/>
+<int name="delay" value="60"/>
+<int name="z" value="0"/>
+</canvas>
+</imgdir>
+<imgdir name="ladder">
+<canvas name="0" width="1" height="1">
+<vector name="origin" x="0" y="0"/>
+<vector name="head" x="1" y="-1500"/>
+<int name="delay" value="60"/>
+<int name="z" value="0"/>
+</canvas>
+</imgdir>
+</imgdir>

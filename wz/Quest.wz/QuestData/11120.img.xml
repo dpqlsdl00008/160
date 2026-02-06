@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><imgdir name="11120.img"><imgdir name="QuestInfo"><string name="name" value="개굴개굴 봄나들이!"/><int name="area" value="50"/><string name="0" value="봄맞이 #b‘개굴 개굴 봄나들이!’ #k이벤트가 시작되었다. 카산드라를 찾아가서 이벤트에 참여해 보자.\r\n#b&lt;이벤트 기간&gt;\n 2011년 2월 24일 ~ 2011년 3월 31일#k
+&lt;오늘 수행 횟수&gt; #R11121#/5
+&lt;봄 개구리 모자까지&gt; #R11123#/36"/><string name="1" value="봄맞이 #b‘개굴 개굴 봄나들이!’#k 이벤트에 참여하였다. 메이플월드의 몬스터들에게서 얻을 수 있는 #r#t02430244##k에서 #b잠에서 깬 개구리를 50마리#k 구한 뒤 카산드라에게 가져다 주고 보상을 받자. 
+&lt;오늘 수행 횟수&gt; #R11121#/5
+&lt;봄 개구리 모자까지&gt; #R11123#/36
+#b&lt;36회 완료 시마다 보상&gt;\r\n#i01003227##t01003227#(30일) 1개#k\n모든 능력치 +5
+공격력, 마력 +3
+물리방어력 +40
+마법방어력 +30
+이동속도 +5
+점프력 +4
+업그레이드 불가
+#e교환 불가
+유효기간 연장 불가#n"/><int name="autoStart" value="1"/><string name="2" value="봄맞이 #b‘개굴 개굴 봄나들이!’#k 이벤트에 참여하였다.
+&lt;오늘 수행 횟수&gt; #R11121#/5
+&lt;봄 개구리 모자까지&gt; #R11123#/36
+#b&lt;36회 완료 시마다 보상&gt;\r\n#i01003227##t01003227#(30일) 1개#k\n모든 능력치 +5
+공격력, 마력 +3
+물리방어력 +40
+마법방어력 +30
+이동속도 +5
+점프력 +4
+업그레이드 불가
+#e교환 불가
+유효기간 연장 불가#n"/><string name="demandSummary" value="#i4032942:# #t4032942:# #c4032942# / 50
+"/><string name="rewardSummary" value="#Wbasic#
+경험치#b(레벨별로 차등 지급)#k
+
+#b36회 완료 시 
+#i01003227##t01003227# 1개#k 획득"/><int name="autoCancel" value="1"/></imgdir><imgdir name="Check"><imgdir name="0"><int name="npc" value="9010010"/><string name="start" value="201102240000"/><string name="end" value="201104010000"/><string name="start_t" value="201102210000"/><string name="end_t" value="201104010000"/><int name="interval" value="0"/><int name="normalAutoStart" value="1"/><int name="infoNumber" value="11121"/><int name="lvmin" value="13"/><imgdir name="infoex"><imgdir name="0"><string name="value" value="4"/><int name="cond" value="2"/></imgdir></imgdir></imgdir><imgdir name="1"><int name="npc" value="9010010"/><string name="endscript" value="q11120e"/><imgdir name="item"><imgdir name="0"><int name="id" value="4032942"/><int name="count" value="50"/></imgdir></imgdir></imgdir></imgdir><imgdir name="Act"><imgdir name="0"></imgdir><imgdir name="1"><imgdir name="item"><imgdir name="0"><int name="id" value="4032942"/><int name="count" value="-50"/></imgdir></imgdir></imgdir></imgdir><imgdir name="Say"><imgdir name="0"><string name="0" value="#b#hc0#!#k, 2월 24일부터 진행되는 #b‘개굴 개굴 봄나들이!’#k 이벤트에 대해 알고 있어? 이벤트 기간 동안 #e하루 다섯 번#n씩 반복할 수 있고, #r36번 반복#k하면 #b예쁜 #t01003227##k도 받을 수 있어. 어때, 도전해 볼래?"/><imgdir name="stop"></imgdir><imgdir name="yes"><string name="0" value="몬스터들에게서 #t02430244#를 얻은 뒤 그걸 사용해서 #b#t04032942##k들을 찾아줘. 50마리를 모아 오면 돼. 만약에 #r퀘스트를 완료하지 않고 로그아웃을 하게 되면 #e자동포기#n#k되니까 조심하도록 해. 아 참, #t04032942#는 이렇게 생겼어.
+
+#i04032942##b#e#t04032942# 50마리#k
+"/></imgdir><imgdir name="no"><string name="0" value="오늘은 퀘스트 수행 횟수가 더 남았어. 기왕이면 다 채우는 게 좋지 않을까?"/></imgdir></imgdir><imgdir name="1"><imgdir name="stop"><imgdir name="item"><string name="0" value="몬스터들에게서 #t02028076#를 얻은 뒤 그걸 사용해서 #b#t04032942##k들을 찾아줘. 50마리를 모아 오면 돼. 만약에 #r퀘스트를 완료하지 않고 로그아웃을 하게 되면 #e자동포기#n#k되니까 조심하도록 해. 아 참, 잠에서 깬 개구리는 이렇게 생겼어.
+
+#i04032942##b#e#t04032942# 50마리#k
+"/></imgdir></imgdir></imgdir></imgdir></imgdir>

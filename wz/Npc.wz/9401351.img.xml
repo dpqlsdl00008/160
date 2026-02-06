@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<imgdir name="9401351.img">
+<imgdir name="info">
+<int name="hide" value="1"/>
+</imgdir>
+<imgdir name="stand">
+<canvas name="0" width="56" height="98">
+<vector name="origin" x="21" y="98"/>
+<int name="z" value="0"/>
+<int name="delay" value="1200"/>
+</canvas>
+</imgdir>
+<imgdir name="say">
+<canvas name="0" width="56" height="98">
+<vector name="origin" x="21" y="98"/>
+<int name="z" value="0"/>
+<int name="delay" value="90"/>
+</canvas>
+<canvas name="1" width="56" height="98">
+<vector name="origin" x="21" y="98"/>
+<int name="z" value="0"/>
+<int name="delay" value="90"/>
+</canvas>
+<canvas name="2" width="56" height="98">
+<vector name="origin" x="21" y="98"/>
+<int name="z" value="0"/>
+<int name="delay" value="90"/>
+</canvas>
+<canvas name="3" width="56" height="98">
+<vector name="origin" x="21" y="98"/>
+<int name="z" value="0"/>
+<int name="delay" value="90"/>
+</canvas>
+<canvas name="4" width="56" height="98">
+<vector name="origin" x="21" y="98"/>
+<int name="z" value="0"/>
+<int name="delay" value="90"/>
+</canvas>
+<canvas name="5" width="56" height="98">
+<vector name="origin" x="21" y="98"/>
+<int name="z" value="0"/>
+<int name="delay" value="90"/>
+</canvas>
+<canvas name="6" width="56" height="98">
+<vector name="origin" x="21" y="98"/>
+<int name="z" value="0"/>
+<int name="delay" value="90"/>
+</canvas>
+<canvas name="7" width="56" height="98">
+<vector name="origin" x="21" y="98"/>
+<int name="z" value="0"/>
+<int name="delay" value="90"/>
+</canvas>
+</imgdir>
+<imgdir name="condition1">
+<int name="65986" value="2"/>
+<int name="hide" value="1"/>
+<imgdir name="stand">
+<canvas name="0" width="102" height="66">
+<vector name="origin" x="49" y="61"/>
+<int name="z" value="0"/>
+<int name="delay" value="60"/>
+</canvas>
+</imgdir>
+<uol name="say" value="stand"/>
+</imgdir>
+<imgdir name="condition2">
+<uol name="stand" value="../condition1/stand"/>
+<uol name="say" value="../condition1/stand"/>
+<int name="65985" value="2"/>
+</imgdir>
+<imgdir name="condition3">
+<uol name="stand" value="../stand"/>
+<uol name="say" value="../say"/>
+<int name="65984" value="2"/>
+</imgdir>
+</imgdir>

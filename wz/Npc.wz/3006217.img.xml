@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<imgdir name="3006217.img">
+<imgdir name="info">
+</imgdir>
+<imgdir name="stand">
+<canvas name="0" width="55" height="81">
+<vector name="origin" x="27" y="81"/>
+<int name="z" value="0"/>
+<string name="_hash" value="daa84da4aebbcd619be68424bcab702d971fb75a153fd9ac8501d5897d097615"/>
+</canvas>
+</imgdir>
+<imgdir name="eye">
+<canvas name="0" width="55" height="81">
+<vector name="origin" x="27" y="81"/>
+<int name="z" value="0"/>
+</canvas>
+<canvas name="1" width="55" height="81">
+<vector name="origin" x="27" y="81"/>
+<int name="z" value="0"/>
+<string name="_hash" value="8b060273e025c2defff9297636dd52e716e9b4360fdb256fc006f0dd243029fd"/>
+</canvas>
+<canvas name="2" width="55" height="81">
+<vector name="origin" x="27" y="81"/>
+<int name="z" value="0"/>
+<string name="_hash" value="7a9a4783e85845d61d6dd5a318a2d4208c55ef94c4a63fa8b529cd6eab02de69"/>
+</canvas>
+</imgdir>
+<imgdir name="say">
+<canvas name="0" width="55" height="81">
+<vector name="origin" x="27" y="81"/>
+<int name="z" value="0"/>
+<int name="delay" value="200"/>
+</canvas>
+<canvas name="1" width="55" height="81">
+<vector name="origin" x="27" y="81"/>
+<int name="z" value="0"/>
+<int name="delay" value="200"/>
+<string name="_hash" value="a0a95c1f280a47e7657a165569e74a2523f38d9cb247893b322626f09d66a40a"/>
+</canvas>
+<imgdir name="speak">
+<string name="0" value="n0"/>
+<string name="1" value="n1"/>
+</imgdir>
+</imgdir>
+<imgdir name="">
+<imgdir name="36660">
+<imgdir name="0">
+<string name="key" value="17"/>
+<string name="value" value="h0"/>
+</imgdir>
+</imgdir>
+<int name="hide" value="1"/>
+<uol name="stand" value="../stand"/>
+<uol name="say" value="../say"/>
+<uol name="eye" value="../eye"/>
+</imgdir>
+<imgdir name="">
+<imgdir name="36660">
+<imgdir name="0">
+<string name="key" value="17"/>
+<string name="value" value="h1"/>
+</imgdir>
+</imgdir>
+<uol name="stand" value="../stand"/>
+<uol name="say" value="../say"/>
+<uol name="eye" value="../eye"/>
+</imgdir>
+</imgdir>

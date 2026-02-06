@@ -1,0 +1,792 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<imgdir name="PQuest.img">
+<imgdir name="1200">
+<string name="월묘의 떡" value=""/>
+<string name="mark" value="Map/MapHelper/mark/MoonRabbitParty"/>
+<imgdir name="info">
+<int name="memberMin" value="3"/>
+<int name="memberMax" value="5"/>
+<int name="levelMin" value="50"/>
+<int name="memberMin_t" value="3"/>
+<int name="memberMax_t" value="5"/>
+<int name="memberMin_d" value="1"/>
+<int name="memberMax_d" value="5"/>
+<int name="levelMin_t" value="50"/>
+<int name="timeOut" value="1200"/>
+<string name="fieldSet" value="MoonRabbit_"/>
+<string name="difficulty" value="쉬움"/>
+<string name="desc" value="떡방아를 찧는 월묘를 지키고, 떡 10개를 모아 어흥이에게 전해주자."/>
+<int name="recommendationLevelMin" value="50"/>
+<int name="recommendationLevelMax" value="69"/>
+<int name="buttonCode" value="9"/>
+<string name="rewardEXP" value="보통"/>
+<int name="dailyChallenge" value="7910"/>
+</imgdir>
+</imgdir>
+<imgdir name="1201">
+<string name="첫번째 동행" value=""/>
+<string name="mark" value="Map/MapHelper/mark/KerningParty"/>
+<imgdir name="info">
+<int name="memberMin" value="3"/>
+<int name="memberMax" value="4"/>
+<int name="levelMin" value="50"/>
+<int name="memberMin_t" value="3"/>
+<int name="memberMax_t" value="4"/>
+<int name="memberMin_d" value="1"/>
+<int name="memberMax_d" value="5"/>
+<int name="levelMin_t" value="50"/>
+<int name="timeOut" value="1200"/>
+<string name="fieldSet" value="PQ_kerning_"/>
+<string name="difficulty" value="쉬움"/>
+<string name="desc" value="파티원 전원의 힘을 모아 클로토가 내는 미션을 클리어 하자."/>
+<int name="recommendationLevelMin" value="50"/>
+<int name="recommendationLevelMax" value="69"/>
+<int name="buttonCode" value="10"/>
+<string name="rewardEXP" value="보통"/>
+<int name="dailyChallenge" value="7912"/>
+</imgdir>
+</imgdir>
+<imgdir name="1202">
+<string name="차원의 균열" value=""/>
+<string name="mark" value="Map/MapHelper/mark/AbandonTower"/>
+<imgdir name="info">
+<int name="memberMin" value="3"/>
+<int name="memberMax" value="6"/>
+<int name="levelMin" value="50"/>
+<int name="memberMin_t" value="3"/>
+<int name="memberMax_t" value="6"/>
+<int name="memberMin_d" value="1"/>
+<int name="memberMax_d" value="6"/>
+<int name="levelMin_t" value="50"/>
+<int name="timeOut" value="1200"/>
+<string name="fieldSet" value="Party3_"/>
+<string name="difficulty" value="어려움"/>
+<string name="desc" value="차원의 균열을 막고 위기에 빠진 루디브리엄을 구하자."/>
+<int name="recommendationLevelMin" value="50"/>
+<int name="recommendationLevelMax" value="69"/>
+<int name="buttonCode" value="11"/>
+<string name="rewardEXP" value="많음"/>
+<int name="dailyChallenge" value="7914"/>
+</imgdir>
+</imgdir>
+<imgdir name="1203">
+<string name="여신의 흔적" value=""/>
+<string name="mark" value="Map/MapHelper/mark/GoddessTower"/>
+<imgdir name="info">
+<int name="memberMin" value="3"/>
+<int name="memberMax" value="6"/>
+<int name="levelMin" value="70"/>
+<int name="memberMin_t" value="3"/>
+<int name="memberMax_t" value="6"/>
+<int name="memberMin_d" value="1"/>
+<int name="memberMax_d" value="6"/>
+<int name="levelMin_t" value="70"/>
+<int name="timeOut" value="1200"/>
+<string name="fieldSet" value="Party5"/>
+<string name="difficulty" value="어려움"/>
+<string name="desc" value="여신상의 조각을 모아 돌으로 변한 여신 미네르바를 부활시키자."/>
+<int name="recommendationLevelMin" value="70"/>
+<int name="recommendationLevelMax" value="119"/>
+<int name="buttonCode" value="13"/>
+<string name="rewardEXP" value="많음"/>
+<int name="dailyChallenge" value="7918"/>
+</imgdir>
+</imgdir>
+<imgdir name="1204">
+<string name="해적 데비존" value=""/>
+<string name="mark" value="Map/MapHelper/mark/DevijonParty"/>
+<imgdir name="info">
+<int name="memberMin" value="3"/>
+<int name="memberMax" value="6"/>
+<int name="levelMin" value="70"/>
+<int name="memberMin_t" value="3"/>
+<int name="memberMax_t" value="6"/>
+<int name="memberMin_d" value="1"/>
+<int name="memberMax_d" value="6"/>
+<int name="levelMin_t" value="70"/>
+<int name="timeOut" value="1200"/>
+<string name="fieldSet" value="DavyJohn1"/>
+<string name="difficulty" value="보통"/>
+<string name="desc" value="해적 데비존을 쓰러뜨리고 납치된 우양을 구출하자."/>
+<int name="recommendationLevelMin" value="70"/>
+<int name="recommendationLevelMax" value="119"/>
+<int name="buttonCode" value="14"/>
+<string name="rewardEXP" value="보통"/>
+<int name="dailyChallenge" value="7044"/>
+</imgdir>
+</imgdir>
+<imgdir name="1205">
+<string name="로미오와 줄리엣" value=""/>
+<string name="mark" value="Map/MapHelper/mark/RomioJuliet"/>
+<imgdir name="info">
+<int name="memberMin" value="4"/>
+<int name="memberMax" value="4"/>
+<int name="levelMin" value="70"/>
+<int name="memberMin_t" value="4"/>
+<int name="memberMax_t" value="4"/>
+<int name="memberMin_d" value="1"/>
+<int name="memberMax_d" value="4"/>
+<int name="levelMin_t" value="70"/>
+<int name="timeOut" value="1200"/>
+<string name="fieldSet" value="Romio"/>
+<string name="difficulty" value="어려움"/>
+<string name="desc" value="로미오와 줄리엣을 돕고 알카드노와 제뉴미스트의 갈등을 해결하자."/>
+<int name="recommendationLevelMin" value="70"/>
+<int name="recommendationLevelMax" value="119"/>
+<int name="buttonCode" value="15"/>
+<string name="rewardEXP" value="많음"/>
+<int name="dailyChallenge" value="7922"/>
+</imgdir>
+</imgdir>
+<imgdir name="1206">
+<string name="독안개의 숲" value=""/>
+<string name="mark" value="Map/MapHelper/mark/EilnForest"/>
+<imgdir name="info">
+<int name="memberMin" value="3"/>
+<int name="memberMax" value="5"/>
+<int name="levelMin" value="70"/>
+<int name="memberMin_t" value="3"/>
+<int name="memberMax_t" value="5"/>
+<int name="memberMin_d" value="1"/>
+<int name="memberMax_d" value="5"/>
+<int name="levelMin_t" value="70"/>
+<int name="timeOut" value="1200"/>
+<string name="fieldSet" value="pForest"/>
+<string name="difficulty" value="어려움"/>
+<string name="desc" value="과거의 시간으로 돌아가 오염된 숲을 구하자."/>
+<int name="recommendationLevelMin" value="70"/>
+<int name="recommendationLevelMax" value="119"/>
+<int name="buttonCode" value="12"/>
+<string name="rewardEXP" value="많음"/>
+<int name="dailyChallenge" value="7916"/>
+</imgdir>
+</imgdir>
+<imgdir name="1209">
+<string name="렉스의 부활" value=""/>
+<string name="mark" value="Map/MapHelper/mark/Lex"/>
+<imgdir name="info">
+<int name="memberMin" value="3"/>
+<int name="memberMax" value="6"/>
+<int name="levelMin" value="120"/>
+<int name="memberMin_t" value="3"/>
+<int name="memberMax_t" value="6"/>
+<int name="memberMin_d" value="1"/>
+<int name="memberMax_d" value="6"/>
+<int name="levelMin_t" value="120"/>
+<int name="timeOut" value="1200"/>
+<string name="fieldSet" value="Shammos_"/>
+<string name="difficulty" value="보통"/>
+<string name="desc" value="샤모스를 도와 호브의 제왕 렉스를 다시 봉인하자."/>
+<int name="recommendationLevelMin" value="120"/>
+<int name="recommendationLevelMax" value="200"/>
+<int name="buttonCode" value="16"/>
+<string name="rewardEXP" value="보통"/>
+<int name="dailyChallenge" value="7924"/>
+</imgdir>
+</imgdir>
+<imgdir name="1210">
+<string name="드래곤 라이더" value=""/>
+<string name="mark" value="Map/MapHelper/mark/Dragonrider"/>
+<imgdir name="info">
+<int name="memberMin" value="3"/>
+<int name="memberMax" value="6"/>
+<int name="levelMin" value="120"/>
+<int name="memberMin_t" value="3"/>
+<int name="memberMax_t" value="6"/>
+<int name="memberMin_d" value="1"/>
+<int name="memberMax_d" value="6"/>
+<int name="levelMin_t" value="120"/>
+<int name="timeOut" value="1200"/>
+<string name="fieldSet" value="DragonRider_"/>
+<string name="difficulty" value="보통"/>
+<string name="desc" value="드래곤라이더를 물리치고 그 정체를 밝혀내자."/>
+<int name="recommendationLevelMin" value="120"/>
+<int name="recommendationLevelMax" value="200"/>
+<int name="buttonCode" value="17"/>
+<string name="rewardEXP" value="보통"/>
+<int name="dailyChallenge" value="7814"/>
+</imgdir>
+</imgdir>
+<imgdir name="1211">
+<string name="네트의 피라미드" value=""/>
+<string name="mark" value="Map/MapHelper/mark/Pyramid"/>
+<imgdir name="info">
+<int name="memberMin" value="4"/>
+<int name="memberMax" value="4"/>
+<int name="levelMin" value="10"/>
+<int name="memberMin_t" value="2"/>
+<int name="memberMax_t" value="4"/>
+<int name="memberMin_d" value="1"/>
+<int name="memberMax_d" value="4"/>
+<int name="levelMin_t" value="60"/>
+<int name="levelMax_t" value="109"/>
+<string name="fieldSet" value="Piramid_e1_"/>
+<string name="difficulty" value="어려움"/>
+<string name="desc" value="네트신의 오벨리스크를 지켜 시련을 이겨내자."/>
+<int name="buttonCode" value="5"/>
+<string name="rewardEXP" value="많음"/>
+<int name="dailyChallenge" value="7242"/>
+<int name="recommendationLevelMin" value="10"/>
+</imgdir>
+</imgdir>
+<imgdir name="1212">
+<string name="임차장의 지하철" value=""/>
+<string name="mark" value="Map/MapHelper/mark/KerningCity"/>
+<imgdir name="rank">
+<imgdir name="S">
+<imgdir name="less">
+</imgdir>
+<imgdir name="more">
+<int name="cmp" value="50"/>
+</imgdir>
+<imgdir name="equal">
+<int name="have" value="1"/>
+</imgdir>
+</imgdir>
+<imgdir name="A">
+<imgdir name="less">
+</imgdir>
+<imgdir name="more">
+<int name="cmp" value="40"/>
+</imgdir>
+<imgdir name="equal">
+<int name="have" value="1"/>
+</imgdir>
+</imgdir>
+<imgdir name="B">
+<imgdir name="less">
+</imgdir>
+<imgdir name="more">
+<int name="cmp" value="20"/>
+</imgdir>
+<imgdir name="equal">
+</imgdir>
+</imgdir>
+<imgdir name="C">
+<imgdir name="less">
+</imgdir>
+<imgdir name="more">
+<int name="cmp" value="10"/>
+</imgdir>
+<imgdir name="equal">
+</imgdir>
+</imgdir>
+<imgdir name="D">
+<imgdir name="less">
+</imgdir>
+<imgdir name="more">
+<int name="cmp" value="1"/>
+</imgdir>
+<imgdir name="equal">
+</imgdir>
+</imgdir>
+<imgdir name="F">
+<imgdir name="less">
+</imgdir>
+<imgdir name="more">
+<int name="cmp" value="0"/>
+</imgdir>
+<imgdir name="equal">
+</imgdir>
+</imgdir>
+</imgdir>
+<imgdir name="string">
+<string name="S" value="S랭크를 달성하였습니다."/>
+<string name="A" value="다음 랭크 조건\n\n완료 : 50회 이상\n#t1142141##k 획득"/>
+<string name="B" value="다음 랭크 조건\n\n완료 : 40회 이상\n#t1142141##k 획득"/>
+<string name="C" value="다음 랭크 조건\n\n완료 : 20회 이상"/>
+<string name="D" value="다음 랭크 조건\n\n완료 : 10회 이상"/>
+<string name="F" value="다음 랭크 조건\n\n완료 : 1회 이상"/>
+</imgdir>
+</imgdir>
+<imgdir name="1213">
+<string name="무릉도장" value=""/>
+<string name="mark" value="Map/MapHelper/mark/MuruengRaid"/>
+<imgdir name="info">
+<int name="memberMin" value="1"/>
+<int name="memberMax" value="1"/>
+<int name="levelMin" value="10"/>
+<int name="memberMin_t" value="1"/>
+<int name="memberMax_t" value="1"/>
+<int name="memberMin_d" value="1"/>
+<int name="memberMax_d" value="1"/>
+<int name="levelMin_t" value="10"/>
+<string name="fieldSet" value="DragonRider_"/>
+<string name="difficulty" value="어려움"/>
+<string name="desc" value="무릉도장에 도전하여 자신의 힘을 시험해보자."/>
+<int name="buttonCode" value="1"/>
+<int name="recommendationLevelMin" value="10"/>
+<int name="dailyChallenge" value="7216"/>
+</imgdir>
+</imgdir>
+<imgdir name="1214">
+<string name="위험에 빠진 켄타" value=""/>
+<string name="mark" value="Map/MapHelper/mark/kentaInDanger"/>
+<imgdir name="info">
+<int name="memberMin" value="3"/>
+<int name="memberMax" value="6"/>
+<int name="levelMin" value="120"/>
+<int name="memberMin_t" value="3"/>
+<int name="memberMax_t" value="6"/>
+<int name="memberMin_d" value="1"/>
+<int name="memberMax_d" value="6"/>
+<int name="levelMin_t" value="120"/>
+<int name="timeOut" value="1200"/>
+<string name="fieldSet" value="PQ_kenta_"/>
+<string name="difficulty" value="보통"/>
+<string name="desc" value="흉폭해진 바다 생물들로부터 켄타를 보호하자."/>
+<int name="recommendationLevelMin" value="120"/>
+<int name="recommendationLevelMax" value="200"/>
+<int name="buttonCode" value="21"/>
+<string name="rewardEXP" value="보통"/>
+<int name="dailyChallenge" value="7926"/>
+</imgdir>
+</imgdir>
+<imgdir name="1215">
+<string name="탈출" value=""/>
+<string name="mark" value="Map/MapHelper/mark/prisonBreak"/>
+<imgdir name="info">
+<int name="memberMin" value="3"/>
+<int name="memberMax" value="6"/>
+<int name="levelMin" value="120"/>
+<int name="memberMin_t" value="3"/>
+<int name="memberMax_t" value="6"/>
+<int name="memberMin_d" value="1"/>
+<int name="memberMax_d" value="6"/>
+<int name="levelMin_t" value="120"/>
+<int name="timeOut" value="1200"/>
+<string name="fieldSet" value="PQ_prisonBreak_"/>
+<string name="difficulty" value="보통"/>
+<string name="desc" value="사자왕의 성, 숨겨진 탑에 갇혀있는 모험가들을 구출하자."/>
+<int name="recommendationLevelMin" value="120"/>
+<int name="recommendationLevelMax" value="200"/>
+<int name="buttonCode" value="22"/>
+<string name="rewardEXP" value="보통"/>
+<int name="dailyChallenge" value="7928"/>
+</imgdir>
+</imgdir>
+<imgdir name="1218">
+<string name="아이스나이트의 저주" value=""/>
+<string name="mark" value="Map/MapHelper/mark/IceKnight"/>
+<imgdir name="info">
+<int name="memberMin" value="3"/>
+<int name="memberMax" value="6"/>
+<int name="levelMin" value="50"/>
+<int name="memberMin_t" value="3"/>
+<int name="memberMax_t" value="6"/>
+<int name="memberMin_d" value="1"/>
+<int name="memberMax_d" value="6"/>
+<int name="levelMin_t" value="50"/>
+<int name="timeOut" value="1200"/>
+<string name="fieldSet" value="PQ_iceKnight_"/>
+<string name="difficulty" value="보통"/>
+<string name="desc" value="아이스나이트를 쓰러뜨리고 준의 저주를 풀자."/>
+<int name="recommendationLevelMin" value="50"/>
+<int name="recommendationLevelMax" value="69"/>
+<int name="buttonCode" value="23"/>
+<string name="rewardEXP" value="보통"/>
+<int name="dailyChallenge" value="7920"/>
+</imgdir>
+</imgdir>
+<imgdir name="1300">
+<string name="아리안트 투기대회" value=""/>
+<string name="mark" value="Map/MapHelper/mark/AriantMatch"/>
+<imgdir name="rank">
+<imgdir name="S">
+<imgdir name="less">
+</imgdir>
+<imgdir name="more">
+<int name="try" value="100"/>
+<int name="VR" value="40"/>
+</imgdir>
+<imgdir name="equal">
+<int name="have" value="1"/>
+</imgdir>
+</imgdir>
+<imgdir name="A">
+<imgdir name="less">
+</imgdir>
+<imgdir name="more">
+<int name="try" value="70"/>
+<int name="VR" value="30"/>
+</imgdir>
+<imgdir name="equal">
+<int name="have" value="1"/>
+</imgdir>
+</imgdir>
+<imgdir name="B">
+<imgdir name="less">
+</imgdir>
+<imgdir name="more">
+<int name="try" value="50"/>
+<int name="VR" value="25"/>
+</imgdir>
+<imgdir name="equal">
+</imgdir>
+</imgdir>
+<imgdir name="C">
+<imgdir name="less">
+</imgdir>
+<imgdir name="more">
+<int name="try" value="10"/>
+<int name="VR" value="20"/>
+</imgdir>
+<imgdir name="equal">
+</imgdir>
+</imgdir>
+<imgdir name="D">
+<imgdir name="less">
+</imgdir>
+<imgdir name="more">
+<int name="try" value="1"/>
+<int name="VR" value="10"/>
+</imgdir>
+<imgdir name="equal">
+</imgdir>
+</imgdir>
+<imgdir name="F">
+<imgdir name="less">
+</imgdir>
+<imgdir name="more">
+<int name="try" value="1"/>
+<int name="VR" value="0"/>
+</imgdir>
+<imgdir name="equal">
+</imgdir>
+</imgdir>
+</imgdir>
+</imgdir>
+<imgdir name="1301">
+<string name="몬스터 카니발" value=""/>
+<string name="mark" value="Map/MapHelper/mark/Carnival"/>
+<imgdir name="rank">
+<imgdir name="S">
+<imgdir name="less">
+</imgdir>
+<imgdir name="more">
+<int name="vic" value="100"/>
+</imgdir>
+<imgdir name="equal">
+<int name="have" value="1"/>
+</imgdir>
+</imgdir>
+<imgdir name="A">
+<imgdir name="less">
+</imgdir>
+<imgdir name="more">
+<int name="vic" value="80"/>
+</imgdir>
+<imgdir name="equal">
+<int name="have" value="1"/>
+</imgdir>
+</imgdir>
+<imgdir name="B">
+<imgdir name="less">
+</imgdir>
+<imgdir name="more">
+<int name="vic" value="50"/>
+</imgdir>
+<imgdir name="equal">
+</imgdir>
+</imgdir>
+<imgdir name="C">
+<imgdir name="less">
+</imgdir>
+<imgdir name="more">
+<int name="vic" value="20"/>
+</imgdir>
+<imgdir name="equal">
+</imgdir>
+</imgdir>
+<imgdir name="D">
+<imgdir name="less">
+</imgdir>
+<imgdir name="more">
+<int name="vic" value="1"/>
+</imgdir>
+<imgdir name="equal">
+</imgdir>
+</imgdir>
+<imgdir name="F">
+<imgdir name="less">
+</imgdir>
+<imgdir name="more">
+<int name="try" value="1"/>
+<int name="VR" value="0"/>
+</imgdir>
+<imgdir name="equal">
+</imgdir>
+</imgdir>
+</imgdir>
+<imgdir name="string">
+<string name="S" value="S랭크를 달성하였습니다."/>
+<string name="A" value="다음 랭크 조건\n\n승리 : 100회 이상\n#t1122007##k 획득"/>
+<string name="B" value="다음 랭크 조건\n\n승리 : 80회 이상\n#t1122007##k 획득"/>
+<string name="C" value="다음 랭크 조건\n\n승리 : 50회 이상"/>
+<string name="D" value="다음 랭크 조건\n\n승리 : 20회 이상"/>
+<string name="F" value="다음 랭크 조건\n\n승리 : 1회 이상"/>
+</imgdir>
+</imgdir>
+<imgdir name="1302">
+<string name="제 2회 몬스터 카니발" value=""/>
+<string name="mark" value="Map/MapHelper/mark/Carnival"/>
+<imgdir name="rank">
+<imgdir name="S">
+<imgdir name="less">
+</imgdir>
+<imgdir name="more">
+<int name="vic" value="100"/>
+</imgdir>
+<imgdir name="equal">
+<int name="have" value="1"/>
+</imgdir>
+</imgdir>
+<imgdir name="A">
+<imgdir name="less">
+</imgdir>
+<imgdir name="more">
+<int name="vic" value="80"/>
+</imgdir>
+<imgdir name="equal">
+<int name="have" value="1"/>
+</imgdir>
+</imgdir>
+<imgdir name="B">
+<imgdir name="less">
+</imgdir>
+<imgdir name="more">
+<int name="vic" value="50"/>
+</imgdir>
+<imgdir name="equal">
+</imgdir>
+</imgdir>
+<imgdir name="C">
+<imgdir name="less">
+</imgdir>
+<imgdir name="more">
+<int name="vic" value="20"/>
+</imgdir>
+<imgdir name="equal">
+</imgdir>
+</imgdir>
+<imgdir name="D">
+<imgdir name="less">
+</imgdir>
+<imgdir name="more">
+<int name="vic" value="1"/>
+</imgdir>
+<imgdir name="equal">
+</imgdir>
+</imgdir>
+<imgdir name="F">
+<imgdir name="less">
+</imgdir>
+<imgdir name="more">
+<int name="try" value="1"/>
+<int name="VR" value="0"/>
+</imgdir>
+<imgdir name="equal">
+</imgdir>
+</imgdir>
+</imgdir>
+<imgdir name="string">
+<string name="S" value="S랭크를 달성하였습니다."/>
+<string name="A" value="다음 랭크 조건\n\n승리 : 100회 이상\n#t1122058##k 획득"/>
+<string name="B" value="다음 랭크 조건\n\n승리 : 80회 이상\n#t1122058##k 획득"/>
+<string name="C" value="다음 랭크 조건\n\n승리 : 50회 이상"/>
+<string name="D" value="다음 랭크 조건\n\n승리 : 20회 이상"/>
+<string name="F" value="다음 랭크 조건\n\n승리 : 1회 이상"/>
+</imgdir>
+</imgdir>
+<imgdir name="1303">
+<string name="안개 바다의 유령선" value=""/>
+<string name="mark" value="Map/MapHelper/mark/GhostShip2"/>
+<imgdir name="info">
+<int name="memberMin" value="3"/>
+<int name="memberMax" value="3"/>
+<int name="levelMin" value="120"/>
+<int name="levelMax" value="159"/>
+<int name="memberMin_t" value="3"/>
+<int name="memberMax_t" value="3"/>
+<int name="memberMin_d" value="3"/>
+<int name="memberMax_d" value="3"/>
+<int name="levelMin_t" value="120"/>
+<int name="levelMax_t" value="159"/>
+<int name="timeOut" value="900"/>
+<string name="fieldSet" value="PRaid_E_D_"/>
+<string name="difficulty" value="보통"/>
+<string name="desc" value="안개 바다의 유령선을 탐험하고 저주 받은 함장을 물리치자."/>
+<int name="recommendationLevelMin" value="120"/>
+<int name="recommendationLevelMax" value="159"/>
+<int name="buttonCode" value="4"/>
+<string name="rewardEXP" value="보통"/>
+<int name="dailyChallenge" value="7960"/>
+<int name="notRecommendPQ" value="1"/>
+</imgdir>
+</imgdir>
+<imgdir name="1304">
+<string name="마왕 발록" value=""/>
+<string name="mark" value="Map/MapHelper/mark/Balog"/>
+<imgdir name="info">
+<int name="memberMin" value="1"/>
+<int name="memberMax" value="30"/>
+<int name="levelMin" value="50"/>
+<int name="memberMin_t" value="1"/>
+<int name="memberMax_t" value="30"/>
+<int name="memberMin_d" value="1"/>
+<int name="memberMax_d" value="30"/>
+<int name="levelMin_t" value="50"/>
+<int name="timeOut" value="3600"/>
+<string name="fieldSet" value="MoonRabbit_"/>
+<string name="difficulty" value="보통"/>
+<string name="desc" value="마왕 발록을 물리치고 슬리피우드를 구해내자."/>
+<int name="recommendationLevelMin" value="50"/>
+<int name="recommendationLevelMax" value="69"/>
+<int name="buttonCode" value="30"/>
+<string name="rewardEXP" value="많음"/>
+<int name="dailyChallenge" value="20230000"/>
+</imgdir>
+</imgdir>
+<imgdir name="1305">
+<string name="사자왕 반 레온" value=""/>
+</imgdir>
+<imgdir name="1306">
+<string name="자쿰" value=""/>
+<string name="mark" value="Map/MapHelper/mark/Zakum"/>
+</imgdir>
+<imgdir name="1307">
+<string name="피아누스" value=""/>
+<string name="mark" value="Map/MapHelper/mark/MoonRabbitParty"/>
+</imgdir>
+<imgdir name="1308">
+<string name="파풀라투스" value=""/>
+<string name="mark" value="Map/MapHelper/mark/MoonRabbitParty"/>
+</imgdir>
+<imgdir name="1309">
+<string name="혼테일" value=""/>
+<string name="mark" value="Map/MapHelper/mark/Hontale"/>
+</imgdir>
+<imgdir name="1310">
+<string name="핑크빈" value=""/>
+<string name="mark" value="Map/MapHelper/mark/PinkBean"/>
+</imgdir>
+<imgdir name="1311">
+<string name="버섯의 성" value=""/>
+<string name="mark" value="Map/MapHelper/mark/MushCatle"/>
+</imgdir>
+<imgdir name="1312">
+<string name="커닝스퀘어" value=""/>
+<string name="mark" value="Map/MapHelper/mark/101Building"/>
+</imgdir>
+<imgdir name="1313">
+<string name="네오시티" value=""/>
+<string name="mark" value="Map/MapHelper/mark/TokyoK"/>
+</imgdir>
+<imgdir name="1314">
+<string name="크리세" value=""/>
+<string name="mark" value="Map/MapHelper/mark/Krease"/>
+</imgdir>
+<imgdir name="1315">
+<string name="군단장 아카이럼" value=""/>
+<string name="mark" value="Map/MapHelper/mark/Akayrum"/>
+</imgdir>
+<imgdir name="1316">
+<string name="힐라" value=""/>
+<string name="mark" value="Map/MapHelper/mark/Aswan"/>
+</imgdir>
+<imgdir name="1317">
+<string name="이상한 갤러리" value=""/>
+<string name="mark" value="Map/MapHelper/mark/StrangeGallery"/>
+<imgdir name="info">
+<int name="levelMin" value="50"/>
+<int name="levelMin_t" value="50"/>
+<string name="difficulty" value="쉬움"/>
+<string name="desc" value="슈피겔만의 이상한 갤러리에서 그림을 감상해 보자."/>
+<string name="rewardEXP" value="보통"/>
+<int name="buttonCode" value="2"/>
+</imgdir>
+</imgdir>
+<imgdir name="1318">
+<string name="판타스틱 테마파크" value=""/>
+<string name="mark" value="Map/MapHelper/mark/FantasticPark"/>
+</imgdir>
+<imgdir name="1319">
+<string name="대난투" value=""/>
+<string name="mark" value="Map/MapHelper/mark/BattleSquare"/>
+<imgdir name="info">
+<int name="levelMin" value="70"/>
+<int name="levelMin_t" value="100"/>
+<string name="difficulty" value="어려움"/>
+<string name="desc" value="배틀스퀘어에서 타인과 강함을 겨뤄보자."/>
+<string name="rewardEXP" value="보통"/>
+<int name="buttonCode" value="30"/>
+</imgdir>
+</imgdir>
+<imgdir name="7039">
+<string name="아스완 해방전" value=""/>
+<string name="mark" value="Map/MapHelper/mark/Aswan"/>
+<imgdir name="info">
+<int name="memberMin" value="1"/>
+<int name="memberMax" value="6"/>
+<int name="levelMin" value="40"/>
+<int name="memberMin_t" value="1"/>
+<int name="memberMax_t" value="6"/>
+<int name="memberMin_d" value="1"/>
+<int name="memberMax_d" value="6"/>
+<int name="levelMin_t" value="40"/>
+<int name="timeOut" value="1200"/>
+<string name="difficulty" value="쉬움"/>
+<string name="desc" value="아스완 지역에 남아있는 힐라의 잔당들을 소탕하자."/>
+<int name="recommendationLevelMin" value="40"/>
+<int name="recommendationLevelMax" value="200"/>
+<string name="rewardEXP" value="보통"/>
+<int name="buttonCode" value="27"/>
+<int name="notRecommendPQ" value="1"/>
+<int name="dailyChallenge" value="7963"/>
+</imgdir>
+</imgdir>
+<imgdir name="1219">
+<string name="루디브리엄 메이즈" value=""/>
+<string name="mark" value="Map/MapHelper/mark/ludiMaze"/>
+<imgdir name="info">
+<int name="memberMin" value="1"/>
+<int name="memberMax" value="6"/>
+<int name="levelMin" value="10"/>
+<int name="memberMin_t" value="1"/>
+<int name="memberMax_t" value="6"/>
+<int name="memberMin_d" value="1"/>
+<int name="memberMax_d" value="6"/>
+<int name="levelMin_t" value="10"/>
+<int name="timeOut" value="900"/>
+<string name="fieldSet" value="PQ_maze_"/>
+<string name="difficulty" value="쉬움"/>
+<string name="desc" value="루디브리엄 메이즈의 포탈의 규칙을 풀어 미로에서 탈출하자."/>
+<int name="recommendationLevelMin" value="10"/>
+<int name="buttonCode" value="0"/>
+<string name="rewardEXP" value="보통"/>
+<int name="dailyChallenge" value="7921"/>
+</imgdir>
+</imgdir>
+<imgdir name="1220">
+<string name="라바나" value=""/>
+<string name="mark" value="Map/MapHelper/mark/GoldTempleTH"/>
+<imgdir name="info">
+<int name="memberMin" value="1"/>
+<int name="memberMax" value="6"/>
+<int name="memberMin_t" value="1"/>
+<int name="memberMax_t" value="6"/>
+<int name="memberMin_d" value="1"/>
+<int name="memberMax_d" value="6"/>
+<int name="levelMin" value="30"/>
+<int name="levelMin_t" value="30"/>
+<int name="timeOut" value="1800"/>
+<string name="fieldSet" value="PQ_ravana_"/>
+<string name="difficulty" value="어려움"/>
+<string name="desc" value="황금 사원의 지하 세계를 다스리던 왕, 라바나를 물리쳐 황금 사원의 평화를 되찾자."/>
+<int name="recommendationLevelMin" value="30"/>
+<int name="buttonCode" value="8"/>
+<string name="rewardEXP" value="많음"/>
+<int name="dailyChallenge" value="7923"/>
+</imgdir>
+</imgdir>
+</imgdir>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><imgdir name="3191.img"><imgdir name="QuestInfo"><string name="name" value="금기의 프리스트"/><int name="area" value="33"/><string name="1" value="알케스터는 리치의 금지된 마법을 막기 위해선 결계의 토템이 필요한데, 결계의 토템을 만들기 위해선 #b지혜의 크리스탈#k과 리치의 #b붉은 계약 구슬, 타락한 자의 성서#k가 필요하다며 구해올 것을 부탁했다.
+
+#i4000633:# #t4000633:# #c4000633# / 1
+#i4000336:# #t4000336:# #c4000336# / 1
+#i4005001:# #t4005001:# #c4005001# / 1
+
+"/><string name="2" value="결계의 토템의 재료인 지혜의 크리스탈, 타락한 자의 성서, 붉은 계약 구슬을 가져다 주었다."/><string name="parent" value="저주 받은 프리스트"/><int name="order" value="4"/><string name="demandSummary" value="
+"/><string name="rewardSummary" value="경험치 32,000
+&apos;결계의 토템&apos; 퀘스트로 진행 가능
+"/></imgdir><imgdir name="Check"><imgdir name="0"><int name="npc" value="2020005"/><int name="lvmin" value="135"/><string name="startscript" value="q3191s"/><imgdir name="quest"><imgdir name="0"><int name="id" value="3190"/><int name="state" value="2"/></imgdir></imgdir></imgdir><imgdir name="1"><int name="npc" value="2020005"/><imgdir name="item"><imgdir name="0"><int name="id" value="4000633"/><int name="count" value="1"/></imgdir><imgdir name="1"><int name="id" value="4000336"/><int name="count" value="1"/></imgdir><imgdir name="2"><int name="id" value="4005001"/><int name="count" value="1"/></imgdir></imgdir></imgdir></imgdir><imgdir name="Act"><imgdir name="0"></imgdir><imgdir name="1"><int name="nextQuest" value="3192"/><int name="exp" value="32000"/><imgdir name="item"><imgdir name="0"><int name="id" value="4000633"/><int name="count" value="-1"/></imgdir><imgdir name="1"><int name="id" value="4005001"/><int name="count" value="-1"/></imgdir><imgdir name="2"><int name="id" value="4000336"/><int name="count" value="-1"/></imgdir></imgdir></imgdir></imgdir><imgdir name="Say"><imgdir name="0"><string name="0" value="샘플을 모두 구해왔군. 잠시만 기다려 주겠나? 샘플들을 조사하고, 바로 알려주겠네."/><imgdir name="stop"></imgdir><imgdir name="no"><string name="0" value="성질이 급하구만..."/></imgdir></imgdir><imgdir name="1"><imgdir name="stop"><imgdir name="item"><string name="0" value="이걸로는 결계의 토템을 만들 수가 없네. 재료를 구해오게."/></imgdir></imgdir></imgdir></imgdir></imgdir>

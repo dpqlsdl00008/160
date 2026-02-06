@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<imgdir name="WorldMap190.img">
+<imgdir name="info">
+<string name="parentMap" value="WorldMap"/>
+<string name="WorldMap" value="WorldMap190"/>
+</imgdir>
+<imgdir name="BaseImg">
+<canvas name="0" width="640" height="470">
+<vector name="origin" x="320" y="235"/>
+<int name="z" value="0"/>
+</canvas>
+</imgdir>
+<imgdir name="MapList">
+<imgdir name="0">
+<vector name="spot" x="-92" y="88"/>
+<int name="type" value="0"/>
+<string name="title" value="玄山"/>
+<string name="desc" value="位於江湖最南端的地方。連綿的大海，遍布岩石，潮流急促。有港口村莊河津和堅守巍峨玄山的玄山派。"/>
+<imgdir name="mapNo">
+<int name="0" value="875000000"/>
+<int name="1" value="875000001"/>
+<int name="2" value="875000010"/>
+<int name="3" value="875000011"/>
+<int name="4" value="875000020"/>
+<int name="5" value="875000100"/>
+<int name="6" value="875000101"/>
+<int name="7" value="875000102"/>
+<int name="8" value="875000103"/>
+<int name="9" value="875000104"/>
+<int name="10" value="875000105"/>
+<int name="11" value="875000106"/>
+<int name="12" value="875000107"/>
+<int name="13" value="875000108"/>
+<int name="14" value="875001000"/>
+<int name="15" value="875001001"/>
+<int name="16" value="875001100"/>
+<int name="17" value="875001101"/>
+<int name="18" value="875001102"/>
+<int name="19" value="875001103"/>
+<int name="20" value="875001104"/>
+<int name="21" value="875001105"/>
+<int name="22" value="875001106"/>
+<int name="23" value="875002000"/>
+<int name="24" value="875002100"/>
+<int name="25" value="875002101"/>
+<int name="26" value="875002001"/>
+</imgdir>
+</imgdir>
+<imgdir name="1">
+<vector name="spot" x="134" y="-118"/>
+<int name="type" value="0"/>
+<imgdir name="mapNo">
+<int name="0" value="875010000"/>
+<int name="1" value="875010500"/>
+<int name="2" value="875010400"/>
+<int name="3" value="875010410"/>
+<int name="4" value="875010420"/>
+<int name="5" value="875010100"/>
+<int name="6" value="875010110"/>
+<int name="7" value="875010200"/>
+<int name="8" value="875010210"/>
+<int name="9" value="875010220"/>
+<int name="10" value="875010300"/>
+<int name="11" value="875010230"/>
+<int name="12" value="875010240"/>
+<int name="13" value="875010250"/>
+<int name="14" value="875010120"/>
+<int name="15" value="875010130"/>
+<int name="16" value="875010600"/>
+<int name="17" value="875010700"/>
+</imgdir>
+<string name="title" value="永恆森林"/>
+<string name="desc" value="位於江湖東北方最頂端的樹林。一年四季覆蓋常青的植物，因此又被稱為&quot;永恆森林&quot;。高聳的山脈和鬱鬱蔥蔥的樹林，極為隱蔽，與外界隔絕許久。"/>
+</imgdir>
+</imgdir>
+<imgdir name="MapLink">
+<imgdir name="0">
+<string name="toolTip" value="현산"/>
+<imgdir name="link">
+<canvas name="linkImg" width="237" height="258">
+<vector name="origin" x="204" y="43"/>
+<int name="z" value="1"/>
+</canvas>
+<string name="linkMap" value="WorldMap1781"/>
+</imgdir>
+</imgdir>
+<imgdir name="1">
+<string name="toolTip" value="永恆森林"/>
+<imgdir name="link">
+<canvas name="linkImg" width="215" height="179">
+<vector name="origin" x="-33" y="216"/>
+<int name="z" value="1"/>
+</canvas>
+<string name="linkMap" value="WorldMap1782"/>
+</imgdir>
+</imgdir>
+</imgdir>
+</imgdir>

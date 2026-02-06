@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<imgdir name="3005508.img">
+<imgdir name="info">
+<int name="hide" value="1"/>
+</imgdir>
+<imgdir name="stand">
+<canvas name="0" width="59" height="88">
+<vector name="origin" x="29" y="83"/>
+<int name="z" value="0"/>
+<string name="_hash" value="6ef8dcb32144bf10d9729ccfc4677694a0fdbecf497b0bde9660449bf8186ae8"/>
+</canvas>
+</imgdir>
+<imgdir name="say">
+<canvas name="0" width="59" height="88">
+<vector name="origin" x="29" y="83"/>
+<int name="z" value="0"/>
+<int name="delay" value="150"/>
+</canvas>
+<canvas name="1" width="59" height="88">
+<vector name="origin" x="29" y="83"/>
+<int name="z" value="0"/>
+<int name="delay" value="150"/>
+<string name="_hash" value="5c70f114bda899b7e0078a91f3c0ca8c5bb32e5845d5e3d629e2c9050c7c3144"/>
+</canvas>
+<canvas name="2" width="59" height="88">
+<vector name="origin" x="29" y="83"/>
+<int name="z" value="0"/>
+<int name="delay" value="150"/>
+</canvas>
+<canvas name="3" width="59" height="88">
+<vector name="origin" x="29" y="83"/>
+<int name="z" value="0"/>
+<int name="delay" value="150"/>
+<string name="_hash" value="11602a057dd1dc40b924c211c857d6ebd42e70f2d20345926de0d0cc5f8aa517"/>
+</canvas>
+<canvas name="4" width="59" height="88">
+<vector name="origin" x="29" y="83"/>
+<int name="z" value="0"/>
+<int name="delay" value="150"/>
+</canvas>
+<imgdir name="speak">
+<string name="0" value="n0"/>
+<string name="1" value="n1"/>
+</imgdir>
+</imgdir>
+<imgdir name="eye">
+<canvas name="0" width="59" height="88">
+<vector name="origin" x="29" y="83"/>
+<int name="z" value="0"/>
+<int name="delay" value="150"/>
+</canvas>
+<canvas name="1" width="59" height="88">
+<vector name="origin" x="29" y="83"/>
+<int name="z" value="0"/>
+<int name="delay" value="150"/>
+<string name="_hash" value="be7d3a1fc3ff6119307dde715a8dcd18f735251924d7a7696dc9f28dbebaa42e"/>
+</canvas>
+<canvas name="2" width="59" height="88">
+<vector name="origin" x="29" y="83"/>
+<int name="z" value="0"/>
+<int name="delay" value="150"/>
+<string name="_hash" value="a2ef209ccebb81b15bd4222ada6583544a9a5741a3ecfd511fd6851160ae0470"/>
+</canvas>
+</imgdir>
+<imgdir name="">
+<imgdir name="38300">
+<imgdir name="0">
+<string name="key" value="08"/>
+<string name="value" value="h0"/>
+</imgdir>
+</imgdir>
+<int name="hide" value="1"/>
+<uol name="stand" value="../stand"/>
+<uol name="say" value="../say"/>
+<uol name="eye" value="../eye"/>
+</imgdir>
+<imgdir name="">
+<imgdir name="38300">
+<imgdir name="0">
+<string name="key" value="08"/>
+<string name="value" value="h1"/>
+</imgdir>
+</imgdir>
+<uol name="stand" value="../stand"/>
+<uol name="say" value="../say"/>
+<uol name="eye" value="../eye"/>
+</imgdir>
+</imgdir>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><imgdir name="2700.img"><imgdir name="QuestInfo"><string name="name" value="[현상수배] 주황버섯"/><string name="0" value="#m100010000#에 현상수배 표지판이 세워졌다. 
+"/><string name="1" value="#m100010000#에 #b#p1012125##k이 세워졌다. #r#o1210102# 20마리#k를 사냥하고 #m100020000#에 있는 #p1012119#에게 가서 보고하자.
+"/><string name="2" value="#m100010000#에 #p1012119#가 #p1012125#을 세웠다. #o1210102# 20마리를 사냥하고 #m100020000#에 있는 #p1012119#에게 가서 보고하고 현상금을 받았다. 그런데 내가 #o1210102#을 진짜 잡았는지 안 잡았는지 어떻게 알고있는 걸까?
+"/><string name="demandSummary" value="#o1210102# #a27001#
+"/><string name="rewardSummary" value="경험치 300
+#Wbasic#
+#i1002010:# #t1002010:# 1 개
+&apos;[현상수배] 초록버섯&apos; 퀘스트로 진행 가능
+"/><int name="area" value="25"/></imgdir><imgdir name="Check"><imgdir name="0"><int name="npc" value="1012125"/><int name="lvmin" value="10"/></imgdir><imgdir name="1"><int name="npc" value="1012119"/><imgdir name="mob"><imgdir name="0"><int name="id" value="1210102"/><int name="count" value="20"/></imgdir></imgdir></imgdir></imgdir><imgdir name="Act"><imgdir name="0"></imgdir><imgdir name="1"><int name="exp" value="300"/><imgdir name="item"><imgdir name="0"><int name="id" value="1002010"/><int name="count" value="1"/><string name="potentialGrade" value="노멀"/></imgdir></imgdir></imgdir></imgdir><imgdir name="Say"><imgdir name="0"><string name="0" value="#eWANTED#n\n#i3800223#\n최근 니은숲 일대에 출몰해서 여행자들을 방해하는 #r#o1210102# 20마리#k를 수배합니다.\n죄목 : 통행방해, 소란죄\r\n"/><imgdir name="stop"></imgdir><imgdir name="yes"><string name="0" value="&lt;추신&gt;\n#o1210102# 20마리를 소탕하신 분은 버섯노래숲:#m100020000#에 있는 #b#p1012119##k를 찾아가 제보해주세요.
+"/></imgdir><imgdir name="no"><string name="0" value="&lt;추신&gt;\n- 표지판 훼손 시, 벌금 10만메소를 징수.\n- 이 곳에 쓰레기를 버리지 마시오.
+"/></imgdir></imgdir><imgdir name="1"><int name="ask" value="1"/><string name="0" value="무슨 일로 왔나?\r\n#L0##b#o1210102# 20마리를 소탕하고 현상금을 받으러 왔습니다.#l\n#k"/><string name="1" value="오! 이런 정말이군? 좋아, 현상금을 내주겠네. 자네 덕분에 골칫거리 #o1210102#들이 좀 줄어들었겠군! 하하하!"/><imgdir name="yes"><string name="0" value="#m100000000# 주변의 버섯들은 항상 골칫거리야. 버섯노래숲에 내가 세워놓은 수배표지판이 더 있을테니 한번 찾아보게. 물론 그에 합당한 보상을 지급해줄테니 보상금에 대해서는 걱정하지 말고~
+"/></imgdir><imgdir name="stop"><imgdir name="0"><int name="answer" value="1"/></imgdir><imgdir name="npc"><string name="0" value="&lt;추신&gt;\n#o1210102# 20마리를 소탕하신 분은 버섯노래숲:#m100020000#에 있는 #p1012119#를 찾아가 제보해주세요.
+"/></imgdir><imgdir name="mob"><string name="0" value="#m100010000#에 세워놓은 #o1210102# 수배 표지판을 보고 온건가? 보상금을 받으려면 우선 #o1210102# 20마리를 소탕해 주게.
+"/></imgdir></imgdir></imgdir></imgdir></imgdir>

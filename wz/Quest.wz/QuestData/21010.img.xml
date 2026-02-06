@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><imgdir name="21010.img"><imgdir name="QuestInfo"><string name="name" value="영웅의 귀환"/><int name="area" value="6"/><string name="0" value="여기는 어디지? ...나는 누구? 
+
+기억나는 것은 아무것도 없다. 이름마저도 떠올리지 못하는 나를 알아보는 것은, 동굴 속에서 만난 소녀 #p1201000# 뿐이다. 뭐가 어떻게 된 건지는 잘 모르지만 마을까지 가면 설명해 준다고 하니 일단 #p1201000#의 말대로 마을로 가보자. 
+
+그런데 저기 보이는 것은... 펭귄? #b#p1202001##k에게 말을 걸어보자."/><string name="1" value="#p1202001#는 영웅을 만나 반갑다고 호들갑스럽게 말했다. 영웅이라니... 내가 영웅? #p1201000#의 말도 그렇고 아무래도 난 영웅이었는지도 모르겠다. 하지만 여전히 아무것도 기억나지 않는데...
+
+일단 #p1202001#가 준 물약을 먹고 체력을 회복시켜 보자. #bI키를 눌러 인벤토리를 연 후, 소비탭에 가서 물약을 더블클릭하면 된다#k고 한다."/><string name="2" value="물약을 다 마시자 체력이 어느 정도 차오른다. 여전히 상황은 잘 모르겠지만 친절하게 대해주는 걸 보면, 나에게 악의를 가진 사람들은 아닌 것 같다. 이대로 마을로 가도 문제는 없을 것 같다..."/><string name="rewardSummary" value="&apos;사라진 무기&apos; 퀘스트로 진행 가능
+"/><string name="type" value="[필수]"/></imgdir><imgdir name="Check"><imgdir name="0"><int name="npc" value="1202001"/><string name="startscript" value="q21010s"/><imgdir name="quest"><imgdir name="0"><int name="id" value="21001"/><int name="state" value="2"/></imgdir></imgdir><imgdir name="job"><int name="0" value="2000"/></imgdir></imgdir><imgdir name="1"><int name="npc" value="1202001"/><string name="endscript" value="q21010e"/><imgdir name="item"><imgdir name="0"><int name="id" value="2000022"/></imgdir></imgdir></imgdir></imgdir><imgdir name="Act"><imgdir name="0"></imgdir><imgdir name="1"></imgdir></imgdir><imgdir name="Say"><imgdir name="0"></imgdir><imgdir name="1"><imgdir name="stop"><imgdir name="item"><string name="0" value="아까워하지 말고 포션을 주욱 들이키십시오! 별 건 아니지만, 체력이 좀 회복될 겁니다. "/></imgdir></imgdir></imgdir></imgdir></imgdir>

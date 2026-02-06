@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><imgdir name="2335.img"><imgdir name="QuestInfo"><string name="name" value="잔당소탕"/><string name="0" value="아직 성내에 #b총리대신#k의 잔당들이 남아있다고 하는데...
+
+#r&apos;칭호 - 버섯왕국의 수호자&apos; 퀘스트와는 관계 없는 번외 퀘스트 입니다.#k"/><string name="1" value="총리대신의 잔당들이 있는곳을 찾아내자. 그들이 숨어있는 곳은 #b마천루3#k에서 진입할 수 있다고 한다. 추가로 #b마천루#k 곳곳에서 #r#o3300003#, #o3300004#를 각각 40마리#k씩 처치하자. 잔당을 소탕하고나면 #b#p1300003#에게 보고하자.
+
+#r&apos;칭호 - 버섯왕국의 수호자&apos; 퀘스트와는 관계 없는 번외 퀘스트 입니다.#k"/><string name="2" value="#b총리대신#k 잔당들의 거점을 발견하고 적을 소탕한 뒤에 #b#p1300003##k에게 보고하였다."/><string name="summary" value="총리대신의 잔당들을 제거하자. 우선 #b#m106021001##k에 들러보고, #r#o3300003#, #r#o3300004#를 각각 40마리씩#k 처치하자.  #b#m106021001##k은 #b#m106021000##k에서 진입할 수 있다.
+
+#r&apos;칭호 - 버섯왕국의 수호자&apos; 퀘스트와는 관계 없는 번외 퀘스트 입니다.#k"/><string name="demandSummary" value="총리대신의 잔당들을 찾아서 처치하라.
+
+#b#m106021000##k에서 갈 수 있는 #b#m106021001##k에 들러서 잔당이 있는지 확인한다.
+#o3300003# #a23351#
+#o3300004# #a23352#
+"/><string name="rewardSummary" value="경험치 5,000
+"/><int name="area" value="25"/></imgdir><imgdir name="Check"><imgdir name="0"><int name="npc" value="1300002"/><int name="lvmin" value="30"/><string name="startscript" value="q2335s"/><imgdir name="quest"><imgdir name="0"><int name="id" value="2334"/><int name="state" value="2"/></imgdir></imgdir></imgdir><imgdir name="1"><int name="npc" value="1300003"/><int name="infoNumber" value="2347"/><imgdir name="infoex"><imgdir name="0"><string name="value" value="1"/><int name="cond" value="1"/></imgdir></imgdir><imgdir name="mob"><imgdir name="0"><int name="id" value="3300003"/><int name="count" value="40"/></imgdir><imgdir name="1"><int name="id" value="3300004"/><int name="count" value="40"/></imgdir></imgdir></imgdir></imgdir><imgdir name="Act"><imgdir name="0"></imgdir><imgdir name="1"><int name="exp" value="5000"/></imgdir></imgdir><imgdir name="Say"><imgdir name="0"></imgdir><imgdir name="1"><string name="0" value="훌륭합니다. 용사님. #b페페킹#k을 물리치시고 공주님을 구하셨다면서요!!"/><imgdir name="yes"><string name="0" value="네? 거기다 성내의 남은 잔당까지 처리해주시다니... 정말 감사합니다."/></imgdir><imgdir name="stop"><imgdir name="default"><string name="0" value="공주님께서 성내에 총리대신의 잔당들이 남아있다고 말씀하셨다고요? #b#m106021001##k은 #b마천루3#k에서 공주님이 드린 #b#t4032405##k를 사용해 들어가실 수 있습니다. 그리고 남은 잔당들은 #b마천루#k 곳곳에서 발견하실 수 있을 겁니다."/></imgdir><imgdir name="npc"><string name="0" value="잔당들이 숨어 있을 만한 장소는 #b#m106021001##k이라는 곳인데 #b마천루3#k에서 제가 드린 #b#t4032405##k를 사용해 들어가실 수 있어요. 그리고 남은 잔당들은 #b마천루#k 곳곳에서 발견하실 수 있을 테니 꼭 처리해주세요."/></imgdir></imgdir></imgdir></imgdir></imgdir>

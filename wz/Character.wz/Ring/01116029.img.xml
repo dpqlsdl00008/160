@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<imgdir name="01116029.img">
+<imgdir name="info">
+<canvas name="icon" width="32" height="30">
+<vector name="origin" x="0" y="29"/>
+<int name="z" value="0"/>
+</canvas>
+<canvas name="iconRaw" width="30" height="30">
+<vector name="origin" x="0" y="29"/>
+<int name="z" value="0"/>
+</canvas>
+<string name="islot" value="Ri"/>
+<string name="vslot" value="Ri"/>
+<int name="reqJob" value="0"/>
+<int name="reqLevel" value="0"/>
+<int name="reqSTR" value="0"/>
+<int name="reqDEX" value="0"/>
+<int name="reqINT" value="0"/>
+<int name="reqLUK" value="0"/>
+<int name="cash" value="1"/>
+<int name="illusionGrade" value="1"/>
+</imgdir>
+<imgdir name="stand1">
+<canvas name="0" width="96" height="60">
+<vector name="origin" x="61" y="60"/>
+<int name="z" value="0"/>
+</canvas>
+<canvas name="1" width="88" height="60">
+<vector name="origin" x="61" y="60"/>
+<int name="z" value="0"/>
+</canvas>
+<canvas name="2" width="96" height="60">
+<vector name="origin" x="61" y="60"/>
+<int name="z" value="0"/>
+</canvas>
+<canvas name="3" width="98" height="60">
+<vector name="origin" x="61" y="60"/>
+<int name="z" value="0"/>
+</canvas>
+<canvas name="4" width="96" height="60">
+<vector name="origin" x="61" y="60"/>
+<int name="z" value="0"/>
+</canvas>
+<canvas name="5" width="88" height="60">
+<vector name="origin" x="61" y="60"/>
+<int name="z" value="0"/>
+</canvas>
+<canvas name="6" width="96" height="58">
+<vector name="origin" x="61" y="58"/>
+<int name="z" value="0"/>
+</canvas>
+<canvas name="7" width="98" height="60">
+<vector name="origin" x="61" y="60"/>
+<int name="z" value="0"/>
+</canvas>
+<int name="z" value="2"/>
+<imgdir name="applySpecialAction">
+<string name="0" value="stand1_floating"/>
+<string name="1" value="stand2_floating"/>
+<string name="2" value="stand1_floating2"/>
+<string name="3" value="stand2_floating2"/>
+</imgdir>
+<int name="delay" value="150"/>
+</imgdir>
+<imgdir name="jump">
+<canvas name="0" width="96" height="54">
+<vector name="origin" x="61" y="64"/>
+<int name="z" value="0"/>
+</canvas>
+<int name="z" value="2"/>
+<imgdir name="applySpecialAction">
+<string name="0" value="cannonJump"/>
+<string name="1" value="demonJumpUpward"/>
+<string name="2" value="RWexplosionJumpUp"/>
+<string name="3" value="RWexplosionJump"/>
+<string name="4" value="VerticalshiningChase"/>
+<string name="5" value="upperCharge"/>
+<string name="6" value="upperCharge2"/>
+<string name="7" value="upperCharge3"/>
+<string name="8" value="AMupperJump"/>
+<string name="9" value="retreatShot"/>
+</imgdir>
+</imgdir>
+<imgdir name="fly">
+<canvas name="0" width="96" height="54">
+<vector name="origin" x="56" y="54"/>
+<int name="z" value="0"/>
+</canvas>
+<canvas name="1" width="100" height="56">
+<vector name="origin" x="60" y="56"/>
+<int name="z" value="0"/>
+</canvas>
+<int name="z" value="2"/>
+<imgdir name="applySpecialAction">
+<string name="0" value="fly2"/>
+<string name="1" value="manaWaveFloat"/>
+<string name="2" value="fly2Move"/>
+<string name="3" value="arrowTeleport2"/>
+<string name="4" value="wingsAir"/>
+<string name="5" value="FWflareBlink"/>
+<string name="6" value="WBwindWalk_air"/>
+<string name="7" value="demonFly"/>
+<string name="8" value="KSPsychicMove"/>
+<string name="9" value="demonFly2"/>
+</imgdir>
+<int name="delay" value="180"/>
+</imgdir>
+<imgdir name="attack1">
+<canvas name="0" width="90" height="56">
+<vector name="origin" x="51" y="56"/>
+<int name="z" value="0"/>
+</canvas>
+<canvas name="1" width="94" height="52">
+<vector name="origin" x="51" y="52"/>
+<int name="z" value="0"/>
+</canvas>
+<int name="z" value="2"/>
+<int name="delay" value="150"/>
+</imgdir>
+<imgdir name="move">
+<canvas name="0" width="94" height="62">
+<vector name="origin" x="61" y="64"/>
+<int name="z" value="0"/>
+</canvas>
+<canvas name="1" width="96" height="58">
+<vector name="origin" x="61" y="58"/>
+<int name="z" value="0"/>
+</canvas>
+<canvas name="2" width="100" height="56">
+<vector name="origin" x="61" y="56"/>
+<int name="z" value="0"/>
+</canvas>
+<int name="z" value="2"/>
+<int name="delay" value="150"/>
+</imgdir>
+<imgdir name="prone">
+<canvas name="0" width="96" height="56">
+<vector name="origin" x="62" y="56"/>
+<int name="z" value="0"/>
+</canvas>
+<int name="z" value="2"/>
+<imgdir name="applySpecialAction">
+<string name="0" value="5thTrueSniping"/>
+</imgdir>
+</imgdir>
+<imgdir name="hang">
+<canvas name="0" width="72" height="90">
+<vector name="origin" x="35" y="90"/>
+<int name="z" value="0"/>
+</canvas>
+<canvas name="1" width="72" height="90">
+<vector name="origin" x="35" y="92"/>
+<int name="z" value="0"/>
+</canvas>
+<int name="z" value="2"/>
+<int name="delay" value="150"/>
+</imgdir>
+<imgdir name="sit">
+<canvas name="0" width="90" height="62">
+<vector name="origin" x="59" y="62"/>
+<int name="z" value="0"/>
+</canvas>
+<canvas name="1" width="90" height="62">
+<vector name="origin" x="59" y="62"/>
+<int name="z" value="0"/>
+</canvas>
+<canvas name="2" width="88" height="62">
+<vector name="origin" x="59" y="62"/>
+<int name="z" value="0"/>
+</canvas>
+<canvas name="3" width="90" height="62">
+<vector name="origin" x="59" y="62"/>
+<int name="z" value="0"/>
+</canvas>
+<int name="z" value="2"/>
+<imgdir name="applySpecialAction">
+<string name="0" value="ATCloudRiding"/>
+</imgdir>
+<int name="delay" value="150"/>
+</imgdir>
+<imgdir name="hide">
+<canvas name="0" width="1" height="1">
+<vector name="origin" x="0" y="0"/>
+<int name="z" value="0"/>
+</canvas>
+<int name="z" value="2"/>
+<imgdir name="applySpecialAction">
+<string name="0" value="blink"/>
+</imgdir>
+</imgdir>
+</imgdir>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<imgdir name="3006222.img">
+<imgdir name="info">
+<int name="hide" value="1"/>
+<imgdir name="script">
+<imgdir name="0">
+<string name="script" value="npc_3006222"/>
+</imgdir>
+</imgdir>
+</imgdir>
+<imgdir name="stand">
+<canvas name="0" width="53" height="79">
+<vector name="origin" x="26" y="79"/>
+<int name="z" value="0"/>
+<string name="_hash" value="b763f86e94da77b3ac491ac42b71fb10f2595b432fa0542d7a826b97d5000553"/>
+</canvas>
+</imgdir>
+<imgdir name="say">
+<canvas name="0" width="53" height="79">
+<vector name="origin" x="26" y="79"/>
+<int name="z" value="0"/>
+<int name="delay" value="180"/>
+</canvas>
+<canvas name="1" width="53" height="79">
+<vector name="origin" x="26" y="79"/>
+<int name="z" value="0"/>
+<int name="delay" value="180"/>
+<string name="_hash" value="1406fbb2f0335357d03c217e76916e38d4562e1a550e346819c34a4b25536de5"/>
+</canvas>
+<canvas name="2" width="53" height="79">
+<vector name="origin" x="26" y="79"/>
+<int name="z" value="0"/>
+<int name="delay" value="180"/>
+<string name="_hash" value="46adb27ee9a6d794d9f5de13abceaca872f5bf077215698e2606eae6f70a6dc2"/>
+</canvas>
+<canvas name="3" width="53" height="79">
+<vector name="origin" x="26" y="79"/>
+<int name="z" value="0"/>
+<int name="delay" value="180"/>
+</canvas>
+<canvas name="4" width="53" height="79">
+<vector name="origin" x="26" y="79"/>
+<int name="z" value="0"/>
+<int name="delay" value="180"/>
+</canvas>
+<imgdir name="speak">
+<string name="0" value="n0"/>
+<string name="1" value="n1"/>
+</imgdir>
+</imgdir>
+<imgdir name="eye">
+<canvas name="0" width="53" height="79">
+<vector name="origin" x="26" y="79"/>
+<int name="z" value="0"/>
+<int name="delay" value="180"/>
+</canvas>
+<canvas name="1" width="53" height="79">
+<vector name="origin" x="26" y="79"/>
+<int name="z" value="0"/>
+<int name="delay" value="180"/>
+<string name="_hash" value="f198e83fa4f7e77ef6f8763378abbc8063882f2fc5a1573ed943a18a5e07516d"/>
+</canvas>
+</imgdir>
+<imgdir name="">
+<int name="36683" value="2"/>
+<uol name="stand" value="../stand"/>
+<uol name="say" value="../say"/>
+<uol name="eye" value="../eye"/>
+</imgdir>
+</imgdir>

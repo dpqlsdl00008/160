@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><imgdir name="11125.img"><imgdir name="QuestInfo"><string name="name" value="헌 모자 줄게! 새 모자 다오!"/><int name="area" value="50"/><int name="autoStart" value="1"/><string name="0" value="봄맞이 #b‘개굴 개굴 봄나들이!’#k 이벤트에 열심히 참여해서 #b#t01003227##k를 #b#e2개#n#k나 받았다면 #p9010010#를 찾아가 보자.
+#t01003227#가 하나뿐이라면 &apos;개굴 개굴 봄나들이!&apos; 퀘스트를 한 번 더 수행해서 #t01003227#를 받을 수 있다."/><string name="1" value="봄맞이 #b‘헌모자 줄게! 새 모자 다오!’#k 이벤트에 참여하였다. &apos;개굴개굴 봄나들이!&apos; 퀘스트를 36번 수행하고, #b50레벨#k이 되어 #b#t01003227#를 2개#k 가져가면 더 좋은 모자로 교환해준다고 한다.\r\n#i01003228##b#t01003228#(30일) #k1개\n모든 능력치 + 8
+공격력, 마력 +5
+물리/마법방어력 +70
+이동속도 + 10
+점프력 + 8
+업그레이드 불가
+#e교환 불가
+유효기간 연장 불가#n
+"/><string name="2" value="봄맞이 #b‘헌 모자 줄게! 새 모자 다오!’#k 이벤트에 참여해서 #b#t01003227# 2개#k를 #b#t01003228##k로 교환하였다.\r\n#i01003228##b#t01003228#(30일) #k1개"/><string name="demandSummary" value="#b50레벨 달성#k
+#i1003227:# #t1003227:# #c1003227# / 2
+"/><string name="rewardSummary" value="#Wbasic#
+#b#i1003228:# #t1003228:#(30일) 1 개#k"/></imgdir><imgdir name="Check"><imgdir name="0"><int name="npc" value="9010010"/><int name="lvmin" value="13"/><string name="start" value="201102240000"/><string name="end" value="201104010000"/><string name="start_t" value="201102210000"/><string name="end_t" value="201104010000"/><int name="interval" value="0"/><int name="normalAutoStart" value="1"/><imgdir name="item"><imgdir name="0"><int name="id" value="1003227"/><int name="count" value="1"/></imgdir></imgdir></imgdir><imgdir name="1"><int name="npc" value="9010010"/><string name="endscript" value="q11125e"/><int name="lvmin" value="50"/><imgdir name="item"><imgdir name="0"><int name="id" value="1003227"/><int name="count" value="2"/></imgdir></imgdir></imgdir></imgdir><imgdir name="Act"><imgdir name="0"></imgdir><imgdir name="1"></imgdir></imgdir><imgdir name="Say"><imgdir name="0"><string name="0" value="헤이 #e#b#h0##n#k! #t01003227#를 받았구나! 어때, #r#e50레벨#k#n을 달성하고 &apos;개굴개굴 봄나들이!&apos; 퀘스트를 36번만 더 완료한 뒤에  #b#t01003227# 2개#k를 나에게 준다면 내가 좀 더 좋은 #b#e#t01003228##n#k로 바꿔줄게."/><imgdir name="stop"></imgdir><imgdir name="yes"><string name="0" value="아 참, 처음에 받은 #t01003227#는 #r30일#k 이후에는 사라지게 되니까, #t01003228#를 받고 싶다면 처음에 받은 모자가 사라지기 전에 바꿔야 해. 명심해."/></imgdir><imgdir name="no"><string name="0" value="#b#t01003228##k가 갖고 싶지 않아? 봄개구리 모자보다 훨씬 더 좋아."/></imgdir></imgdir><imgdir name="1"><string name="0" value="자, 일단 나에게 #t01003227# 2개를 주겠어? 혹시 아직 #b착용하고 있다면 장비창으로 넣고#k 다시 말을 걸어줘."/><imgdir name="yes"><string name="0" value="자, 훨씬 더 좋은 모자로 바뀌었지?"/></imgdir><imgdir name="stop"><imgdir name="item"><string name="0" value="#t01003228#로 바꾸려면 #t01003227#가 2개 필요해."/></imgdir></imgdir></imgdir></imgdir></imgdir>

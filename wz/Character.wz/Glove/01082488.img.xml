@@ -1,0 +1,1415 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<imgdir name="01082488.img">
+<imgdir name="info">
+<canvas name="icon" width="31" height="31">
+<vector name="origin" x="-1" y="31"/>
+<string name="_hash" value="693f48e1d34a7b9388f83f27f565606134e9df5839f63daa735f3eeda2b0b6bd"/>
+</canvas>
+<canvas name="iconRaw" width="31" height="31">
+<vector name="origin" x="-1" y="31"/>
+<string name="_hash" value="fd697b5112cd866fa64c1cb963dfaf5ce4f2ccfafb7ea1982e2b7520109c5348"/>
+</canvas>
+<string name="islot" value="Gv"/>
+<string name="vslot" value="GlGw"/>
+<int name="tuc" value="7"/>
+<int name="reqJob" value="0"/>
+<int name="reqLevel" value="140"/>
+<int name="reqSTR" value="0"/>
+<int name="reqDEX" value="0"/>
+<int name="reqINT" value="0"/>
+<int name="reqLUK" value="0"/>
+<int name="incPAD" value="8"/>
+<int name="incMAD" value="8"/>
+<int name="incLUK" value="12"/>
+<int name="incINT" value="12"/>
+<int name="incDEX" value="12"/>
+<int name="incSTR" value="12"/>
+<int name="incPDD" value="120"/>
+<int name="incMDD" value="120"/>
+<int name="cash" value="0"/>
+<int name="equipTradeBlock" value="1"/>
+<int name="exItem" value="1"/>
+<int name="exGrade" value="3"/>
+</imgdir>
+<imgdir name="walk1">
+<imgdir name="0">
+<canvas name="lGlove" width="11" height="11">
+<vector name="origin" x="13" y="4"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverBody"/>
+<string name="_hash" value="9dc901bc25a25d990d95537c98cc8c484784fd9dac8dd9de26bcc1cdcc4633ee"/>
+</canvas>
+<canvas name="rGlove" width="10" height="12">
+<vector name="origin" x="-9" y="5"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="glove"/>
+<string name="_hash" value="6b50b3805c42c69c2e86b06d5e5478b8a04972847d115698435508898297db96"/>
+</canvas>
+</imgdir>
+<imgdir name="1">
+<canvas name="lGlove" width="6" height="9">
+<vector name="origin" x="8" y="2"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverBody"/>
+<string name="_hash" value="f79cb809ef2c4b1c36acf2c0b9a9d36117b990b4b89da846020185a72a70b384"/>
+</canvas>
+<canvas name="rGlove" width="13" height="11">
+<vector name="origin" x="0" y="2"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="glove"/>
+<string name="_hash" value="cbea4f93b6b74f2d7b08ca41f09be48765e077e2020def5d56ac982f9429416c"/>
+</canvas>
+</imgdir>
+<imgdir name="2">
+<canvas name="lGlove" width="11" height="11">
+<vector name="origin" x="13" y="4"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverBody"/>
+<string name="_hash" value="9a6ed8aad76d6d7701bde03f51997c554feec4beb24996332e1aafa251119278"/>
+</canvas>
+<uol name="rGlove" value="../0/rGlove"/>
+</imgdir>
+<imgdir name="3">
+<canvas name="lGlove" width="10" height="11">
+<vector name="origin" x="15" y="9"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverBody"/>
+<string name="_hash" value="d7e0695d14e435321b086a9acd49add59ada8866842a951751300558d650492b"/>
+</canvas>
+<canvas name="rGlove" width="9" height="12">
+<vector name="origin" x="-11" y="8"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="glove"/>
+<string name="_hash" value="64a37299f9fb3bbf29c66e6cc11e8571b0765ef6c154dfe6b41105a5c892079d"/>
+</canvas>
+</imgdir>
+</imgdir>
+<imgdir name="walk2">
+<imgdir name="0">
+<canvas name="lGlove" width="8" height="13">
+<vector name="origin" x="10" y="3"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="0c6c456ee81707eb2f5808554df55a260fef2bb75b184efcdd2c603f5e648116"/>
+</canvas>
+<canvas name="rGlove" width="12" height="11">
+<vector name="origin" x="0" y="6"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="b47481e6f1da53668318cd49f3012a526367e8a693303e9033832b3f0b35c703"/>
+</canvas>
+</imgdir>
+<imgdir name="1">
+<canvas name="lGlove" width="11" height="12">
+<vector name="origin" x="11" y="1"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="b3f4b4a227c7f137f413647bb9473f7bff254d67f1b6fc417d029d44251d53b5"/>
+</canvas>
+<canvas name="rGlove" width="12" height="11">
+<vector name="origin" x="1" y="5"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="797b53902c296c465bad7a8651dc2e1c5b70454ae92a7677fa515588baf4d96a"/>
+</canvas>
+</imgdir>
+<imgdir name="2">
+<uol name="lGlove" value="../0/lGlove"/>
+<uol name="rGlove" value="../0/rGlove"/>
+</imgdir>
+<imgdir name="3">
+<canvas name="lGlove" width="8" height="12">
+<vector name="origin" x="9" y="4"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="8a8050dafeaf0c092843504f843e513f5340b33f73fdf92361b297e931aaf332"/>
+</canvas>
+<canvas name="rGlove" width="17" height="11">
+<vector name="origin" x="4" y="7"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="f91c5d34700d6b2ab0ff850539fee209ab87f3d7e69bba2706717c5954fb1f62"/>
+</canvas>
+</imgdir>
+</imgdir>
+<imgdir name="stand1">
+<imgdir name="0">
+<canvas name="lGlove" width="7" height="13">
+<vector name="origin" x="8" y="2"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverBody"/>
+<string name="_hash" value="fa720aed606f7b2aede736f45e225b9adc53247e9da93e6cd6d62d9ed771ad6a"/>
+</canvas>
+<canvas name="rGlove" width="10" height="13">
+<vector name="origin" x="-8" y="2"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="glove"/>
+<string name="_hash" value="a567079076bcc1f7cfa9f72c77542cca603ad6838f123843fb3c64bb896e5d01"/>
+</canvas>
+</imgdir>
+<imgdir name="1">
+<canvas name="lGlove" width="8" height="13">
+<vector name="origin" x="10" y="3"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverBody"/>
+<string name="_hash" value="48daa9803ca44e3a4e7c5e97c8150c977cf120fb6ce5d3e1c3efa7e98a5ab15d"/>
+</canvas>
+<canvas name="rGlove" width="10" height="13">
+<vector name="origin" x="-8" y="3"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="glove"/>
+<string name="_hash" value="c016878ff0a4b7919ba73890bf7582ae2dad51e03345c45d958572a8a873a397"/>
+</canvas>
+</imgdir>
+<imgdir name="2">
+<canvas name="lGlove" width="9" height="13">
+<vector name="origin" x="12" y="2"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverBody"/>
+<string name="_hash" value="8ec06adbc6fc4de887311f2db7342065ff8e5e19d9c7c9ffba8bf3510b03538c"/>
+</canvas>
+<canvas name="rGlove" width="10" height="13">
+<vector name="origin" x="-8" y="2"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="glove"/>
+<string name="_hash" value="8640cf4ff2af240b0fc4bb2b096f6195cff13d9642c4b683165f0a0261bd2ffd"/>
+</canvas>
+</imgdir>
+</imgdir>
+<imgdir name="stand2">
+<imgdir name="0">
+<canvas name="lGlove" width="8" height="11">
+<vector name="origin" x="10" y="0"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="6bda803f688f1cc9d6ddf1fdba49cdfaf128dd482fab69946acf8e5f18b0a47d"/>
+</canvas>
+<canvas name="rGlove" width="15" height="10">
+<vector name="origin" x="3" y="5"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="09459f61ced0ca997a944d5a5b53e01002d46026619a5e026ca95a84d1aedce7"/>
+</canvas>
+</imgdir>
+<imgdir name="1">
+<canvas name="lGlove" width="8" height="12">
+<vector name="origin" x="10" y="2"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="f03d29b3e970f28565e9ca26a1a8208f284f2182473436ce1d461885927ffeb8"/>
+</canvas>
+<canvas name="rGlove" width="12" height="10">
+<vector name="origin" x="0" y="6"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="d8e856006f70940e12d2a1bcc587fdd75e79794d54f04c50a7b108d24f1d57f4"/>
+</canvas>
+</imgdir>
+<imgdir name="2">
+<canvas name="lGlove" width="8" height="12">
+<vector name="origin" x="10" y="1"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="11fe977bdc6d908557297e7dcaa2291fe42d49e62e70387ceac22e76cf48a053"/>
+</canvas>
+<canvas name="rGlove" width="18" height="10">
+<vector name="origin" x="6" y="5"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="21e3c468f5b26bb7cd3bd20ceb28601359da46915d56fa531ffc76d98ee690a4"/>
+</canvas>
+</imgdir>
+</imgdir>
+<imgdir name="alert">
+<imgdir name="0">
+<canvas name="lGlove" width="8" height="9">
+<vector name="origin" x="12" y="6"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveBelowWeapon"/>
+<string name="_hash" value="fb7c2de9b66836c5a3fb58acb0e5bd3b197b3cfe1eabc48385dc1fcd40b318a5"/>
+</canvas>
+<canvas name="rGlove" width="12" height="10">
+<vector name="origin" x="0" y="3"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="44aff44503ec0c51e389ce480fb9185a47874f85f6ebbc907aedfe3bc0b9b7b3"/>
+</canvas>
+</imgdir>
+<imgdir name="1">
+<canvas name="lGlove" width="8" height="9">
+<vector name="origin" x="12" y="4"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveBelowWeapon"/>
+</canvas>
+<canvas name="rGlove" width="11" height="10">
+<vector name="origin" x="0" y="1"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="7029eec2ae1e26c31670ef765d5abed8bfcfd9c8d9f493db3bf5f41ec32e3910"/>
+</canvas>
+</imgdir>
+<imgdir name="2">
+<canvas name="lGlove" width="8" height="11">
+<vector name="origin" x="12" y="4"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveBelowWeapon"/>
+<string name="_hash" value="a74b4e32b642591a0e0dfda59840068ad09b2c56a5a4521d73ca12a33dfb895d"/>
+</canvas>
+<canvas name="rGlove" width="11" height="11">
+<vector name="origin" x="0" y="0"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="b242be84af031a32497ce6c10af9192c8a2bc01a985f15c5c375ef86f09b553b"/>
+</canvas>
+</imgdir>
+</imgdir>
+<imgdir name="swingO1">
+<imgdir name="1">
+<canvas name="lGlove" width="8" height="10">
+<vector name="origin" x="-8" y="8"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverBody"/>
+<string name="_hash" value="821a7c069213bfb14320ba24be1ee8725563cff0d26be077a7968fd328ed2ad9"/>
+</canvas>
+<canvas name="rGlove" width="9" height="12">
+<vector name="origin" x="12" y="8"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="66d4edde3d65ccc9cbe9d6dc1fad7036906392a5e2d8fc24473b6fdabfb34071"/>
+</canvas>
+</imgdir>
+<imgdir name="2">
+<canvas name="lGlove" width="5" height="7">
+<vector name="origin" x="9" y="8"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverBody"/>
+</canvas>
+<canvas name="rGlove" width="14" height="13">
+<vector name="origin" x="-10" y="25"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="c121236ba234d9b3ba276f38901ccc28566ebb246ac470fdf643321249ade85a"/>
+</canvas>
+</imgdir>
+</imgdir>
+<imgdir name="swingO2">
+<imgdir name="0">
+<canvas name="lGlove" width="8" height="9">
+<vector name="origin" x="12" y="3"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverBody"/>
+<string name="_hash" value="c9e2a6004a222ad66fc6245559e927649a7d3a2ad3472f59ef9a34ebf49626fe"/>
+</canvas>
+<canvas name="rGlove" width="12" height="13">
+<vector name="origin" x="22" y="19"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveBelowHead"/>
+<string name="_hash" value="2eb8cf66131bc96d88cbb96021235dff947594edc5fccfe9fea719594ed046c1"/>
+</canvas>
+</imgdir>
+<imgdir name="1">
+<canvas name="lGlove" width="8" height="8">
+<vector name="origin" x="11" y="13"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverBody"/>
+<string name="_hash" value="e49e8af627794fb606e90e77b676092a2a7654c6f317b7ea9c1ac0ee1e4df85b"/>
+</canvas>
+<canvas name="rGlove" width="13" height="11">
+<vector name="origin" x="25" y="15"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveBelowHead"/>
+<string name="_hash" value="5c90c12a58592f9deb79ba084330212ca4782c520e9ee4134f02ca4954266c8f"/>
+</canvas>
+</imgdir>
+<imgdir name="2">
+<canvas name="lGlove" width="11" height="7">
+<vector name="origin" x="19" y="13"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverBody"/>
+<string name="_hash" value="b75712d4b67cf22ffecdeb075fb4dcbf486321c96bf8d33778d407c323dda8ca"/>
+</canvas>
+<canvas name="rGlove" width="12" height="12">
+<vector name="origin" x="-11" y="7"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="glove"/>
+<string name="_hash" value="aa46571679586d7ca4bf262ba23dfcda7a8bf3309f25ad9469a495b378d28504"/>
+</canvas>
+</imgdir>
+</imgdir>
+<imgdir name="swingO3">
+<imgdir name="0">
+<canvas name="lGlove" width="14" height="9">
+<vector name="origin" x="28" y="10"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverBody"/>
+<string name="_hash" value="2a1ffabf3c301059dd48a9055f0582b4b860abe229d2f92841c510b658cd94ee"/>
+</canvas>
+<canvas name="rGlove" width="14" height="12">
+<vector name="origin" x="-10" y="17"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="glove"/>
+<string name="_hash" value="772a99241f0d9ed31e558f5af2eb275a07b1e24bdae5e18a878226ebd38d3e36"/>
+</canvas>
+</imgdir>
+<imgdir name="1">
+<canvas name="rGlove" width="13" height="10">
+<vector name="origin" x="23" y="8"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveBelowHead"/>
+<string name="_hash" value="e67652e1ddbd61253fc30d8220a69b1986316871ffd24c87388c845f946c2cf4"/>
+</canvas>
+</imgdir>
+</imgdir>
+<imgdir name="swingOF">
+<imgdir name="0">
+<canvas name="lGlove" width="9" height="10">
+<vector name="origin" x="15" y="4"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="glove"/>
+<string name="_hash" value="f49ea17b43678e8283346e6757a4f8d5813203d1a54b1c4f691659711efa3900"/>
+</canvas>
+<canvas name="rGlove" width="12" height="11">
+<vector name="origin" x="-11" y="14"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="9b910a78a1386a86eeb3d2cb30fd93f7c356482046e12e7ab3df6ae1f1592b97"/>
+</canvas>
+</imgdir>
+<imgdir name="1">
+<canvas name="lGlove" width="7" height="6">
+<vector name="origin" x="-12" y="6"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="glove"/>
+<string name="_hash" value="cd2a9e3908ec77b734e1b0d97a99159660006675c092f007bc3a0383e58ca079"/>
+</canvas>
+</imgdir>
+<imgdir name="3">
+<canvas name="lGlove" width="12" height="8">
+<vector name="origin" x="19" y="-4"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="glove"/>
+<string name="_hash" value="ff97fc5b1f649e25311070a012523511432aac816441989a027dfb9dae434380"/>
+</canvas>
+<canvas name="rGlove" width="12" height="9">
+<vector name="origin" x="-11" y="20"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverBody"/>
+<string name="_hash" value="61aaceecd257d4379fd34c3ae74d3b3b19caecf83888e62ad8da865e871b9345"/>
+</canvas>
+</imgdir>
+</imgdir>
+<imgdir name="swingT1">
+<imgdir name="0">
+<canvas name="lGlove" width="14" height="14">
+<vector name="origin" x="0" y="27"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="355cb127a28a23bac45ecb40cf5f6da06149a18a01256f6359327e4b9ed9f464"/>
+</canvas>
+<canvas name="rGlove" width="13" height="14">
+<vector name="origin" x="-11" y="30"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="f369e2014ae7a184a12f3dc317bbc88351dff107e597f3ab76d8d00efe323233"/>
+</canvas>
+</imgdir>
+<imgdir name="1">
+<canvas name="lGlove" width="11" height="16">
+<vector name="origin" x="23" y="18"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="f5531b2422099ebe7fe3b4d683a3c373c2b5850d9303f7724560b7c3592d3d65"/>
+</canvas>
+<canvas name="rGlove" width="13" height="15">
+<vector name="origin" x="19" y="25"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="4590dafd0ff3d28924aa3db1e86607ac9c5d812bf479b62790bdea86972884b2"/>
+</canvas>
+</imgdir>
+<imgdir name="2">
+<canvas name="lGlove" width="5" height="9">
+<vector name="origin" x="11" y="-4"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverBody"/>
+<string name="_hash" value="4949c08d1e4aa579dfac324c41bc627e5ba9e510eccee0f681d9e10707214e0f"/>
+</canvas>
+<canvas name="rGlove" width="12" height="13">
+<vector name="origin" x="20" y="-3"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="glove"/>
+<string name="_hash" value="a9c30a7ddecfa26e0525411a3232a1d6346fef4f1baa828bcbf777615eca3a1b"/>
+</canvas>
+</imgdir>
+</imgdir>
+<imgdir name="swingT2">
+<imgdir name="1">
+<canvas name="lGlove" width="10" height="10">
+<vector name="origin" x="21" y="13"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverBody"/>
+<string name="_hash" value="3b83357932b08f8b362ab1003ffe4bdfbdeb6640fb27b2a17aea896445be4eab"/>
+</canvas>
+<canvas name="rGlove" width="15" height="9">
+<vector name="origin" x="20" y="9"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="glove"/>
+<string name="_hash" value="94eb53c18a940bff384e3ffd5d472e9a3c673279095d6fa3ac0fcc03ae6afbd3"/>
+</canvas>
+</imgdir>
+<imgdir name="2">
+<canvas name="lGlove" width="13" height="12">
+<vector name="origin" x="2" y="1"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="glove"/>
+<string name="_hash" value="f316a82d612d14736b118d04f751b280f08cab602e9e65a002510ac1b3a15f33"/>
+</canvas>
+<canvas name="rGlove" width="11" height="13">
+<vector name="origin" x="-5" y="5"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="glove"/>
+<string name="_hash" value="d527efa22512c9a1496d329f15d6e299f61ff586eda65888ccead9a9bb4ca380"/>
+</canvas>
+</imgdir>
+</imgdir>
+<imgdir name="swingT3">
+<imgdir name="0">
+<canvas name="lGlove" width="13" height="11">
+<vector name="origin" x="0" y="4"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="glove"/>
+<string name="_hash" value="8545071462e1edfcab0de972f9537db9b2649b9d27d5e0b5d5be0427126687cb"/>
+</canvas>
+<canvas name="rGlove" width="15" height="12">
+<vector name="origin" x="-2" y="5"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverBody"/>
+<string name="_hash" value="cf880b37b22c1275b34755beb11cc36c3ed7e0935879acbff558dffa06f7eecf"/>
+</canvas>
+</imgdir>
+<imgdir name="1">
+<canvas name="lGlove" width="13" height="9">
+<vector name="origin" x="5" y="2"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveBelowHead"/>
+<string name="_hash" value="96aa20663bc4e5bf1b11c774c4dc750f6541a2bf21ecd1b02929b0abec1ddc3d"/>
+</canvas>
+<canvas name="rGlove" width="17" height="12">
+<vector name="origin" x="1" y="4"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveBelowHead"/>
+<string name="_hash" value="d6458ba34b1a67bdcdd1928343248d97ae60873fb8efdd15c94e5ef022eba066"/>
+</canvas>
+</imgdir>
+</imgdir>
+<imgdir name="swingTF">
+<imgdir name="1">
+<canvas name="lGlove" width="15" height="11">
+<vector name="origin" x="0" y="19"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveBelowHead"/>
+<string name="_hash" value="c0e4fcedbb0e48be4d0383f9c7086ca99e1b60a8d66db9064c9de622cf64eaf2"/>
+</canvas>
+</imgdir>
+<imgdir name="2">
+<canvas name="lGlove" width="12" height="16">
+<vector name="origin" x="16" y="28"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="a56aaadbd805b09d7e997b45f8b9e03c860fa5ff6e23b2e468eddf5d95d94095"/>
+</canvas>
+<canvas name="rGlove" width="13" height="21">
+<vector name="origin" x="10" y="34"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="2398069c9023d54c4eed53b9a8790b2f5f239fdcf1bc59b3edff63828b5844aa"/>
+</canvas>
+</imgdir>
+<imgdir name="3">
+<canvas name="lGlove" width="8" height="9">
+<vector name="origin" x="17" y="-2"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverBody"/>
+<string name="_hash" value="17d0565f1590403d551e47f3a34fc7103051a4734098f75b4e3c58720d1e6d99"/>
+</canvas>
+<canvas name="rGlove" width="12" height="13">
+<vector name="origin" x="22" y="-1"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="38e38c0e99cd359c8c6e94719da176f0f043850b8fe3a72b249bcfe3fc5bea8d"/>
+</canvas>
+</imgdir>
+</imgdir>
+<imgdir name="swingP1">
+<imgdir name="0">
+<canvas name="lGlove" width="13" height="14">
+<vector name="origin" x="6" y="30"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="b13d77d49bdbc9e97136031f0b239f9764eeca75283dd0df9c770c37e06969e4"/>
+</canvas>
+<canvas name="rGlove" width="21" height="14">
+<vector name="origin" x="-2" y="32"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="49406ee59560020444c01bdd80aa038d91c611fb17f97be63b9772d7c7e35049"/>
+</canvas>
+</imgdir>
+<imgdir name="1">
+<canvas name="lGlove" width="13" height="12">
+<vector name="origin" x="25" y="12"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="cf006722e1f79286ea5e9eabab220a4590935a40797a6bc663cd94b919e2404d"/>
+</canvas>
+<canvas name="rGlove" width="13" height="14">
+<vector name="origin" x="19" y="26"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="d7d0ffbe9a13e87b04e2b994a0b4602f38e049652a0313051fd225118c10b17b"/>
+</canvas>
+</imgdir>
+<imgdir name="2">
+<canvas name="lGlove" width="5" height="8">
+<vector name="origin" x="11" y="-4"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverBody"/>
+<string name="_hash" value="5524ee2017ad324b4dcf32c0fb0bb3b945ee339ed897b211b368df8adaaaade6"/>
+</canvas>
+<canvas name="rGlove" width="12" height="13">
+<vector name="origin" x="20" y="-2"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="glove"/>
+<string name="_hash" value="1ceaf1d6e06a3942d1d7bfbc2f43fed2f4f3aa5224afa58b071b7d42f744c3c3"/>
+</canvas>
+</imgdir>
+</imgdir>
+<imgdir name="swingP2">
+<imgdir name="0">
+<canvas name="rGlove" width="12" height="15">
+<vector name="origin" x="22" y="18"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="glove"/>
+<string name="_hash" value="e5a2c0aa89944ada72fe25782aadfd403fd84e186e314829f1ea9763c533a42c"/>
+</canvas>
+</imgdir>
+<imgdir name="1">
+<canvas name="rGlove" width="15" height="10">
+<vector name="origin" x="23" y="7"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="glove"/>
+<string name="_hash" value="2280657c1961fc63a59ddcc7f0041e2a70853b8d25254ee66c47b20cc6b9ceb4"/>
+</canvas>
+</imgdir>
+<imgdir name="2">
+<canvas name="lGlove" width="13" height="12">
+<vector name="origin" x="2" y="1"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="glove"/>
+<string name="_hash" value="598dd64979830dbde4bcb9dd0f98808c726c4841916e80e463e9efab675a5761"/>
+</canvas>
+<canvas name="rGlove" width="16" height="13">
+<vector name="origin" x="0" y="5"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="glove"/>
+<string name="_hash" value="f47377775c68e6878fc69e1dcdb9311e830c0d2dfffd69efdf7cfc2c9dada725"/>
+</canvas>
+</imgdir>
+</imgdir>
+<imgdir name="swingPF">
+<imgdir name="0">
+<canvas name="lGlove" width="13" height="11">
+<vector name="origin" x="23" y="9"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="cb6713a5551df337a14e6c753fc6a9b78137592571e45296906eeca0542454bf"/>
+</canvas>
+<canvas name="rGlove" width="10" height="14">
+<vector name="origin" x="-16" y="13"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="glove"/>
+<string name="_hash" value="37cc9aebac47b8f24655fab3b3ebdb6fbee0529f31b3956d395881929809729d"/>
+</canvas>
+</imgdir>
+<imgdir name="1">
+<canvas name="lGlove" width="12" height="12">
+<vector name="origin" x="21" y="6"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="a4b2867a10e7c7784e96a0501ca72abbe202e3e53cdece2dae9f23e203781160"/>
+</canvas>
+<canvas name="rGlove" width="11" height="13">
+<vector name="origin" x="-15" y="15"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="glove"/>
+<string name="_hash" value="ffb446abea91d6751a37781d52ea77daefe81e72d5a9ce6e4c27571a08bf200d"/>
+</canvas>
+</imgdir>
+<imgdir name="2">
+<canvas name="lGlove" width="13" height="14">
+<vector name="origin" x="12" y="30"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="91bfb28b724e72e1fd0be969d7246b7c0ef2dd722964837b4d48cb883dac7ebf"/>
+</canvas>
+<canvas name="rGlove" width="13" height="14">
+<vector name="origin" x="-6" y="32"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="87bc2bd942f35ebbc36965e25a11e5d867ff1b34e7d68554018b1e34b7f218b7"/>
+</canvas>
+</imgdir>
+<imgdir name="3">
+<canvas name="lGlove" width="7" height="11">
+<vector name="origin" x="14" y="-1"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverBody"/>
+<string name="_hash" value="2bf98205225eb825f3f4127f2ca79252407673c01f4c18eda71da4ca310353cf"/>
+</canvas>
+<canvas name="rGlove" width="12" height="13">
+<vector name="origin" x="22" y="-2"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="eb83ebd027497803afa0f7d88f82ae7fbdba445e2fa76986ad95533ea7cc11cd"/>
+</canvas>
+</imgdir>
+</imgdir>
+<imgdir name="stabO1">
+<imgdir name="0">
+<canvas name="lGlove" width="13" height="9">
+<vector name="origin" x="25" y="9"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverBody"/>
+<string name="_hash" value="f28c3ca3d54a5e783acc74b6cb2563ea818e42b80d06aeabf2a9a648fba826a9"/>
+</canvas>
+<canvas name="rGlove" width="9" height="12">
+<vector name="origin" x="-10" y="5"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="glove"/>
+<string name="_hash" value="5833947f8c04a4a11d7a980fff611923ee0f6f21cef2a461c7c593728a47f9ba"/>
+</canvas>
+</imgdir>
+<imgdir name="1">
+<canvas name="rGlove" width="14" height="9">
+<vector name="origin" x="30" y="12"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="fcef874d89c258f52dde73f73e8cdffcda2b3cc5dd1dd3d842ea0d51e12b6833"/>
+</canvas>
+</imgdir>
+</imgdir>
+<imgdir name="stabO2">
+<imgdir name="0">
+<canvas name="lGlove" width="14" height="11">
+<vector name="origin" x="25" y="12"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverBody"/>
+<string name="_hash" value="3b638a441c787f3935af4b2e290b96513c7b93119403ecfe5f5693a75184397e"/>
+</canvas>
+<canvas name="rGlove" width="13" height="11">
+<vector name="origin" x="-6" y="16"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="c81a2f6fd1a7c9f6077e1aa68b48e3069a3cacac7143490ab7534cebaaffee74"/>
+</canvas>
+</imgdir>
+<imgdir name="1">
+<canvas name="rGlove" width="12" height="10">
+<vector name="origin" x="27" y="12"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="0efdc4ecc81cddde2042ae078109cbdf4d782cd792f68289c03691a6a77afb03"/>
+</canvas>
+</imgdir>
+</imgdir>
+<imgdir name="stabOF">
+<imgdir name="0">
+<canvas name="lGlove" width="15" height="10">
+<vector name="origin" x="5" y="7"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverBody"/>
+<string name="_hash" value="e7a027052947cdb8083489159fa025730496eb026a992fb3ba296ac37893e9a2"/>
+</canvas>
+<canvas name="rGlove" width="9" height="12">
+<vector name="origin" x="-3" y="9"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveBelowMailArm"/>
+<string name="_hash" value="826e32fc9152f0ed4d58956504e8c85d7c520d8e333ad2794949ca5eaf76c8fc"/>
+</canvas>
+</imgdir>
+<imgdir name="1">
+<canvas name="lGlove" width="13" height="10">
+<vector name="origin" x="35" y="13"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverBody"/>
+<string name="_hash" value="7ee89aa3ae47ee5683c8323ddbea0583f327132b90ef7092aedaae98f9f69b32"/>
+</canvas>
+<canvas name="rGlove" width="9" height="12">
+<vector name="origin" x="-7" y="6"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveBelowMailArm"/>
+<string name="_hash" value="03b432fa2284ad6f85333f4321f533c5aa649486c5248424315bb2d03615a385"/>
+</canvas>
+</imgdir>
+<imgdir name="2">
+<canvas name="lGlove" width="14" height="11">
+<vector name="origin" x="25" y="10"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverBody"/>
+<string name="_hash" value="612fc0bde494965fd8ea08eb671bf0da3cbb84284920f80d8d32c0f07259553f"/>
+</canvas>
+<canvas name="rGlove" width="15" height="9">
+<vector name="origin" x="32" y="11"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="d25bf5b8e2ff84529a022d2f84e180d2d3f261ee10f68521c6259b73f64d16a0"/>
+</canvas>
+</imgdir>
+</imgdir>
+<imgdir name="stabT1">
+<imgdir name="0">
+<canvas name="lGlove" width="13" height="9">
+<vector name="origin" x="9" y="2"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="2bc8a444f05f3edc0343b0ed9eb3ed922284c1b715a38315e3eb2dc8638050d2"/>
+</canvas>
+<canvas name="rGlove" width="13" height="13">
+<vector name="origin" x="-12" y="11"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="glove"/>
+<string name="_hash" value="b68778ac7198801980dbd2187c1f9de8ce090a20929b230ebca33adb3eb6fd3d"/>
+</canvas>
+</imgdir>
+<imgdir name="1">
+<canvas name="lGlove" width="11" height="9">
+<vector name="origin" x="10" y="1"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="bee2bb7adf44b2bef37dc6a2e3871471f1167ce1598dc4a09e7bd2873baa102c"/>
+</canvas>
+<canvas name="rGlove" width="10" height="13">
+<vector name="origin" x="-12" y="10"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="glove"/>
+<string name="_hash" value="3f87fc9645cbfb55096e14532e0498bc984810e51f608f2a55fcf56f5d043119"/>
+</canvas>
+</imgdir>
+<imgdir name="2">
+<canvas name="lGlove" width="14" height="9">
+<vector name="origin" x="29" y="8"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="9fa6a35fa332a162c5c96b7936f79268d94b5bae3b9287b82ac3b2ba282ddf67"/>
+</canvas>
+<canvas name="rGlove" width="24" height="10">
+<vector name="origin" x="17" y="10"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveBelowHead"/>
+<string name="_hash" value="78d63f572301a01a3d1a49b5ff1b50cdd7713c7a7acd7d53b622b56aca0be475"/>
+</canvas>
+</imgdir>
+</imgdir>
+<imgdir name="stabT2">
+<imgdir name="0">
+<canvas name="lGlove" width="10" height="12">
+<vector name="origin" x="16" y="4"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="50747efdc3e4219ad6af211d12512d27c369eece3d3ffa860abb700d9336252a"/>
+</canvas>
+<canvas name="rGlove" width="27" height="13">
+<vector name="origin" x="8" y="11"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveBelowHead"/>
+<string name="_hash" value="83070f2b6fed2140a7ef8ca6d492e77f8a62fd1410d5a2d230b339c42d22a979"/>
+</canvas>
+</imgdir>
+<imgdir name="1">
+<canvas name="lGlove" width="11" height="10">
+<vector name="origin" x="19" y="2"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="9a275afca05a666065e3648200d755b152a8541b4528ded1e380c95aab9eac76"/>
+</canvas>
+<canvas name="rGlove" width="11" height="13">
+<vector name="origin" x="-6" y="12"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveBelowHead"/>
+<string name="_hash" value="80429448581a1333e19e6bd5499ef69895acafdad5aa674cfe6afb05516a6579"/>
+</canvas>
+</imgdir>
+<imgdir name="2">
+<canvas name="lGlove" width="14" height="10">
+<vector name="origin" x="30" y="8"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="5a9e134a13b3cecc6ccac19203158e6a8d4e56616dbdc19b8e35777bebd7878e"/>
+</canvas>
+<canvas name="rGlove" width="14" height="13">
+<vector name="origin" x="-1" y="5"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveBelowHead"/>
+<string name="_hash" value="ae71b5ba211dbd0154aa6b2277a3c5afdd8901f6c8e40bd3a389b81f1f88974e"/>
+</canvas>
+</imgdir>
+</imgdir>
+<imgdir name="stabTF">
+<imgdir name="0">
+<uol name="lGlove" value="../../swingPF/0/lGlove"/>
+<uol name="rGlove" value="../../swingPF/0/rGlove"/>
+</imgdir>
+<imgdir name="1">
+<uol name="lGlove" value="../../swingPF/1/lGlove"/>
+<uol name="rGlove" value="../../swingPF/1/rGlove"/>
+</imgdir>
+<imgdir name="2">
+<canvas name="lGlove" width="11" height="10">
+<vector name="origin" x="5" y="5"/>
+<imgdir name="map">
+<vector name="navel" x="-11" y="2"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="1c9a287314b379a4b8addc8db8248c702236e376b33a67f27a65a1219055d3f2"/>
+</canvas>
+<canvas name="rGlove" width="11" height="10">
+<vector name="origin" x="5" y="5"/>
+<imgdir name="map">
+<vector name="navel" x="-23" y="10"/>
+</imgdir>
+<string name="z" value="gloveBelowHead"/>
+<string name="_hash" value="6ecc4f1ef600d4ea3d2b6747ebbc0473782449ba6cd0d5f91506a085c78324b0"/>
+</canvas>
+</imgdir>
+<imgdir name="3">
+<uol name="lGlove" value="../../stabT1/2/lGlove"/>
+<uol name="rGlove" value="../../stabT1/2/rGlove"/>
+</imgdir>
+</imgdir>
+<imgdir name="shoot1">
+<imgdir name="0">
+<canvas name="lGlove" width="13" height="9">
+<vector name="origin" x="27" y="12"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverBody"/>
+<string name="_hash" value="6d35de1fe11f6b60e0b1b37c52ceb82c87ff1e5cf15a29ce505bc7b487ba0f66"/>
+</canvas>
+<canvas name="rGlove" width="13" height="9">
+<vector name="origin" x="13" y="16"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="73a4d3a98c735c9aafe112ab162d7e32be54350e2550e0c96b2e0a248ebb8133"/>
+</canvas>
+</imgdir>
+<imgdir name="1">
+<canvas name="lGlove" width="13" height="9">
+<vector name="origin" x="27" y="12"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverBody"/>
+<string name="_hash" value="8eefc4965893402f2d6dbee71ce5cd5f6de8aa15185e7708168eea5ca4e777f6"/>
+</canvas>
+<canvas name="rGlove" width="14" height="9">
+<vector name="origin" x="-1" y="16"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="287e24cae76d1f66bed05efd695a5aecbfb7256de3d5768083d1902227e0e41a"/>
+</canvas>
+</imgdir>
+<imgdir name="2">
+<uol name="lGlove" value="../1/lGlove"/>
+<uol name="rGlove" value="../1/rGlove"/>
+</imgdir>
+</imgdir>
+<imgdir name="shoot2">
+<imgdir name="0">
+<canvas name="lGlove" width="12" height="9">
+<vector name="origin" x="18" y="10"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverBody"/>
+<string name="_hash" value="be3eec6e00acdef1a917d32587b4ee9d6673d1b2c746958f93562ce2c29ce20e"/>
+</canvas>
+<canvas name="rGlove" width="13" height="9">
+<vector name="origin" x="1" y="10"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="6fd2dd2c58a8a47dd56a16eccb6424173e5e40b16280802857b62c71be03776a"/>
+</canvas>
+</imgdir>
+<imgdir name="1">
+<uol name="lGlove" value="../0/lGlove"/>
+<canvas name="rGlove" width="13" height="15">
+<vector name="origin" x="15" y="17"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="34689d89e3347faa54797ce679e1a1c38888be965ab2099a3a070ec559a67ad0"/>
+</canvas>
+</imgdir>
+<imgdir name="2">
+<uol name="lGlove" value="../0/lGlove"/>
+<canvas name="rGlove" width="29" height="15">
+<vector name="origin" x="8" y="16"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="83da7dfb50720d1dde294129fec63b2f11ecd2ccae68b6f05772926faf5a3cfc"/>
+</canvas>
+</imgdir>
+<imgdir name="3">
+<uol name="lGlove" value="../0/lGlove"/>
+<uol name="rGlove" value="../0/rGlove"/>
+</imgdir>
+<imgdir name="4">
+<canvas name="lGlove" width="12" height="9">
+<vector name="origin" x="16" y="10"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverBody"/>
+<string name="_hash" value="2a954b94bf429d8d5444ce9aaa6e0fc69864ea5a5a30d67ecff2b5720cd5d70d"/>
+</canvas>
+<canvas name="rGlove" width="19" height="9">
+<vector name="origin" x="5" y="10"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="31082e278f12767295a6d06d6acfb5333fac4d78d9f87e5e01b772114f9b0490"/>
+</canvas>
+</imgdir>
+</imgdir>
+<imgdir name="shootF">
+<imgdir name="0">
+<canvas name="lGlove" width="14" height="12">
+<vector name="origin" x="29" y="17"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverBody"/>
+<string name="_hash" value="54e6e23eada56ca2a044bccd091bf2be1bb5bfc4613d01628bd0311370cb9fad"/>
+</canvas>
+<canvas name="rGlove" width="14" height="10">
+<vector name="origin" x="12" y="18"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="0168003bd974b736d60b4e8c8d7cb29d19bd9c59b6616ffd091f0c08c6e76b39"/>
+</canvas>
+</imgdir>
+<imgdir name="1">
+<canvas name="lGlove" width="14" height="11">
+<vector name="origin" x="31" y="17"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverBody"/>
+<string name="_hash" value="1f2450c8de959047eab064013ca2ec049bbf18a1f4c3000f265c973bdff6484f"/>
+</canvas>
+<canvas name="rGlove" width="13" height="11">
+<vector name="origin" x="-2" y="15"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveBelowMailArm"/>
+<string name="_hash" value="54f34d725cabd2e8b9681836672f6e83504abd1e6d25454589154a97b6190e25"/>
+</canvas>
+</imgdir>
+<imgdir name="2">
+<uol name="lGlove" value="../1/lGlove"/>
+<uol name="rGlove" value="../1/rGlove"/>
+</imgdir>
+</imgdir>
+<imgdir name="proneStab">
+<imgdir name="0">
+<canvas name="lGlove" width="12" height="9">
+<vector name="origin" x="40" y="6"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverBody"/>
+<string name="_hash" value="7495a8987ad7579bc86608479c36b7dc577b9e5b5ee9adb95ad7ea7966430ec1"/>
+</canvas>
+<canvas name="rGlove" width="14" height="10">
+<vector name="origin" x="14" y="7"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="6788961900bb82cb9904b848110755942c25c3d69866d6a7ef0be7886c95346a"/>
+</canvas>
+</imgdir>
+<imgdir name="1">
+<uol name="lGlove" value="../0/lGlove"/>
+<canvas name="rGlove" width="16" height="10">
+<vector name="origin" x="30" y="7"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="e94097dd6b839da58f1190934c9d50bdccae9f26a64c82d4cc3a8fb255c20ad7"/>
+</canvas>
+</imgdir>
+</imgdir>
+<imgdir name="prone">
+<imgdir name="0">
+<uol name="lGlove" value="../../proneStab/0/lGlove"/>
+<uol name="rGlove" value="../../proneStab/0/rGlove"/>
+</imgdir>
+</imgdir>
+<imgdir name="heal">
+<imgdir name="0">
+<uol name="lGlove" value="../../alert/1/lGlove"/>
+<uol name="rGlove" value="../../alert/1/rGlove"/>
+</imgdir>
+<imgdir name="1">
+<uol name="lGlove" value="../../swingO2/1/lGlove"/>
+<uol name="rGlove" value="../../swingO2/1/rGlove"/>
+</imgdir>
+<imgdir name="2">
+<uol name="lGlove" value="../../swingO2/0/lGlove"/>
+<uol name="rGlove" value="../../swingO2/0/rGlove"/>
+</imgdir>
+</imgdir>
+<imgdir name="fly">
+<imgdir name="0">
+<canvas name="lGlove" width="8" height="9">
+<vector name="origin" x="12" y="8"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="370b085aeae40b9096ce563d76b6fb15007803916995328d0740cdfeff08b688"/>
+</canvas>
+<canvas name="rGlove" width="11" height="11">
+<vector name="origin" x="1" y="13"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="51cc8bd32c28d425a18cca0ca7ec5c5d9deb53276deda3d2fda9bb4f37db008f"/>
+</canvas>
+</imgdir>
+<imgdir name="1">
+<uol name="lGlove" value="../0/lGlove"/>
+<uol name="rGlove" value="../0/rGlove"/>
+</imgdir>
+</imgdir>
+<imgdir name="jump">
+<imgdir name="0">
+<canvas name="lGlove" width="8" height="9">
+<vector name="origin" x="11" y="7"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+</canvas>
+<canvas name="rGlove" width="11" height="11">
+<vector name="origin" x="0" y="12"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverHair"/>
+<string name="_hash" value="70809ed6a6ea0614e7a9bfad7678270cf450fe2a9c24e2ee15482dd77b286d93"/>
+</canvas>
+</imgdir>
+</imgdir>
+<imgdir name="sit">
+<imgdir name="0">
+<canvas name="lGlove" width="7" height="7">
+<vector name="origin" x="9" y="4"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="gloveOverBody"/>
+<string name="_hash" value="02bf5559d33c6b6e848a047575043697698cd651b171c40b9c5ea6f9bf851c3e"/>
+</canvas>
+<canvas name="rGlove" width="12" height="11">
+<vector name="origin" x="1" y="5"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="glove"/>
+<string name="_hash" value="c9e7ae231e6374a8115b8cd864b0501ea22f8c753e92f4e234cbc99ad4d0eb93"/>
+</canvas>
+</imgdir>
+</imgdir>
+<imgdir name="ladder">
+<imgdir name="0">
+<canvas name="rGlove" width="23" height="18">
+<vector name="origin" x="11" y="22"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="backGlove"/>
+<string name="_hash" value="3e2f2b6778f078f3ca856171fb3466b4c61c421151f174c40a22ea978b185fd3"/>
+</canvas>
+</imgdir>
+<imgdir name="1">
+<canvas name="rGlove" width="23" height="19">
+<vector name="origin" x="12" y="22"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="backGlove"/>
+<string name="_hash" value="9e06ed14cc16ef32d3f160db2bb303a27526cb7fe0f534cc40d2c522c5d57cf0"/>
+</canvas>
+</imgdir>
+</imgdir>
+<imgdir name="rope">
+<imgdir name="0">
+<canvas name="rGlove" width="12" height="8">
+<vector name="origin" x="6" y="4"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="backGlove"/>
+<string name="_hash" value="3fc06949e2845ab28b470c18945ccddc389096968070d0cc1de3e01f6ff15413"/>
+</canvas>
+</imgdir>
+<imgdir name="1">
+<canvas name="rGlove" width="11" height="5">
+<vector name="origin" x="5" y="2"/>
+<imgdir name="map">
+<vector name="navel" x="0" y="0"/>
+</imgdir>
+<string name="z" value="backGlove"/>
+<string name="_hash" value="ae85f9f356f831679dee129ad77329774d23ba55e50e442488898f381ed8f9c4"/>
+</canvas>
+</imgdir>
+</imgdir>
+</imgdir>

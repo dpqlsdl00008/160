@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<imgdir name="01006157.img">
+<imgdir name="info">
+<canvas name="icon" width="30" height="26">
+<vector name="origin" x="-2" y="26"/>
+<int name="z" value="0"/>
+<string name="_hash" value="671bba5f5d31235f3fac3edfeb208a9c0dece7e328178d65dfbc08ef71c121a4"/>
+</canvas>
+<canvas name="iconRaw" width="26" height="22">
+<vector name="origin" x="-3" y="26"/>
+<int name="z" value="0"/>
+<string name="_hash" value="75263a831d05c25653270f300b04c44a4f48fa87225f9e5f3326649dba8a7410"/>
+</canvas>
+<string name="islot" value="Cp"/>
+<string name="vslot" value="CpH1H5"/>
+<int name="reqJob " value="0"/>
+<int name="reqLevel " value="0"/>
+<int name="reqSTR" value="0"/>
+<int name="reqDEX" value="0"/>
+<int name="reqINT" value="0"/>
+<int name="reqLUK" value="0"/>
+<int name="cash" value="1"/>
+</imgdir>
+<imgdir name="default">
+<canvas name="capOverHair" width="46" height="34">
+<vector name="origin" x="19" y="34"/>
+<string name="z" value="capOverHair"/>
+<imgdir name="map">
+<vector name="brow" x="0" y="0"/>
+</imgdir>
+<string name="_hash" value="9a7c8c15997c0994a9ff52c6636664cda8180565997134ff3c98a07a44fc43e7"/>
+</canvas>
+</imgdir>
+<imgdir name="backDefault">
+<canvas name="backCapOverHair" width="46" height="39">
+<vector name="origin" x="18" y="34"/>
+<string name="z" value="backCapOverHair"/>
+<imgdir name="map">
+<vector name="brow" x="0" y="0"/>
+</imgdir>
+<string name="_hash" value="a136b6f455d2e8621bfe5a1376edda3b964827349ee1969f9ff7403ff7a7c1ca"/>
+</canvas>
+</imgdir>
+<imgdir name="walk1">
+<imgdir name="0">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="1">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="2">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="3">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+</imgdir>
+<imgdir name="walk2">
+<imgdir name="0">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="1">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="2">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="3">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+</imgdir>
+<imgdir name="stand1">
+<imgdir name="0">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="1">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="2">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+</imgdir>
+<imgdir name="stand2">
+<imgdir name="0">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="1">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="2">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+</imgdir>
+<imgdir name="alert">
+<imgdir name="0">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="1">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="2">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+</imgdir>
+<imgdir name="swingO1">
+<imgdir name="0">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="1">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="2">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+</imgdir>
+<imgdir name="swingO2">
+<imgdir name="0">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="1">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="2">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+</imgdir>
+<imgdir name="swingO3">
+<imgdir name="0">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="1">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="2">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+</imgdir>
+<imgdir name="swingOF">
+<imgdir name="0">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="1">
+<uol name="backCapOverHair" value="../../backDefault/backCapOverHair"/>
+</imgdir>
+<imgdir name="2">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="3">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+</imgdir>
+<imgdir name="swingT1">
+<imgdir name="0">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="1">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="2">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+</imgdir>
+<imgdir name="swingT2">
+<imgdir name="0">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="1">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="2">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+</imgdir>
+<imgdir name="swingT3">
+<imgdir name="0">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="1">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="2">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+</imgdir>
+<imgdir name="swingTF">
+<imgdir name="0">
+<uol name="backCapOverHair" value="../../backDefault/backCapOverHair"/>
+</imgdir>
+<imgdir name="1">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="2">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="3">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+</imgdir>
+<imgdir name="swingP1">
+<imgdir name="0">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="1">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="2">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+</imgdir>
+<imgdir name="swingP2">
+<imgdir name="0">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="1">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="2">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+</imgdir>
+<imgdir name="swingPF">
+<imgdir name="0">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="1">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="2">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="3">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+</imgdir>
+<imgdir name="stabO1">
+<imgdir name="0">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="1">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+</imgdir>
+<imgdir name="stabO2">
+<imgdir name="0">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="1">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+</imgdir>
+<imgdir name="stabOF">
+<imgdir name="0">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="1">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="2">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+</imgdir>
+<imgdir name="stabT1">
+<imgdir name="0">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="1">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="2">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+</imgdir>
+<imgdir name="stabT2">
+<imgdir name="0">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="1">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="2">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+</imgdir>
+<imgdir name="stabTF">
+<imgdir name="0">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="1">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="2">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="3">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+</imgdir>
+<imgdir name="shoot1">
+<imgdir name="0">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="1">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="2">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+</imgdir>
+<imgdir name="shoot2">
+<imgdir name="0">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="1">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="2">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="3">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="4">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+</imgdir>
+<imgdir name="shootF">
+<imgdir name="0">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="1">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="2">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+</imgdir>
+<imgdir name="proneStab">
+<imgdir name="0">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="1">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+</imgdir>
+<imgdir name="prone">
+<imgdir name="0">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+</imgdir>
+<imgdir name="heal">
+<imgdir name="0">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="1">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="2">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+</imgdir>
+<imgdir name="fly">
+<imgdir name="0">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+<imgdir name="1">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+</imgdir>
+<imgdir name="jump">
+<imgdir name="0">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+</imgdir>
+<imgdir name="sit">
+<imgdir name="0">
+<uol name="capOverHair" value="../../default/capOverHair"/>
+</imgdir>
+</imgdir>
+<imgdir name="ladder">
+<imgdir name="0">
+<uol name="backCapOverHair" value="../../backDefault/backCapOverHair"/>
+</imgdir>
+<imgdir name="1">
+<uol name="backCapOverHair" value="../../backDefault/backCapOverHair"/>
+</imgdir>
+</imgdir>
+<imgdir name="rope">
+<imgdir name="0">
+<uol name="backCapOverHair" value="../../backDefault/backCapOverHair"/>
+</imgdir>
+<imgdir name="1">
+<uol name="backCapOverHair" value="../../backDefault/backCapOverHair"/>
+</imgdir>
+</imgdir>
+</imgdir>

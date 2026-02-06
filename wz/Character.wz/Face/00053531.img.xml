@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<imgdir name="00053531.img">
+<imgdir name="info">
+<string name="islot" value="Fc"/>
+<string name="vslot" value="Fc"/>
+<int name="cash" value="1"/>
+</imgdir>
+<imgdir name="default">
+<canvas name="face" width="27" height="15">
+<vector name="origin" x="13" y="-5"/>
+<string name="z" value="face"/>
+<imgdir name="map">
+<vector name="brow" x="0" y="0"/>
+</imgdir>
+<string name="_hash" value="efab9d57afc082c9fe73f77f9bb7c9e32820d402b75c96dcf7a0d7ae5f72d346"/>
+</canvas>
+</imgdir>
+<imgdir name="blink">
+<imgdir name="0">
+<int name="delay" value="60"/>
+<canvas name="face" width="27" height="15">
+<vector name="origin" x="13" y="-5"/>
+<string name="z" value="face"/>
+<imgdir name="map">
+<vector name="brow" x="0" y="0"/>
+</imgdir>
+</canvas>
+</imgdir>
+<imgdir name="1">
+<int name="delay" value="60"/>
+<canvas name="face" width="27" height="14">
+<vector name="origin" x="13" y="-6"/>
+<string name="z" value="face"/>
+<imgdir name="map">
+<vector name="brow" x="0" y="0"/>
+</imgdir>
+<string name="_hash" value="b189b927c52c260405e474a01637d781d4741082c81364b25451d709a0a30b52"/>
+</canvas>
+</imgdir>
+<imgdir name="2">
+<int name="delay" value="60"/>
+<canvas name="face" width="27" height="15">
+<vector name="origin" x="13" y="-5"/>
+<string name="z" value="face"/>
+<imgdir name="map">
+<vector name="brow" x="0" y="0"/>
+</imgdir>
+<string name="_hash" value="f12047e7e1576cb6857847a07ac5b1d989d930952e65369bad53177e8c8c97cb"/>
+</canvas>
+</imgdir>
+</imgdir>
+<imgdir name="hit">
+<imgdir name="0">
+<canvas name="face" width="27" height="16">
+<vector name="origin" x="13" y="-4"/>
+<string name="z" value="face"/>
+<imgdir name="map">
+<vector name="brow" x="0" y="0"/>
+</imgdir>
+<string name="_hash" value="7dc9845a5f39d55a8b39b3b224ae281b70edccc526f4999dbc00fa3351a25bea"/>
+</canvas>
+</imgdir>
+</imgdir>
+<imgdir name="wink">
+<imgdir name="0">
+<canvas name="face" width="27" height="15">
+<vector name="origin" x="13" y="-5"/>
+<string name="z" value="face"/>
+<imgdir name="map">
+<vector name="brow" x="0" y="0"/>
+</imgdir>
+<string name="_hash" value="f57aba027f84509e7b3d31b66d5213343a9f9d1bce5427b963932366cb48860b"/>
+</canvas>
+</imgdir>
+</imgdir>
+<imgdir name="glitter">
+<imgdir name="0">
+<int name="delay" value="150"/>
+<canvas name="face" width="27" height="20">
+<vector name="origin" x="13" y="-2"/>
+<string name="z" value="face"/>
+<imgdir name="map">
+<vector name="brow" x="0" y="0"/>
+</imgdir>
+<string name="_hash" value="7b94a12f371a9c2a556bcc05cf54902bf910cbd5ef3068c9e347717b70cdbb61"/>
+</canvas>
+</imgdir>
+<imgdir name="1">
+<int name="delay" value="150"/>
+<canvas name="face" width="28" height="20">
+<vector name="origin" x="14" y="-2"/>
+<string name="z" value="face"/>
+<imgdir name="map">
+<vector name="brow" x="0" y="0"/>
+</imgdir>
+<string name="_hash" value="c6c143ac7d06b463245cdcf4079117c1bc9ec5808cdeee40118a3d02bc6eba74"/>
+</canvas>
+</imgdir>
+</imgdir>
+<imgdir name="smile">
+<imgdir name="0">
+<canvas name="face" width="28" height="17">
+<vector name="origin" x="13" y="-4"/>
+<string name="z" value="face"/>
+<imgdir name="map">
+<vector name="brow" x="0" y="0"/>
+</imgdir>
+<string name="_hash" value="2ab1e4ebdd67f3d10fb82df2c35f01978c5eacb0ff745abad5b6a4d42bc55387"/>
+</canvas>
+</imgdir>
+</imgdir>
+<imgdir name="troubled">
+<imgdir name="0">
+<canvas name="face" width="28" height="17">
+<vector name="origin" x="12" y="-3"/>
+<string name="z" value="face"/>
+<imgdir name="map">
+<vector name="brow" x="0" y="0"/>
+</imgdir>
+<string name="_hash" value="ad8b3a3a3ffe0de4899ebd785bd71dd0865c296c49524c9255df1ab1bdf837c4"/>
+</canvas>
+</imgdir>
+</imgdir>
+<imgdir name="cry">
+<imgdir name="0">
+<canvas name="face" width="27" height="16">
+<vector name="origin" x="13" y="-3"/>
+<string name="z" value="face"/>
+<imgdir name="map">
+<vector name="brow" x="0" y="0"/>
+</imgdir>
+<string name="_hash" value="81eb460acd90cd64c2b99c9c318b71b4cf66f53944f46d4dfd5b108ac7fcaa30"/>
+</canvas>
+</imgdir>
+</imgdir>
+<imgdir name="angry">
+<imgdir name="0">
+<canvas name="face" width="26" height="22">
+<vector name="origin" x="12" y="-3"/>
+<string name="z" value="face"/>
+<imgdir name="map">
+<vector name="brow" x="0" y="0"/>
+</imgdir>
+<string name="_hash" value="b50036cb395252a8ddc1c29163dbc5548f45f54fdd5bf2d6a3205f6c7840e1b1"/>
+</canvas>
+</imgdir>
+</imgdir>
+<imgdir name="bewildered">
+<imgdir name="0">
+<canvas name="face" width="25" height="17">
+<vector name="origin" x="12" y="-3"/>
+<string name="z" value="face"/>
+<imgdir name="map">
+<vector name="brow" x="0" y="0"/>
+</imgdir>
+<string name="_hash" value="6f652d157a1012cb379bf46715e96c08451a7525c7385f79d21f4c571e264ae0"/>
+</canvas>
+</imgdir>
+</imgdir>
+<imgdir name="stunned">
+<imgdir name="0">
+<canvas name="face" width="29" height="17">
+<vector name="origin" x="14" y="-3"/>
+<string name="z" value="face"/>
+<imgdir name="map">
+<vector name="brow" x="0" y="0"/>
+</imgdir>
+<string name="_hash" value="6e81afde6e99a572f7d98f48b59ab6ad4fe4c11c3d642cc5bee93c6cf16232ca"/>
+</canvas>
+</imgdir>
+</imgdir>
+<imgdir name="vomit">
+<imgdir name="0">
+<int name="delay" value="120"/>
+<canvas name="face" width="28" height="49">
+<vector name="origin" x="15" y="-3"/>
+<string name="z" value="face"/>
+<imgdir name="map">
+<vector name="brow" x="0" y="0"/>
+</imgdir>
+<string name="_hash" value="b7fb72c7f54b376d3e40ea81e9d9cf0d9a480d7edc633c417585b2db93996604"/>
+</canvas>
+</imgdir>
+<imgdir name="1">
+<int name="delay" value="120"/>
+<canvas name="face" width="28" height="49">
+<vector name="origin" x="15" y="-3"/>
+<string name="z" value="face"/>
+<imgdir name="map">
+<vector name="brow" x="0" y="0"/>
+</imgdir>
+<string name="_hash" value="60e43af7041dc8ccc8c298c256f28410e1614c6b11636097352acd0a74647b1a"/>
+</canvas>
+</imgdir>
+</imgdir>
+<imgdir name="oops">
+<imgdir name="0">
+<int name="delay" value="1640"/>
+<canvas name="face" width="26" height="17">
+<vector name="origin" x="12" y="-3"/>
+<string name="z" value="face"/>
+<imgdir name="map">
+<vector name="brow" x="0" y="0"/>
+</imgdir>
+<string name="_hash" value="c04f539d1b01651910761cce86361b2458e720686e6437ea5b536a0801c07f03"/>
+</canvas>
+</imgdir>
+</imgdir>
+<imgdir name="cheers">
+<imgdir name="0">
+<canvas name="face" width="25" height="18">
+<vector name="origin" x="12" y="-3"/>
+<string name="z" value="face"/>
+<imgdir name="map">
+<vector name="brow" x="0" y="0"/>
+</imgdir>
+<string name="_hash" value="f159eaa7478f1e78ec7b779c01f35a73b264adbb6cfc09b9249d174acfc84820"/>
+</canvas>
+</imgdir>
+</imgdir>
+<imgdir name="chu">
+<imgdir name="0">
+<canvas name="face" width="27" height="16">
+<vector name="origin" x="13" y="-4"/>
+<string name="z" value="face"/>
+<imgdir name="map">
+<vector name="brow" x="0" y="0"/>
+</imgdir>
+<string name="_hash" value="2099fdbd9bb21b7073c74f30dc26ac35fc4e1d7ec9e80170ef7ef7a84d28b2ef"/>
+</canvas>
+</imgdir>
+</imgdir>
+<imgdir name="pain">
+<imgdir name="0">
+<canvas name="face" width="29" height="18">
+<vector name="origin" x="13" y="-3"/>
+<string name="z" value="face"/>
+<imgdir name="map">
+<vector name="brow" x="0" y="0"/>
+</imgdir>
+<string name="_hash" value="a58296f3333723dd6e9af62aef749fe48352ddde801fc29eed4ccebe5955436d"/>
+</canvas>
+</imgdir>
+</imgdir>
+<imgdir name="despair">
+<imgdir name="0">
+<int name="delay" value="150"/>
+<canvas name="face" width="42" height="20">
+<vector name="origin" x="26" y="-4"/>
+<string name="z" value="face"/>
+<imgdir name="map">
+<vector name="brow" x="0" y="0"/>
+</imgdir>
+<string name="_hash" value="57aa4ccc5378b3fbbe3db0936422e92c18b590a8c98ea6f02cde45ba1fc8b343"/>
+</canvas>
+</imgdir>
+<imgdir name="1">
+<int name="delay" value="150"/>
+<canvas name="face" width="44" height="20">
+<vector name="origin" x="28" y="-4"/>
+<string name="z" value="face"/>
+<imgdir name="map">
+<vector name="brow" x="0" y="0"/>
+</imgdir>
+<string name="_hash" value="69336ef592ebddf6250706c8dcaba2992411fc30dc45766426ab109b5e49af47"/>
+</canvas>
+</imgdir>
+</imgdir>
+<imgdir name="love">
+<imgdir name="0">
+<int name="delay" value="150"/>
+<canvas name="face" width="27" height="22">
+<vector name="origin" x="12" y="-1"/>
+<string name="z" value="face"/>
+<imgdir name="map">
+<vector name="brow" x="0" y="0"/>
+</imgdir>
+<string name="_hash" value="9fdcfbff1b6809d3c05f60741eaec5c1740d38e16f3ff57ae8b0b7b20c3132d4"/>
+</canvas>
+</imgdir>
+<imgdir name="1">
+<int name="delay" value="150"/>
+<canvas name="face" width="27" height="22">
+<vector name="origin" x="12" y="-1"/>
+<string name="z" value="face"/>
+<imgdir name="map">
+<vector name="brow" x="0" y="0"/>
+</imgdir>
+<string name="_hash" value="8b15b336e8a1001a6482c2f61c81ada3aeb476d56aa9dababf10fc610f3fe147"/>
+</canvas>
+</imgdir>
+</imgdir>
+<imgdir name="shine">
+<imgdir name="0">
+<canvas name="face" width="26" height="16">
+<vector name="origin" x="12" y="-1"/>
+<string name="z" value="face"/>
+<imgdir name="map">
+<vector name="brow" x="0" y="0"/>
+</imgdir>
+<string name="_hash" value="704450a1ff01f39c94d529409aae4b54e20f55eefa77843d78bf6909c4e4012d"/>
+</canvas>
+</imgdir>
+</imgdir>
+<imgdir name="blaze">
+<imgdir name="0">
+<int name="delay" value="110"/>
+<canvas name="face" width="30" height="21">
+<vector name="origin" x="12" y="-2"/>
+<string name="z" value="face"/>
+<imgdir name="map">
+<vector name="brow" x="0" y="0"/>
+</imgdir>
+<string name="_hash" value="ea162db63f8ea748d2d3df7085985945df9e72e5cb2be38ce99542bfe386f0da"/>
+</canvas>
+</imgdir>
+<imgdir name="1">
+<int name="delay" value="110"/>
+<canvas name="face" width="30" height="23">
+<vector name="origin" x="12" y="0"/>
+<string name="z" value="face"/>
+<imgdir name="map">
+<vector name="brow" x="0" y="0"/>
+</imgdir>
+<string name="_hash" value="4798f3bccd4e50091a85099975d87d75aa03f85ab4035b0682dba0f4e28eb575"/>
+</canvas>
+</imgdir>
+</imgdir>
+<imgdir name="hum">
+<imgdir name="0">
+<int name="delay" value="110"/>
+<canvas name="face" width="25" height="21">
+<vector name="origin" x="10" y="-1"/>
+<string name="z" value="face"/>
+<imgdir name="map">
+<vector name="brow" x="0" y="0"/>
+</imgdir>
+<string name="_hash" value="4dc1f33bc923852c00bfba75e1fadecdcd8cb5fe9d4ec1546130a04a018483a4"/>
+</canvas>
+</imgdir>
+<imgdir name="1">
+<int name="delay" value="110"/>
+<canvas name="face" width="25" height="21">
+<vector name="origin" x="10" y="-1"/>
+<string name="z" value="face"/>
+<imgdir name="map">
+<vector name="brow" x="0" y="0"/>
+</imgdir>
+<string name="_hash" value="ffc7a6e6559d924137d3906bcc20b1e03866448c5dabd65d0319bd4d6a3ade1e"/>
+</canvas>
+</imgdir>
+</imgdir>
+<imgdir name="bowing">
+<imgdir name="0">
+<int name="delay" value="110"/>
+<canvas name="face" width="36" height="20">
+<vector name="origin" x="23" y="-3"/>
+<string name="z" value="face"/>
+<imgdir name="map">
+<vector name="brow" x="0" y="0"/>
+</imgdir>
+<string name="_hash" value="f45f82126b13619bd9bb8cf36b6f2dde9d3d1e546e87d6dc8378d880db8c0606"/>
+</canvas>
+</imgdir>
+<imgdir name="1">
+<int name="delay" value="110"/>
+<canvas name="face" width="37" height="20">
+<vector name="origin" x="24" y="-3"/>
+<string name="z" value="face"/>
+<imgdir name="map">
+<vector name="brow" x="0" y="0"/>
+</imgdir>
+<string name="_hash" value="865e0b7952c5fee306e661ac771f9dd81d282c8ccd409534eb367b7103296fd8"/>
+</canvas>
+</imgdir>
+</imgdir>
+<imgdir name="hot">
+<imgdir name="0">
+<int name="delay" value="110"/>
+<canvas name="face" width="40" height="25">
+<vector name="origin" x="28" y="-2"/>
+<string name="z" value="face"/>
+<imgdir name="map">
+<vector name="brow" x="0" y="0"/>
+</imgdir>
+<string name="_hash" value="342b9c3e55c31460452466a06c200589a30bfdc96fe28dd9970e1aff0596d7ba"/>
+</canvas>
+</imgdir>
+<imgdir name="1">
+<int name="delay" value="110"/>
+<canvas name="face" width="46" height="26">
+<vector name="origin" x="33" y="-1"/>
+<string name="z" value="face"/>
+<imgdir name="map">
+<vector name="brow" x="0" y="0"/>
+</imgdir>
+<string name="_hash" value="b38e048328f6b714fef5e57ca459a52a2c678f449988f3045977fba5c961e5ae"/>
+</canvas>
+</imgdir>
+</imgdir>
+<imgdir name="dam">
+<imgdir name="0">
+<int name="delay" value="240"/>
+<canvas name="face" width="24" height="22">
+<vector name="origin" x="10" y="-2"/>
+<string name="z" value="face"/>
+<imgdir name="map">
+<vector name="brow" x="0" y="0"/>
+</imgdir>
+<string name="_hash" value="f7844b93dd3e16634079a055cb51b5fa8cd07a9c8cfd72dc5245d65d6aa58d87"/>
+</canvas>
+</imgdir>
+<imgdir name="1">
+<int name="delay" value="240"/>
+<canvas name="face" width="24" height="23">
+<vector name="origin" x="10" y="-1"/>
+<string name="z" value="face"/>
+<imgdir name="map">
+<vector name="brow" x="0" y="0"/>
+</imgdir>
+<string name="_hash" value="b08ba2aa5ef2875bbb4e9c3817142561698d950a036969daab1f8b97b2b54b33"/>
+</canvas>
+</imgdir>
+</imgdir>
+<imgdir name="qBlue">
+<imgdir name="0">
+<canvas name="face" width="37" height="32">
+<vector name="origin" x="14" y="11"/>
+<string name="z" value="face"/>
+<imgdir name="map">
+<vector name="brow" x="0" y="0"/>
+</imgdir>
+<string name="_hash" value="525f5323e76c45d743c37d986ea719b5842893d4d345f10c1c7510cd0b21dec3"/>
+</canvas>
+</imgdir>
+</imgdir>
+</imgdir>

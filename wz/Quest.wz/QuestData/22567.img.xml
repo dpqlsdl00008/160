@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><imgdir name="22567.img"><imgdir name="QuestInfo"><string name="name" value="비밀단체 첫 번째 임무"/><int name="area" value="7"/><string name="0" value="비밀단체 임시멤버로서 첫 번째 임무를 받아보자. #b#m200080601##k 안에 있는 #b#p2012034##k 안에 임무가 들어있을 거라는데..."/><string name="1" value="#p2012034# 안의 종이를 읽어보니 #b#p2030012##k이라는 사람에게서 #b성장 촉진제#k를 만들어 오라고 한다. 이게 첫 번째 임무인 모양이다.
+
+#i4032468# #t4032468# #b#c4032468# / 10#k
+"/><string name="2" value="#p2030012#씨가 만들어준 성장촉진제를 벽돌 안에 넣어 두었다. 작물을 잘 자라게 하려고 이런 약품까지 만드는 것을 보면, 역시 비밀단체는 좋은 사람들이 모인 것 같다."/></imgdir><imgdir name="Check"><imgdir name="0"><int name="npc" value="2012034"/><int name="lvmin" value="46"/><imgdir name="quest"><imgdir name="0"><int name="id" value="22566"/><int name="state" value="2"/></imgdir></imgdir><imgdir name="job"><int name="0" value="2200"/><int name="1" value="2210"/><int name="2" value="2211"/><int name="3" value="2212"/><int name="4" value="2213"/><int name="5" value="2214"/><int name="6" value="2215"/><int name="7" value="2216"/><int name="8" value="2217"/><int name="9" value="2218"/></imgdir></imgdir><imgdir name="1"><int name="npc" value="2012034"/><string name="endscript" value="q22567e"/><imgdir name="item"><imgdir name="0"><int name="id" value="4032468"/><int name="count" value="10"/></imgdir></imgdir></imgdir></imgdir><imgdir name="Act"><imgdir name="0"></imgdir><imgdir name="1"></imgdir></imgdir><imgdir name="Say"><imgdir name="0"><string name="0" value="#b(벽돌이 빠져나온 빈 곳에 손을 넣어보니 종이 하나가 잡힌다. 종이를 읽어보자.)#k"/><string name="1" value="#b#p2030012##k에게 #b성장촉진제#k를 제조하여 벽돌 안에 넣어둘 것.\r\n재료는 다음과 같다.\n\n#t4000073# 10개\n#t4000059# 10개\n\r\n이 종이는 버리거나 가져가지 말고 다시 벽돌 안에 넣어둘 것.\r\n"/><string name="2" value="#b(종이를 다시 벽돌 안에 넣어두자.)#k"/><imgdir name="stop"></imgdir><imgdir name="yes"><string name="0" value="#b(#p2012034#을 구멍 안으로 밀어 넣어 원래 상태로 만들었다.)#k"/></imgdir><imgdir name="no"><string name="0" value="#b(윽. 귀찮을 것 같은 임무다. 하기 싫으니 종이를 대충 구겨넣고 못 본 척 하자.)#k"/></imgdir></imgdir><imgdir name="1"><imgdir name="stop"><imgdir name="item"><string name="0" value="#b(#p2012034#을 끄집어 낸 후 다시 한 번 종이를 살폈다.)#k"/><string name="1" value="
+#b#p2030012##k에게 #b성장촉진제#k를 제조하여 벽돌 안에 넣어둘 것.
+재료는 다음과 같다.
+
+#t4000073# 10개
+#t4000059# 10개
+
+
+이 종이는 버리거나 가져가지 말고 다시 벽돌 안에 넣어둘 것.
+"/></imgdir></imgdir></imgdir></imgdir></imgdir>
