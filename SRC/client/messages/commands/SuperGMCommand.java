@@ -107,6 +107,7 @@ public class SuperGMCommand {
     }
 
     public static class 스킬주기 extends CommandExecute {
+        // 사용법: !스킬주기 캐릭터이름 스킬코드 [레벨] [마스터레벨]
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
@@ -177,7 +178,7 @@ public class SuperGMCommand {
         public int execute(MapleClient c, String[] splitted) {
             java.util.Map<Item, MapleInventoryType> eqs = new HashMap<Item, MapleInventoryType>();
             boolean add = false;
-            if (splitted.length < 2 || splitted[1].equals("all")) {
+            if (splitted.length < 2 || splitted[1].equals("모두")) {
                 for (MapleInventoryType type : MapleInventoryType.values()) {
                     for (Item item : c.getPlayer().getInventory(type)) {
                         if (ItemFlag.Locked.check(item.getFlag())) {
@@ -196,7 +197,7 @@ public class SuperGMCommand {
                         add = false;
                     }
                 }
-            } else if (splitted[1].equals("eqp")) {
+            } else if (splitted[1].equals("장착")) {
                 for (Item item : c.getPlayer().getInventory(MapleInventoryType.EQUIPPED).newList()) {
                     if (ItemFlag.Locked.check(item.getFlag())) {
                         item.setFlag((byte) (item.getFlag() - ItemFlag.Locked.getValue()));
@@ -213,7 +214,7 @@ public class SuperGMCommand {
                     }
                     add = false;
                 }
-            } else if (splitted[1].equals("eq")) {
+            } else if (splitted[1].equals("장비")) {
                 for (Item item : c.getPlayer().getInventory(MapleInventoryType.EQUIP)) {
                     if (ItemFlag.Locked.check(item.getFlag())) {
                         item.setFlag((byte) (item.getFlag() - ItemFlag.Locked.getValue()));
@@ -230,7 +231,7 @@ public class SuperGMCommand {
                     }
                     add = false;
                 }
-            } else if (splitted[1].equals("u")) {
+            } else if (splitted[1].equals("소비")) {
                 for (Item item : c.getPlayer().getInventory(MapleInventoryType.USE)) {
                     if (ItemFlag.Locked.check(item.getFlag())) {
                         item.setFlag((byte) (item.getFlag() - ItemFlag.Locked.getValue()));
@@ -247,7 +248,7 @@ public class SuperGMCommand {
                     }
                     add = false;
                 }
-            } else if (splitted[1].equals("s")) {
+            } else if (splitted[1].equals("설치")) {
                 for (Item item : c.getPlayer().getInventory(MapleInventoryType.SETUP)) {
                     if (ItemFlag.Locked.check(item.getFlag())) {
                         item.setFlag((byte) (item.getFlag() - ItemFlag.Locked.getValue()));
@@ -264,7 +265,7 @@ public class SuperGMCommand {
                     }
                     add = false;
                 }
-            } else if (splitted[1].equals("e")) {
+            } else if (splitted[1].equals("기타")) {
                 for (Item item : c.getPlayer().getInventory(MapleInventoryType.ETC)) {
                     if (ItemFlag.Locked.check(item.getFlag())) {
                         item.setFlag((byte) (item.getFlag() - ItemFlag.Locked.getValue()));
@@ -281,7 +282,7 @@ public class SuperGMCommand {
                     }
                     add = false;
                 }
-            } else if (splitted[1].equals("c")) {
+            } else if (splitted[1].equals("캐시")) {
                 for (Item item : c.getPlayer().getInventory(MapleInventoryType.CASH)) {
                     if (ItemFlag.Locked.check(item.getFlag())) {
                         item.setFlag((byte) (item.getFlag() - ItemFlag.Locked.getValue()));
@@ -299,7 +300,7 @@ public class SuperGMCommand {
                     add = false;
                 }
             } else {
-                c.getPlayer().dropMessage(6, "[all/eqp/eq/u/s/e/c]");
+                c.getPlayer().dropMessage(6, "[모두/장착/장비/소비/설치/기타/캐시]");
             }
 
             for (Entry<Item, MapleInventoryType> eq : eqs.entrySet()) {
@@ -309,21 +310,21 @@ public class SuperGMCommand {
         }
     }
 
-    public static class Marry extends CommandExecute {
+    public static class 결혼 extends CommandExecute {
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
             if (splitted.length < 3) {
-                c.getPlayer().dropMessage(6, "Need <name> <itemid>");
+                c.getPlayer().dropMessage(6, "사용법 : !결혼 <캐릭터명> <반지 ID>");
                 return 0;
             }
             int itemId = Integer.parseInt(splitted[2]);
             if (!GameConstants.isEffectRing(itemId)) {
-                c.getPlayer().dropMessage(6, "Invalid itemID.");
+                c.getPlayer().dropMessage(6, "잘못된 아이템 ID입니다.");
             } else {
                 MapleCharacter fff = ChannelServer.getInstance(World.Find.findChannel(splitted[1])).getPlayerStorage().getCharacterByName(splitted[1]);
                 if (fff == null) {
-                    c.getPlayer().dropMessage(6, "Player must be online");
+                    c.getPlayer().dropMessage(6, "대상 플레이어가 접속 중이어야 합니다.");
                 } else {
                     int[] ringID = {MapleInventoryIdentifier.getInstance(), MapleInventoryIdentifier.getInstance()};
                     try {
@@ -331,11 +332,11 @@ public class SuperGMCommand {
                         for (int i = 0; i < chrz.length; i++) {
                             Equip eq = (Equip) MapleItemInformationProvider.getInstance().getEquipById(itemId, ringID[i]);
                             if (eq == null) {
-                                c.getPlayer().dropMessage(6, "Invalid itemID.");
+                                c.getPlayer().dropMessage(6, "잘못된 아이템 ID입니다.");
                                 return 0;
                             }
                             MapleInventoryManipulator.addbyItem(chrz[i].getClient(), eq.copy());
-                            chrz[i].dropMessage(6, "Successfully married with " + chrz[i == 0 ? 1 : 0].getName());
+                            chrz[i].dropMessage(6, chrz[i == 0 ? 1 : 0].getName() + "님과 결혼에 성공했습니다.");
                         }
                         MapleRing.addToDB(itemId, c.getPlayer(), fff.getName(), fff.getId(), ringID);
                     } catch (SQLException e) {
@@ -347,31 +348,32 @@ public class SuperGMCommand {
         }
     }
 
-    public static class chatType extends CommandExecute {
+    public static class 채팅타입 extends CommandExecute {
+        // GM 채팅 말풍선 색상 변경
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
             if (splitted.length < 2) {
-                c.getPlayer().dropMessage(6, "Syntax: !chatType <midteal, whitebg, globaldarkpink, darkpink, chathide, chat, topyellow, notice, lightblue, lightpink, system>");
+                c.getPlayer().dropMessage(6, "사용법 : !채팅타입 <청록색, 흰색, 진분홍, 전체진분홍, 숨김, 일반, 노랑, 공지, 팝업, 연파랑, 연분홍, 시스템>");
                 return 0;
             }
             switch (splitted[1].toLowerCase()) {
-                case "midteal":
+                case "청록색":
                     c.getPlayer().setChatType(-7);
                     break;
-                case "whitebg":
+                case "흰색":
                     c.getPlayer().setChatType(-6);
                     break;
-                case "darkpink":
+                case "진분홍":
                     c.getPlayer().setChatType(-5);
                     break;
-                case "globaldarkpink":
+                case "전체진분홍":
                     c.getPlayer().setChatType(-10);
                     break;
-                case "chathide":
+                case "숨김":
                     c.getPlayer().setChatType(-4);
                     break;
-                case "chat":
+                case "일반":
                     c.getPlayer().setChatType(-3);
                     break;
                 case "reg":
@@ -380,26 +382,26 @@ public class SuperGMCommand {
                 case "regular":
                     c.getPlayer().setChatType(-3);
                     break;
-                case "topyellow":
+                case "노랑":
                     c.getPlayer().setChatType(-1);
                     break;
-                case "notice":
+                case "공지":
                     c.getPlayer().setChatType(0);
                     break;
-                case "popup":
+                case "팝업":
                     c.getPlayer().setChatType(1);
                     break;
-                case "lightblue":
+                case "연파랑":
                     c.getPlayer().setChatType(2);
                     break;
-                case "lightpink":
+                case "연분홍":
                     c.getPlayer().setChatType(5);
                     break;
-                case "system":
+                case "시스템":
                     c.getPlayer().setChatType(6);
                     break;
                 default:
-                    c.getPlayer().dropMessage(6, "Syntax: !chatType <midteal, whitebg, globaldarkpink, darkpink, chathide, chat, topyellow, notice, lightblue, lightpink, system>");
+                    c.getPlayer().dropMessage(6, "사용법 : !채팅타입 <청록색, 흰색, 진분홍, 전체진분홍, 숨김, 일반, 노랑, 공지, 팝업, 연파랑, 연분홍, 시스템>");
                     break;
             }
             return 1;
@@ -407,6 +409,7 @@ public class SuperGMCommand {
     }
 
     public static class SpeakMap extends CommandExecute {
+        // 같은 맵의 모든 유저가 강제로 채팅하게 하기
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
@@ -420,6 +423,7 @@ public class SuperGMCommand {
     }
 
     public static class SpeakChn extends CommandExecute {
+        // 같은 채널의 모든 유저가 강제 채팅
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
@@ -433,6 +437,7 @@ public class SuperGMCommand {
     }
 
     public static class SpeakWorld extends CommandExecute {
+        // 서버 전체 모든 유저가 강제 채팅
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
@@ -448,6 +453,7 @@ public class SuperGMCommand {
     }
 
     public static class Monitor extends CommandExecute {
+        // 특정 플레이어 감시 모드 켜기/끄기
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
@@ -455,20 +461,21 @@ public class SuperGMCommand {
             if (target != null) {
                 if (target.getClient().isMonitored()) {
                     target.getClient().setMonitored(false);
-                    c.getPlayer().dropMessage(5, "Not monitoring " + target.getName() + " anymore.");
+                    c.getPlayer().dropMessage(5, target.getName() + "님의 감시를 시작합니다.");
                 } else {
                     target.getClient().setMonitored(true);
-                    c.getPlayer().dropMessage(5, "Monitoring " + target.getName() + ".");
+                    c.getPlayer().dropMessage(5, target.getName() + "님의 감시를 해제합니다.");
                 }
             } else {
-                c.getPlayer().dropMessage(5, "Target not found on channel.");
+                c.getPlayer().dropMessage(5, "대상을 채널에서 찾을 수 없습니다.");
                 return 0;
             }
             return 1;
         }
     }
 
-    public static class ResetOther extends CommandExecute {
+    public static class 퀘스트포기 extends CommandExecute {
+        // !퀘스트포기 캐릭터이름 퀘스트코드 : 다른 플레이어의 퀘스트 포기(리셋)
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
@@ -477,7 +484,8 @@ public class SuperGMCommand {
         }
     }
 
-    public static class FStartOther extends CommandExecute {
+    public static class 상대강제퀘스트시작 extends CommandExecute {
+        // !강제퀘스트시작 캐릭터이름 퀘스트코드 NPC코드 [데이터] : 다른 플레이어의 퀘스트 강제 시작
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
@@ -486,7 +494,8 @@ public class SuperGMCommand {
         }
     }
 
-    public static class FCompleteOther extends CommandExecute {
+    public static class 상대강제퀘스트완료 extends CommandExecute {
+        // !강제퀘스트완료 캐릭터이름 퀘스트코드 NPC코드 : 다른 플레이어의 퀘스트 강제 완료
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
@@ -495,7 +504,8 @@ public class SuperGMCommand {
         }
     }
 
-    public static class Threads extends CommandExecute {
+    public static class 스레드 extends CommandExecute {
+        // !스레드 [필터] : 서버 스레드(작업 목록) 확인
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
@@ -515,7 +525,8 @@ public class SuperGMCommand {
         }
     }
 
-    public static class ShowTrace extends CommandExecute {
+    public static class 스레드추적 extends CommandExecute {
+        // !스레드추적 스레드번호 : 특정 스레드의 실행 경로 보기
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
@@ -534,6 +545,7 @@ public class SuperGMCommand {
     }
 
     public static class ToggleOffense extends CommandExecute {
+        // 핵 감지 항목 켜기/끄기
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
@@ -547,12 +559,13 @@ public class SuperGMCommand {
         }
     }
 
-    public static class TMegaphone extends CommandExecute {
+    public static class 확성기토글 extends CommandExecute {
+        // 확성기(메가폰) 사용 금지/허용 전환
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
             World.toggleMegaphoneMuteState();
-            c.getPlayer().dropMessage(6, "Megaphone state : " + (c.getChannelServer().getMegaphoneMuteState() ? "Enabled" : "Disabled"));
+            c.getPlayer().dropMessage(6, "확성기 상태 : " + (c.getChannelServer().getMegaphoneMuteState() ? "사용 가능" : "사용 금지"));
             return 1;
         }
     }
@@ -569,6 +582,7 @@ public class SuperGMCommand {
     }
 
     public static class ClearSquads extends CommandExecute {
+        // 현재 채널의 모든 원정대 초기화
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
@@ -580,7 +594,9 @@ public class SuperGMCommand {
         }
     }
 
-    public static class HitMonsterByOID extends CommandExecute {
+    public static class 몬스터타격 extends CommandExecute {
+        // !몬스터타격 오브젝트ID 데미지량 : 특정 몬스터(오브젝트ID)에 데미지 주기
+        // 오브젝트ID는 맵에 소환된 개별 몬스터마다 다른 고유번호
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
@@ -596,7 +612,8 @@ public class SuperGMCommand {
         }
     }
 
-    public static class HitAll extends CommandExecute {
+    public static class 전체공격 extends CommandExecute {
+        // !전체공격 데미지량 & !전체공격 범위 맵ID
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
@@ -625,7 +642,8 @@ public class SuperGMCommand {
         }
     }
 
-    public static class HitMonster extends CommandExecute {
+    public static class 지정몬스터타격 extends CommandExecute {
+        //  !진정몬스터타격 데미지량 몬스터코드 : 특정 몬스터에만 데미지
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
@@ -645,6 +663,7 @@ public class SuperGMCommand {
     }
 
     public static class 킬몬스터 extends CommandExecute {
+        // !킬몬스터 몬스터코드
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
@@ -799,43 +818,45 @@ public class SuperGMCommand {
         }
     }
 
-    public static class MakePNPC extends CommandExecute {
+    public static class 플레이어엔피시생성 extends CommandExecute {
+        // !플레이어엔피시생성 캐릭터이름 NPC코드 : 플레이어 NPC 생성
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
             try {
-                c.getPlayer().dropMessage(6, "Making playerNPC...");
+                c.getPlayer().dropMessage(6, "플레이어 NPC를 생성 중...");
                 MapleCharacter chhr = ChannelServer.getInstance(World.Find.findChannel(splitted[1])).getPlayerStorage().getCharacterByName(splitted[1]);
                 if (chhr == null) {
-                    c.getPlayer().dropMessage(6, splitted[1] + " is not online");
+                    c.getPlayer().dropMessage(6, splitted[1] + "님이 접속 중이 아닙니다.");
                     return 0;
                 }
                 PlayerNPC npc = new PlayerNPC(chhr, Integer.parseInt(splitted[2]), c.getPlayer().getMap(), c.getPlayer());
                 npc.addToServer();
-                c.getPlayer().dropMessage(6, "Done");
+                c.getPlayer().dropMessage(6, "완료");
             } catch (Exception e) {
-                c.getPlayer().dropMessage(6, "NPC failed... : " + e.getMessage());
+                c.getPlayer().dropMessage(6, "NPC 생성에 실패했습니다. : " + e.getMessage());
                 e.printStackTrace();
             }
             return 1;
         }
     }
 
-    public static class DestroyPNPC extends CommandExecute {
+    public static class 플레이어엔피시삭제 extends CommandExecute {
+        // !플레이어엔피시삭제 오브젝트ID
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
             try {
-                c.getPlayer().dropMessage(6, "Destroying playerNPC...");
+                c.getPlayer().dropMessage(6, "플레이어 엔피시를 삭제 중...");
                 final MapleNPC npc = c.getPlayer().getMap().getNPCByOid(Integer.parseInt(splitted[1]));
                 if (npc instanceof PlayerNPC) {
                     ((PlayerNPC) npc).destroy(true);
-                    c.getPlayer().dropMessage(6, "Done");
+                    c.getPlayer().dropMessage(6, "완료");
                 } else {
-                    c.getPlayer().dropMessage(6, "!destroypnpc [objectid]");
+                    c.getPlayer().dropMessage(6, "!플레이어엔피시삭제 [오브젝트 ID]");
                 }
             } catch (Exception e) {
-                c.getPlayer().dropMessage(6, "NPC failed... : " + e.getMessage());
+                c.getPlayer().dropMessage(6, "NPC 삭제에 실패했습니다. : " + e.getMessage());
                 e.printStackTrace();
             }
             return 1;
@@ -843,6 +864,7 @@ public class SuperGMCommand {
     }
 
     public static class ServerMessage extends CommandExecute {
+        // 게임 화면 상단에 흐르는 공지 메시지(노란색 띠)를 변경
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
@@ -855,6 +877,13 @@ public class SuperGMCommand {
     }
 
     public static class 몹 extends CommandExecute {
+        // !몹 몬스터코드 [수량] [옵션]
+        // 추가 옵션:
+        // - lvl = 숫자 → 몬스터 레벨 변경
+        // - hp = 숫자 → HP 직접 지정
+        // - exp = 숫자 → 경험치 직접 지정
+        // - php = 숫자 → HP를 원래의 N% 로 설정
+        // - pexp = 숫자 → 경험치를 원래의 N% 로 설정
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
@@ -870,11 +899,11 @@ public class SuperGMCommand {
             try {
                 onemob = MapleLifeFactory.getMonster(mid);
             } catch (RuntimeException e) {
-                c.getPlayer().dropMessage(5, "Error: " + e.getMessage());
+                c.getPlayer().dropMessage(5, "에러 : " + e.getMessage());
                 return 0;
             }
             if (onemob == null) {
-                c.getPlayer().dropMessage(5, "Mob does not exist");
+                c.getPlayer().dropMessage(5, "존재하지 않는 몬스터입니다.");
                 return 0;
             }
             long newhp = 0;
@@ -907,13 +936,15 @@ public class SuperGMCommand {
                     mob.setOverrideStats(overrideStats);
                 }
                 c.getPlayer().getMap().spawnMonsterOnGroundBelow(mob, c.getPlayer().getPosition());
-                c.getPlayer().dropMessage(6, "SPAWN MONSTER | ID : " + mob.getId() + " | OBJECT ID : " + mob.getObjectId());
+                c.getPlayer().dropMessage(6, "몬스터 스폰 | ID : " + mob.getId() + " | 오브젝트 ID : " + mob.getObjectId());
             }
             return 1;
         }
     }
 
     public static class PS extends CommandExecute {
+        // 패킷 직접 전송 도구 (개발자 전용)
+        // 기능 : 패킷 전송 + 쌓아둔 데이터를 한 번에 내 클라이언트로 보냄
 
         protected static StringBuilder builder = new StringBuilder();
 
@@ -923,27 +954,31 @@ public class SuperGMCommand {
                 c.getSession().write(CField.getPacketFromHexString(builder.toString()));
                 builder = new StringBuilder();
             } else {
-                c.getPlayer().dropMessage(6, "Please enter packet data!");
+                c.getPlayer().dropMessage(6, "패킷 데이터를 입력해주세요!");
             }
             return 1;
         }
     }
 
     public static class APS extends PS {
+        // 패킷 직접 전송 도구 (개발자 전용)
+        // 기능 : 패킷 데이터(16진수) 추가 + 보낼 데이터를 조금씩 이어붙임
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
             if (splitted.length > 1) {
                 builder.append(StringUtil.joinStringFrom(splitted, 1));
-                c.getPlayer().dropMessage(6, "String is now: " + builder.toString());
+                c.getPlayer().dropMessage(6, "현재 데이터 : " + builder.toString());
             } else {
-                c.getPlayer().dropMessage(6, "Please enter packet data!");
+                c.getPlayer().dropMessage(6, "패킷 데이터를 입력해주세요!");
             }
             return 1;
         }
     }
 
     public static class CPS extends PS {
+        // 패킷 직접 전송 도구 (개발자 전용)
+        // 기능 : 패킷 초기화
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
@@ -953,13 +988,15 @@ public class SuperGMCommand {
     }
 
     public static class P extends CommandExecute {
+        // 패킷 직접 전송 도구 (개발자 전용)
+        // 기능 : 즉시 패킷 전송
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
             if (splitted.length > 1) {
                 c.getSession().write(CField.getPacketFromHexString(StringUtil.joinStringFrom(splitted, 1)));
             } else {
-                c.getPlayer().dropMessage(6, "Please enter packet data!");
+                c.getPlayer().dropMessage(6, "패킷 데이터를 입력해주세요!");
             }
             return 1;
         }
@@ -983,7 +1020,7 @@ public class SuperGMCommand {
         }
     }
 
-    public static class Respawn extends CommandExecute {
+    public static class 리스폰 extends CommandExecute {
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
@@ -1056,6 +1093,7 @@ public class SuperGMCommand {
     }
 
     public static class Crash extends CommandExecute {
+        // 특정 플레이어 클라이언트 강제 크래시
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
@@ -1071,6 +1109,7 @@ public class SuperGMCommand {
     }
 
     public static class Rev extends CommandExecute {
+        // 서버 소스 리비전(버전) 확인
 
         private static int revision = -1;
 
@@ -1099,15 +1138,16 @@ public class SuperGMCommand {
         public int execute(MapleClient c, String[] splitted) {
             MapleCharacter player = c.getPlayer();
             if (getRevision() != -1) {
-                c.getPlayer().dropMessage(5, "This is revision " + revision + ".");
+                c.getPlayer().dropMessage(5, "현재 리비전 : " + revision + ".");
             } else {
-                c.getPlayer().dropMessage(5, "Can't find revision T_T");
+                c.getPlayer().dropMessage(5, "리비전을 찾을 수 없습니다.");
             }
             return 1;
         }
     }
 
-    public static class FillBook extends CommandExecute {
+    public static class 몬스터북 extends CommandExecute {
+        // 몬스터북 전부 채우기
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
@@ -1115,12 +1155,13 @@ public class SuperGMCommand {
                 c.getPlayer().getMonsterBook().getCards().put(e, 2);
             }
             c.getPlayer().getMonsterBook().changed();
-            c.getPlayer().dropMessage(5, "Done.");
+            c.getPlayer().dropMessage(5, "완료");
             return 1;
         }
     }
 
-    public static class ListBook extends CommandExecute {
+    public static class 몬스터북목록 extends CommandExecute {
+        // 몬스터북 목록 보기 (페이지별)
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
@@ -1150,6 +1191,7 @@ public class SuperGMCommand {
     }
 
     public static class Subcategory extends CommandExecute {
+        // 캐릭터 서브카테고리 변경
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
@@ -1158,16 +1200,7 @@ public class SuperGMCommand {
         }
     }
 
-    public static class 퍀잇 extends CommandExecute {
-
-        @Override
-        public int execute(MapleClient c, String[] splitted) {
-            //c.getSession().write(CField.showPQReward(c.getPlayer().getId()));
-            return 1;
-        }
-    }
-
-    public static class 메소 extends CommandExecute {
+    public static class 풀메소 extends CommandExecute {
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
@@ -1176,12 +1209,12 @@ public class SuperGMCommand {
         }
     }
 
-    public static class GainCash extends CommandExecute {
+    public static class 캐쉬 extends CommandExecute {
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
             if (splitted.length < 2) {
-                c.getPlayer().dropMessage(5, "Need amount.");
+                c.getPlayer().dropMessage(5, "금액을 입력해주세요.");
                 return 0;
             }
             c.getPlayer().modifyCSPoints(1, Integer.parseInt(splitted[1]), true);
@@ -1189,12 +1222,12 @@ public class SuperGMCommand {
         }
     }
 
-    public static class GainMP extends CommandExecute {
+    public static class 메이플포인트 extends CommandExecute {
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
             if (splitted.length < 2) {
-                c.getPlayer().dropMessage(5, "Need amount.");
+                c.getPlayer().dropMessage(5, "금액을 입력해주세요.");
                 return 0;
             }
             c.getPlayer().modifyCSPoints(2, Integer.parseInt(splitted[1]), true);
@@ -1232,7 +1265,7 @@ public class SuperGMCommand {
         public int execute(MapleClient c, String[] splitted) {
             MapleMonsterInformationProvider.getInstance().clearDrops();
             ReactorScriptManager.getInstance().clearDrops();
-            c.getPlayer().dropMessage(5, "Drops reloaded.");
+            c.getPlayer().dropMessage(5, "드롭 테이블이 새로고침되었습니다.");
             return 1;
         }
     }
@@ -1267,6 +1300,7 @@ public class SuperGMCommand {
     }
 
     public static class 퀘스트리셋 extends CommandExecute {
+        // !퀘스트리셋 퀘스트코드
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
@@ -1276,6 +1310,7 @@ public class SuperGMCommand {
     }
 
     public static class 퀘스트시작 extends CommandExecute {
+        // !퀘스트시작 퀘스트코드 NPC코드
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
@@ -1285,6 +1320,8 @@ public class SuperGMCommand {
     }
 
     public static class 퀘스트완료 extends CommandExecute {
+        // !퀘스트완료 퀘스트코드 NPC코드 선택번호
+        // 선택번호는 보상 선택지가 있을 때 사용
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
@@ -1293,7 +1330,8 @@ public class SuperGMCommand {
         }
     }
 
-    public static class FStartQuest extends CommandExecute {
+    public static class 퀘스트강제시작 extends CommandExecute {
+        // !퀘스트강제시작 퀘스트코드 NPC코드 [데이터]
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
@@ -1302,7 +1340,8 @@ public class SuperGMCommand {
         }
     }
 
-    public static class FCompleteQuest extends CommandExecute {
+    public static class 퀘스트강제완료 extends CommandExecute {
+        // !퀘스트강제완료 퀘스트코드 NPC코드
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
@@ -1311,7 +1350,8 @@ public class SuperGMCommand {
         }
     }
 
-    public static class 리엑터히트 extends CommandExecute {
+    public static class 리엑터공격 extends CommandExecute {
+        // !리엑터히트 오브젝트ID
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
@@ -1320,7 +1360,8 @@ public class SuperGMCommand {
         }
     }
 
-    public static class FHReactor extends CommandExecute {
+    public static class 리엑터강제공격 extends CommandExecute {
+        // !리엑터강제공격 오브젝트ID 상태값 → 특정 상태로 강제 변경
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
@@ -1366,6 +1407,7 @@ public class SuperGMCommand {
     }
 
     public static class SendAllNote extends CommandExecute {
+        // 현재 채널 모든 유저에게 쪽지 보내기
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
@@ -1376,14 +1418,15 @@ public class SuperGMCommand {
                     c.getPlayer().sendNote(mch.getName(), text);
                 }
             } else {
-                c.getPlayer().dropMessage(6, "Use it like this, !sendallnote <text>");
+                c.getPlayer().dropMessage(6, "사용법: !SendAllNote <내용>");
                 return 0;
             }
             return 1;
         }
     }
 
-    public static class godmode extends CommandExecute {
+    public static class 갓모드 extends CommandExecute {
+        // 팔라딘의 디바인 프로텍션(1221054) 스킬을 자신에게 걸어서 일정 시간 동안 죽지 않는 상태 됨
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
@@ -1392,7 +1435,7 @@ public class SuperGMCommand {
         }
     }
 
-    public static class cri extends CommandExecute {
+    public static class 크리티컬버프 extends CommandExecute {
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
@@ -1401,7 +1444,8 @@ public class SuperGMCommand {
         }
     }
 
-    public static class BuffSkill extends CommandExecute {
+    public static class 버프스킬 extends CommandExecute {
+        // !버프스킬 스킬코드 레벨 : 아무 스킬이나 원하는 레벨로 자신에게 버프로 적용
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
@@ -1410,7 +1454,8 @@ public class SuperGMCommand {
         }
     }
 
-    public static class BuffItem extends CommandExecute {
+    public static class 버프아이템 extends CommandExecute {
+        // !버프아이템 아이템코드 : 해당 아이템의 사용 효과를 내 캐릭터에 적용
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
@@ -1419,7 +1464,9 @@ public class SuperGMCommand {
         }
     }
 
-    public static class BuffItemEX extends CommandExecute {
+    public static class 버프아이템확장 extends CommandExecute {
+        // !버프아이템확장 아이템코드 : 아이템 확장 효과 사용
+        // 일부 아이템은 기본 효과 외에 추가 효과가 있는데, 그걸 적용하는 것
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
@@ -1429,15 +1476,17 @@ public class SuperGMCommand {
     }
 
     public static class ItemSize extends CommandExecute { //test
+        // 서버에 등록된 총 아이템 수 확인
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
-            c.getPlayer().dropMessage(6, "Number of items: " + MapleItemInformationProvider.getInstance().getAllItems().size());
+            c.getPlayer().dropMessage(6, "등록된 아이템 수 : " + MapleItemInformationProvider.getInstance().getAllItems().size());
             return 0;
         }
     }
 
     public static class 스킬마스터 extends CommandExecute {
+        // !스킬마스터 직업코드앞3자리
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
@@ -1471,7 +1520,7 @@ public class SuperGMCommand {
                 for (MapleData skill_ : MapleDataProviderFactory.getDataProvider(new File("wz/String.wz")).getData("Skill.img").getChildren()) {
                     try {
                         Skill skill = SkillFactory.getSkill(Integer.parseInt(skill_.getName()));
-                        if ((skill.getId() < 1009 || skill.getId() > 1011));
+                        if ((skill.getId() < 1009 || skill.getId() > 1011)) ;
                         c.getPlayer().changeSingleSkillLevel(skill, (byte) skill.getMaxLevel(), (byte) skill.getMaxLevel());
                     } catch (NumberFormatException nfe) {
                         break;
@@ -1481,16 +1530,16 @@ public class SuperGMCommand {
                 }
                 return 1;
             }
+        }
 
-            public static class 스킬제거 extends CommandExecute {
+        public static class 스킬제거 extends CommandExecute {
 
-                @Override
-                public int execute(MapleClient c, String[] splitted) {
-                    for (Skill skill : SkillFactory.getAllSkills()) {
-                        c.getPlayer().changeSkillLevel(skill, 0, (byte) 0);
-                    }
-                    return 1;
+            @Override
+            public int execute(MapleClient c, String[] splitted) {
+                for (Skill skill : SkillFactory.getAllSkills()) {
+                    c.getPlayer().changeSkillLevel(skill, 0, (byte) 0);
                 }
+                return 1;
             }
         }
     }
