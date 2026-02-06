@@ -221,57 +221,6 @@ public class InternCommand {
         }
     }
 
-    public static class 인벤초기화 extends CommandExecute {
-
-        @Override
-        public int execute(MapleClient c, String[] splitted) {
-            java.util.Map<Pair<Short, Short>, MapleInventoryType> eqs = new HashMap<>();
-            try {
-                if (splitted[1].equals("전부")) {
-                    for (MapleInventoryType type : MapleInventoryType.values()) {
-                        for (Item item : c.getPlayer().getInventory(type)) {
-                            eqs.put(new Pair<>(item.getPosition(), item.getQuantity()), type);
-                        }
-                    }
-                } else if (splitted[1].equals("장착장비")) {
-                    for (Item item : c.getPlayer().getInventory(MapleInventoryType.EQUIPPED)) {
-                        eqs.put(new Pair<>(item.getPosition(), item.getQuantity()), MapleInventoryType.EQUIPPED);
-                    }
-                } else if (splitted[1].equals("장비")) {
-                    for (Item item : c.getPlayer().getInventory(MapleInventoryType.EQUIP)) {
-                        eqs.put(new Pair<>(item.getPosition(), item.getQuantity()), MapleInventoryType.EQUIP);
-                    }
-                } else if (splitted[1].equals("소비")) {
-                    for (Item item : c.getPlayer().getInventory(MapleInventoryType.USE)) {
-                        eqs.put(new Pair<>(item.getPosition(), item.getQuantity()), MapleInventoryType.USE);
-                    }
-                } else if (splitted[1].equals("설치")) {
-                    for (Item item : c.getPlayer().getInventory(MapleInventoryType.SETUP)) {
-                        eqs.put(new Pair<>(item.getPosition(), item.getQuantity()), MapleInventoryType.SETUP);
-                    }
-                } else if (splitted[1].equals("기타")) {
-                    for (Item item : c.getPlayer().getInventory(MapleInventoryType.ETC)) {
-                        eqs.put(new Pair<>(item.getPosition(), item.getQuantity()), MapleInventoryType.ETC);
-                    }
-                } else if (splitted[1].equals("캐시")) {
-                    for (Item item : c.getPlayer().getInventory(MapleInventoryType.CASH)) {
-                        eqs.put(new Pair<>(item.getPosition(), item.getQuantity()), MapleInventoryType.CASH);
-                    }
-                } else {
-                    c.getPlayer().dropMessage(6, "사용법 : !인벤토리초기화 <전부, 장착장비, 장비, 소비, 설치, 기타, 캐시>");
-                    c.getPlayer().dropMessage(6, "경고 : 선택한 탭의 아이템이 모두 삭제됩니다. 이는 되돌릴 수 없습니다.");
-                }
-            } catch (ArrayIndexOutOfBoundsException aioob) {
-                c.getPlayer().dropMessage(6, "사용법 : !인벤토리초기화 <전부, 장착장비, 장비, 소비, 설치, 기타, 캐시>");
-                c.getPlayer().dropMessage(6, "경고 : 선택한 탭의 아이템이 모두 삭제됩니다. 이는 되돌릴 수 없습니다.");
-            }
-            for (Entry<Pair<Short, Short>, MapleInventoryType> eq : eqs.entrySet()) {
-                MapleInventoryManipulator.removeFromSlot(c, eq.getValue(), eq.getKey().left, eq.getKey().right, false, false);
-            }
-            return 1;
-        }
-    }
-
     public static class 온라인 extends CommandExecute {
         // !온라인 채널번호 : 해당 채널에 접속 중인 모든 캐릭터의 레벨, 이름, 현재 있는 맵을 보여줌
 
@@ -1529,52 +1478,6 @@ public class InternCommand {
             } catch (Exception e) {
                 c.getPlayer().dropMessage(5, "에러 : " + e.getMessage());
                 return 0; //assume drunk GM
-            }
-            return 1;
-        }
-    }
-
-    public static class 킬올 extends CommandExecute {
-
-        @Override
-        public int execute(MapleClient c, String[] splitted) {
-            MapleMap map = c.getPlayer().getMap();
-            double range = Double.POSITIVE_INFINITY;
-
-            if (splitted.length > 1) {
-                int irange = Integer.parseInt(splitted[1]);
-                if (splitted.length <= 2) {
-                    range = irange * irange;
-                } else {
-                    map = c.getChannelServer().getMapFactory().getMap(Integer.parseInt(splitted[2]));
-                }
-            }
-            if (map == null) {
-                c.getPlayer().dropMessage(6, "맵이 존재하지 않습니다.");
-                return 0;
-            }
-            MapleMonster mob;
-            for (MapleMapObject monstermo : map.getMapObjectsInRange(c.getPlayer().getPosition(), range, Arrays.asList(MapleMapObjectType.MONSTER))) {
-                mob = (MapleMonster) monstermo;
-                if (mob.getId() != 8850011 && mob.getId() != 9450012) {
-                    mob.damage(c.getPlayer(), mob.getHp(), false);
-                }
-            }
-            return 1;
-        }
-    }
-
-    public static class 데미지 extends CommandExecute {
-        // !데미지 데미지량 : 맵의 모든 몬스터에게 지정 데미지 주기
-
-        @Override
-        public int execute(MapleClient c, String[] splitted) {
-            MapleMap map = c.getPlayer().getMap();
-            double range = Double.POSITIVE_INFINITY;
-            MapleMonster mob;
-            for (MapleMapObject monstermo : map.getMapObjectsInRange(c.getPlayer().getPosition(), range, Arrays.asList(MapleMapObjectType.MONSTER))) {
-                mob = (MapleMonster) monstermo;
-                mob.damage(c.getPlayer(), Long.parseLong(splitted[1]), false);
             }
             return 1;
         }

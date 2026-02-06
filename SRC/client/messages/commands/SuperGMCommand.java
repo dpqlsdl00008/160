@@ -106,22 +106,6 @@ public class SuperGMCommand {
         }
     }
 
-    public static class 근처엔피시 extends 현재맵엔피시 {
-    }
-
-    public static class 현재맵엔피시 extends CommandExecute {
-
-        @Override
-        public int execute(MapleClient c, String[] splitted) {
-            MapleMap map = c.getPlayer().getMap();
-            c.getPlayer().dropMessage(6, "현재 맵에 있는 엔피시 리스트입니다.");
-            for (MapleMapObject mo : map.getAllNPCs()) {
-                c.getPlayer().dropMessage(6, ((MapleNPC) mo).getId() + " : " + ((MapleNPC) mo).getName());
-            }
-            return 1;
-        }
-    }
-
     public static class 스킬주기 extends CommandExecute {
 
         @Override
@@ -1278,15 +1262,6 @@ public class SuperGMCommand {
             for (ChannelServer instance : ChannelServer.getAllInstances()) {
                 instance.reloadEvents();
             }
-            return 1;
-        }
-    }
-
-    public static class 맵다시 extends CommandExecute {
-
-        @Override
-        public int execute(MapleClient c, String[] splitted) {
-            c.getPlayer().getMap().resetFully();
             return 1;
         }
     }
