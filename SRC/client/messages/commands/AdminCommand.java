@@ -1,6 +1,8 @@
 package client.messages.commands;
 
 import java.util.concurrent.ScheduledFuture;
+
+import client.MapleCharacter;
 import constants.ServerConstants.PlayerGMRank;
 import client.MapleClient;
 import client.MapleStat;
@@ -55,12 +57,13 @@ public class AdminCommand {
      return 1;
      }
      }*/
-    public static class PNPC extends CommandExecute {
+
+    public static class 고정엔피시 extends CommandExecute {
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
-            if (splitted.length < 1) {
-                c.getPlayer().dropMessage(6, "!pnpc <npcid>");
+            if (splitted.length < 2) {
+                c.getPlayer().dropMessage(6, "!고정엔피시 <엔피시 ID>");
                 return 0;
             }
             int npcId = Integer.parseInt(splitted[1]);
@@ -93,7 +96,7 @@ public class AdminCommand {
                         ps.executeUpdate();
                     }
                 } catch (SQLException e) {
-                    c.getPlayer().dropMessage(6, "Failed to save NPC to the database");
+                    c.getPlayer().dropMessage(6, "NPC를 DB에 저장하지 못했습니다.");
                 } finally {
                     if (con != null) {
                         try {
@@ -105,21 +108,21 @@ public class AdminCommand {
                 }
                 c.getPlayer().getMap().addMapObject(npc);
                 c.getPlayer().getMap().broadcastMessage(NPCPacket.spawnNPC(npc, true, -1));
-                c.getPlayer().dropMessage(6, "Please do not reload this map or else the NPC will disappear till the next restart.");
+                c.getPlayer().dropMessage(6, "맵을 리로드하면 다음 서버 재시작 전까지 NPC가 사라질 수 있습니다.");
             } else {
-                c.getPlayer().dropMessage(6, "You have entered an invalid Npc-Id");
+                c.getPlayer().dropMessage(6, "유효하지 않은 NPC ID입니다.");
                 return 0;
             }
             return 1;
         }
     }
 
-    public static class PMOB extends CommandExecute {
+    public static class 고정몬스터 extends CommandExecute {
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
-            if (splitted.length < 2) {
-                c.getPlayer().dropMessage(6, "!pmob <mobid> <mobTime>");
+            if (splitted.length < 3) {
+                c.getPlayer().dropMessage(6, "!고정몬스터 <몬스터 ID> <리젠 시간>");
                 return 0;
             }
             int mobid = Integer.parseInt(splitted[1]);
@@ -128,7 +131,7 @@ public class AdminCommand {
             try {
                 npc = MapleLifeFactory.getMonster(mobid);
             } catch (RuntimeException e) {
-                c.getPlayer().dropMessage(5, "Error: " + e.getMessage());
+                c.getPlayer().dropMessage(5, "에러: " + e.getMessage());
                 return 0;
             }
             if (npc != null) {
@@ -159,7 +162,7 @@ public class AdminCommand {
                         ps.executeUpdate();
                     }
                 } catch (SQLException e) {
-                    c.getPlayer().dropMessage(6, "Failed to save NPC to the database");
+                    c.getPlayer().dropMessage(6, "몬스터 스폰 정보를 DB에 저장하지 못했습니다.");
                 } finally {
                     if (con != null) {
                         try {
@@ -170,55 +173,44 @@ public class AdminCommand {
                     }
                 }
                 c.getPlayer().getMap().addMonsterSpawn(npc, mobTime, (byte) -1, null);
-                c.getPlayer().dropMessage(6, "Please do not reload this map or else the MOB will disappear till the next restart.");
+                c.getPlayer().dropMessage(6, "맵을 리로드하면 다음 서버 재시작 전까지 몬스터가 사라질 수 있습니다.");
             } else {
-                c.getPlayer().dropMessage(6, "You have entered an invalid Mob-Id");
+                c.getPlayer().dropMessage(6, "유효하지 않은 몬스터 ID입니다.");
                 return 0;
             }
             return 1;
         }
     }
 
-    /*    public static class MesoEveryone extends CommandExecute {
+    public static class 모두메소 extends CommandExecute {
 
-     @Override
-     public int execute(MapleClient c, String[] splitted) {
-     for (ChannelServer cserv : ChannelServer.getAllInstances()) {
-     for (MapleCharacter mch : cserv.getPlayerStorage().getAllCharacters()) {
-     mch.gainMeso(Integer.parseInt(splitted[1]), true);
+         @Override
+        public int execute(MapleClient c, String[] splitted) {
+            for (ChannelServer cserv : ChannelServer.getAllInstances()) {
+            for (MapleCharacter mch : cserv.getPlayerStorage().getAllCharacters()) {
+                    mch.gainMeso(Integer.parseInt(splitted[1]), true);
+            }
+        }
+            return 1;
+        }
      }
-     }
-     return 1;
-     }
-     }*/
-    /*public static class damagegain extends CommandExecute {
-     private int min;
-     private int max;
 
-     @Override
-     public int execute(MapleClient c, String[] splitted) {
-     min = Integer.parseInt(splitted[1]);
-     max = Integer.parseInt(splitted[2]);
-     c.getPlayer().gainDamage(min, max);
-     return 1;
-     }
-     }*/
     public static class 경험치배율 extends CommandExecute {
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
             if (splitted.length > 1) {
                 final int rate = Integer.parseInt(splitted[1]);
-                if (splitted.length > 2 && splitted[2].equalsIgnoreCase("all")) {
+                if (splitted.length > 2 && splitted[2].equalsIgnoreCase("모두")) {
                     for (ChannelServer cserv : ChannelServer.getAllInstances()) {
                         cserv.setExpRate(rate);
                     }
                 } else {
                     c.getChannelServer().setExpRate(rate);
                 }
-                c.getPlayer().dropMessage(6, "Exprate has been changed to " + rate + "x");
+                c.getPlayer().dropMessage(6, "경험치 배율이 " + rate + "배로 변경되었습니다.");
             } else {
-                c.getPlayer().dropMessage(6, "Syntax: !exprate <number> [all]");
+                c.getPlayer().dropMessage(6, "사용법: !경험치배율 <배율> [모두], 현재 경험치 배율: " + c.getChannelServer().getExpRate() + "배");
             }
             return 1;
         }
@@ -230,16 +222,16 @@ public class AdminCommand {
         public int execute(MapleClient c, String[] splitted) {
             if (splitted.length > 1) {
                 final int rate = Integer.parseInt(splitted[1]);
-                if (splitted.length > 2 && splitted[2].equalsIgnoreCase("all")) {
+                if (splitted.length > 2 && splitted[2].equalsIgnoreCase("모두")) {
                     for (ChannelServer cserv : ChannelServer.getAllInstances()) {
                         cserv.setMesoRate(rate);
                     }
                 } else {
                     c.getChannelServer().setMesoRate(rate);
                 }
-                c.getPlayer().dropMessage(6, "Meso Rate has been changed to " + rate + "x");
+                c.getPlayer().dropMessage(6, "메소 배율이 " + rate + "배로 변경되었습니다.");
             } else {
-                c.getPlayer().dropMessage(6, "Syntax: !mesorate <number> [all], mesorate: " + c.getChannelServer().getMesoRate());
+                c.getPlayer().dropMessage(6, "사용법: !메소배율 <배율> [모두], 현재 메소 배율: " + c.getChannelServer().getMesoRate() + "배");
             }
             return 1;
         }
@@ -250,11 +242,11 @@ public class AdminCommand {
         @Override
         public int execute(MapleClient c, String[] splitted) {
             int range = -1;
-            if (splitted[1].equals("m")) {
+            if (splitted[1].equals("m")) { // 현재 맵
                 range = 0;
-            } else if (splitted[1].equals("c")) {
+            } else if (splitted[1].equals("c")) { // 현재 채널(기본값)
                 range = 1;
-            } else if (splitted[1].equals("w")) {
+            } else if (splitted[1].equals("w")) { // 월드 전체
                 range = 2;
             }
             if (range == -1) {
@@ -287,7 +279,7 @@ public class AdminCommand {
              } else {
              c.getPlayer().dropMessage(6, "A shutdown thread is already in progress or shutdown has not been done. Please wait.");
              }*/
-            c.getPlayer().dropMessage(5, "Please use !서버종료시간 <minutes> instead.");
+            c.getPlayer().dropMessage(5, "!서버종료시간 <분> 명령어를 사용해 주세요.");
             return 1;
         }
     }
@@ -300,8 +292,8 @@ public class AdminCommand {
         @Override
         public int execute(MapleClient c, String[] splitted) {
             minutesLeft = Integer.parseInt(splitted[1]);
-            c.getPlayer().dropMessage(6, "Shutting down... in " + minutesLeft + " minutes");
-            World.Broadcast.broadcastMessage(CWvsContext.serverNotice(0, "The server will shutdown in " + minutesLeft + " minutes. Please log off safely."));
+            c.getPlayer().dropMessage(6, "서버 종료까지 " + minutesLeft + " 분 남았습니다.");
+            World.Broadcast.broadcastMessage(CWvsContext.serverNotice(0, "서버가 " + minutesLeft + " 분 후 종료됩니다. 안전한 위치에서 로그아웃해 주세요."));
             if (ts == null && (t == null || !t.isAlive())) {
                 t = new Thread(ShutdownServer.getInstance());
                 ts = EventTimer.getInstance().register(new Runnable() {
@@ -314,23 +306,23 @@ public class AdminCommand {
                             return;
                         }
                         if (minutesLeft <= 10) {
-                            World.Broadcast.broadcastMessage(CWvsContext.serverNotice(0, "The server will shutdown in " + minutesLeft + " minutes. Please log off safely."));
+                            World.Broadcast.broadcastMessage(CWvsContext.serverNotice(0, "서버가 " + minutesLeft + " 분 후 종료됩니다. 안전한 위치에서 로그아웃해 주세요."));
                         } else if (minutesLeft <= 60 && minutesLeft % 5 == 0) {
-                            World.Broadcast.broadcastMessage(CWvsContext.serverNotice(0, "The server will shutdown in " + minutesLeft + " minutes. Please log off safely."));
+                            World.Broadcast.broadcastMessage(CWvsContext.serverNotice(0, "서버가 " + minutesLeft + " 분 후 종료됩니다. 안전한 위치에서 로그아웃해 주세요."));
                         } else if (minutesLeft % 30 == 0) {
-                            World.Broadcast.broadcastMessage(CWvsContext.serverNotice(0, "The server will shutdown in " + minutesLeft + " minutes. Please log off safely."));
+                            World.Broadcast.broadcastMessage(CWvsContext.serverNotice(0, "서버가 " + minutesLeft + " 분 후 종료됩니다. 안전한 위치에서 로그아웃해 주세요."));
                         }
                         minutesLeft--;
                     }
                 }, 60000);
             } else {
-                c.getPlayer().dropMessage(6, "A shutdown thread is already in progress or shutdown has not been done. Please wait.");
+                c.getPlayer().dropMessage(6, "이미 종료 예약이 진행 중입니다. 잠시 후 다시 시도해 주세요.");
             }
             return 1;
         }
     }
 
-    public static class StartProfiling extends CommandExecute {
+    public static class 프로파일링시작 extends CommandExecute { // 서버 렉/병목 분석
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
@@ -349,7 +341,7 @@ public class AdminCommand {
         }
     }
 
-    public static class StopProfiling extends CommandExecute {
+    public static class 프로파일링종료 extends CommandExecute {
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
@@ -361,7 +353,7 @@ public class AdminCommand {
                 }
                 File file = new File(filename);
                 if (file.exists()) {
-                    c.getPlayer().dropMessage(6, "The entered filename already exists, choose a different one");
+                    c.getPlayer().dropMessage(6, "같은 이름의 파일이 이미 있습니다. 다른 파일명을 입력해 주세요.");
                     return 0;
                 }
                 sampler.stop();

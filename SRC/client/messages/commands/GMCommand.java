@@ -46,7 +46,7 @@ public class GMCommand {
         return PlayerGMRank.GM;
     }
 
-    public static class zz extends CommandExecute {
+    public static class 칭호값 extends CommandExecute { // 칭호/타이틀 값 변경
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
@@ -56,7 +56,7 @@ public class GMCommand {
         }
     }
 
-    public static class cc extends CommandExecute {
+    public static class 카드스택 extends CommandExecute { // 카드 스택 값 변경
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
@@ -66,7 +66,7 @@ public class GMCommand {
         }
     }
 
-    public static class xx extends CommandExecute {
+    public static class xx extends CommandExecute { // FTC 변경
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
@@ -100,7 +100,7 @@ public class GMCommand {
         @Override
         public int execute(MapleClient c, String[] splitted) {
             c.getPlayer().getStat().checkEquipLevels(c.getPlayer(), Integer.parseInt(splitted[1]));
-            c.getPlayer().dropMessage(MessageType.SYSTEM, "All equipped items have gained " + Integer.parseInt(splitted[1]) + " item EXP.");
+            c.getPlayer().dropMessage(MessageType.SYSTEM, "장착 중인 모든 장비의 아이템 경험치가 " + Integer.parseInt(splitted[1]) + " 만큼 증가했습니다.");
             return 1;
         }
     }
@@ -114,28 +114,12 @@ public class GMCommand {
         }
     }
 
-    /*    public static class SWORDSPLOSION extends CommandExecute {
-        @Override
-        public int execute(final MapleClient c, String[] splitted){
-            final Item sword = MapleItemInformationProvider.getInstance().getEquipById(1302000);
-            for(int i = -10; i > -999; i--){
-                final int k = i;
-                BuffTimer.getInstance().schedule(new Runnable(){
-                    public void run(){
-                        MapleInventoryManipulator.equip(c, c.getPlayer().getInventory(MapleInventoryType.EQUIP).addItem(sword), (short)k);
-                    }
-                }, (-1 * i) * 10);
-                
-            }
-            return 1;
-        }
-    }*/
-    public static class explode extends CommandExecute {
+    public static class 아이템폭파드롭 extends CommandExecute {
 
         @Override
         public int execute(final MapleClient c, String[] splitted) {
             if (splitted.length < 3) {
-                c.getPlayer().dropMessage(MessageType.SYSTEM, "Command Syntax: \"!explode <itemID> <quantity>\"");
+                c.getPlayer().dropMessage(MessageType.SYSTEM, "사용법: !아이템폭파드롭 <아이템 ID> <개수>");
             } else {
                 final int itemID = Integer.parseInt(splitted[1]);
                 final int quantity = Integer.parseInt(splitted[2]);
@@ -157,7 +141,7 @@ public class GMCommand {
         public int execute(MapleClient c, String[] splitted) {
             MapleCharacter player = c.getPlayer();
             if (splitted.length < 2) {
-                c.getPlayer().dropMessage(6, "Syntax: !fame <player> <amount>");
+                c.getPlayer().dropMessage(6, "!인기도 <캐릭터 명> <값>");
                 return 0;
             }
             MapleCharacter victim = c.getChannelServer().getPlayerStorage().getCharacterByName(splitted[1]);
@@ -165,7 +149,7 @@ public class GMCommand {
             try {
                 fame = Integer.parseInt(splitted[2]);
             } catch (NumberFormatException nfe) {
-                c.getPlayer().dropMessage(6, "Invalid Number...");
+                c.getPlayer().dropMessage(6, "숫자 형식이 올바르지 않습니다.");
                 return 0;
             }
             if (victim != null && player.allowedToTarget(victim)) {
@@ -183,10 +167,10 @@ public class GMCommand {
             MapleCharacter player = c.getPlayer();
             if (player.isInvincible()) {
                 player.setInvincible(false);
-                player.dropMessage(6, "Invincibility deactivated.");
+                player.dropMessage(6, "무적이 비활성화되었습니다.");
             } else {
                 player.setInvincible(true);
-                player.dropMessage(6, "Invincibility activated.");
+                player.dropMessage(6, "무적이 활성화되었습니다.");
             }
             return 1;
         }
@@ -208,20 +192,11 @@ public class GMCommand {
         public int execute(MapleClient c, String[] splitted) {
             final int itemId = Integer.parseInt(splitted[1]);
             final short quantity = (short) CommandProcessorUtil.getOptionalIntArg(splitted, 2, 1);
-
-            /*if (!c.getPlayer().isAdmin()) {
-                for (int i : GameConstants.itemBlock) {
-                    if (itemId == i) {
-                        c.getPlayer().dropMessage(5, "Sorry but this item is blocked for your GM level.");
-                        return 0;
-                    }
-                }
-            }*/
             MapleItemInformationProvider ii = MapleItemInformationProvider.getInstance();
             if (GameConstants.isPet(itemId)) {
-                c.getPlayer().dropMessage(5, "Please purchase a pet from the cash shop instead.");
+                c.getPlayer().dropMessage(5, "펫은 캐시샵에서 구매해 주세요.");
             } else if (!ii.itemExists(itemId)) {
-                c.getPlayer().dropMessage(5, itemId + " does not exist");
+                c.getPlayer().dropMessage(5, itemId + " : 존재하지 않는 아이템입니다.");
             } else {
                 Item item;
                 short flag = (short) ItemFlag.Locked.getValue();
@@ -253,9 +228,9 @@ public class GMCommand {
             final short quantity = (short) CommandProcessorUtil.getOptionalIntArg(splitted, 2, 1);
             MapleItemInformationProvider ii = MapleItemInformationProvider.getInstance();
             if (GameConstants.isPet(itemId)) {
-                c.getPlayer().dropMessage(5, "Please purchase a pet from the cash shop instead.");
+                c.getPlayer().dropMessage(5, "펫은 캐시샵에서 구매해 주세요.");
             } else if (!ii.itemExists(itemId)) {
-                c.getPlayer().dropMessage(5, itemId + " does not exist");
+                c.getPlayer().dropMessage(5, itemId + " : 존재하지 않는 아이템입니다.");
             } else {
                 Item toDrop;
                 if (GameConstants.getInventoryType(itemId) == MapleInventoryType.EQUIP) {
@@ -278,7 +253,7 @@ public class GMCommand {
         @Override
         public int execute(MapleClient c, String[] splitted) {
             if (MapleCarnivalChallenge.getJobNameById(Integer.parseInt(splitted[1])).length() == 0) {
-                c.getPlayer().dropMessage(5, "Invalid Job");
+                c.getPlayer().dropMessage(5, "유효하지 않은 직업 ID입니다.");
                 return 0;
             }
             c.getPlayer().changeJob((short) Integer.parseInt(splitted[1]));
@@ -343,7 +318,7 @@ public class GMCommand {
         public int execute(MapleClient c, String[] splitted) {
             final MapleEventType type = MapleEventType.getByString(splitted[1]);
             if (type == null) {
-                final StringBuilder sb = new StringBuilder("Wrong syntax: ");
+                final StringBuilder sb = new StringBuilder("입력 형식이 올바르지 않습니다.");
                 for (MapleEventType t : MapleEventType.values()) {
                     sb.append(t.name()).append(",");
                 }
@@ -395,10 +370,10 @@ public class GMCommand {
         public int execute(MapleClient c, String[] splitted) {
             if (c.getChannelServer().getEvent() == c.getPlayer().getMapId()) {
                 MapleEvent.setEvent(c.getChannelServer(), true);
-                c.getPlayer().dropMessage(5, "Started the event and closed off");
+                c.getPlayer().dropMessage(5, "이벤트를 시작하고 입장을 제한했습니다.");
                 return 1;
             } else {
-                c.getPlayer().dropMessage(5, "!scheduleevent must've been done first and you must be in the event map.");
+                c.getPlayer().dropMessage(5, "먼저 이벤트 예약을 해야 하며, 현재 이벤트 맵에 있어야 합니다.");
                 return 0;
             }
         }
@@ -453,16 +428,16 @@ public class GMCommand {
         @Override
         public int execute(MapleClient c, String[] splitted) {
             if (splitted.length < 3) {
-                c.getPlayer().dropMessage(6, "Need <name> <itemid>");
+                c.getPlayer().dropMessage(6, "사용법: !아이템삭제 <캐릭터명> <아이템 ID>");
                 return 0;
             }
             MapleCharacter chr = c.getChannelServer().getPlayerStorage().getCharacterByName(splitted[1]);
             if (chr == null) {
-                c.getPlayer().dropMessage(6, "This player does not exist");
+                c.getPlayer().dropMessage(6, "대상 캐릭터가 존재하지 않습니다.");
                 return 0;
             }
             chr.removeAll(Integer.parseInt(splitted[2]), false);
-            c.getPlayer().dropMessage(6, "All items with the ID " + splitted[2] + " has been removed from the inventory of " + splitted[1] + ".");
+            c.getPlayer().dropMessage(6, "닉네임 : " + splitted[1] + " 님이 소지한 아이템 " + splitted[2] + "을(를) 모두 제거했습니다.");
             return 1;
 
         }
@@ -473,12 +448,12 @@ public class GMCommand {
         @Override
         public int execute(MapleClient c, String[] splitted) {
             if (splitted.length < 3) {
-                c.getPlayer().dropMessage(6, "Need <name> <itemid>");
+                c.getPlayer().dropMessage(6, "사용법: !아이템잠금 <캐릭터명> <아이템 ID>");
                 return 0;
             }
             MapleCharacter chr = c.getChannelServer().getPlayerStorage().getCharacterByName(splitted[1]);
             if (chr == null) {
-                c.getPlayer().dropMessage(6, "This player does not exist");
+                c.getPlayer().dropMessage(6, "대상 캐릭터가 존재하지 않습니다.");
                 return 0;
             }
             int itemid = Integer.parseInt(splitted[2]);
@@ -515,7 +490,7 @@ public class GMCommand {
         }
     }
 
-    public static class SpeakMega extends CommandExecute {
+    public static class 확성대리채팅 extends CommandExecute {
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
@@ -622,19 +597,19 @@ public class GMCommand {
         }
     }
 
-    public static class showHiddenWeaponInfo extends CommandExecute {
+    public static class 아이템세부정보 extends CommandExecute {
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
-            c.getPlayer().dropMessage(6, "Hidden values for currently equipped weapon:");
-            c.getPlayer().dropMessage(6, "Durability: " + String.valueOf(((Equip) c.getPlayer().getInventory(MapleInventoryType.EQUIPPED).getItem((short) -11)).getDurability()));
-            c.getPlayer().dropMessage(6, "Item EXP: " + String.valueOf(((Equip) c.getPlayer().getInventory(MapleInventoryType.EQUIPPED).getItem((short) -11)).getItemEXP()));
+            c.getPlayer().dropMessage(6, "현재 장착 무기의 세부 정보입니다.");
+            c.getPlayer().dropMessage(6, "내구도 : " + String.valueOf(((Equip) c.getPlayer().getInventory(MapleInventoryType.EQUIPPED).getItem((short) -11)).getDurability()));
+            c.getPlayer().dropMessage(6, "아이템 경험치 : " + String.valueOf(((Equip) c.getPlayer().getInventory(MapleInventoryType.EQUIPPED).getItem((short) -11)).getItemEXP()));
             //c.getPlayer().dropMessage(6, "Item EXP: " + String.valueOf(((Equip)c.getPlayer().getInventory(MapleInventoryType.EQUIPPED).getItem((short)-56)).getItemEXP()));
             return 1;
         }
     }
 
-    public static class SetInstanceProperty extends CommandExecute {
+   /* public static class SetInstanceProperty extends CommandExecute {
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
@@ -719,9 +694,9 @@ public class GMCommand {
             return 1;
 
         }
-    }
+    } */
 
-    public static class ResetMobs extends CommandExecute {
+    public static class 몬스터리셋 extends CommandExecute {
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
@@ -862,7 +837,7 @@ public class GMCommand {
         }
     }
 
-    public static class levelTo extends CommandExecute {
+    public static class 목표레벨업 extends CommandExecute {
 
         @Override
         public int execute(MapleClient c, String[] splitted) {
@@ -890,7 +865,7 @@ public class GMCommand {
         public int execute(MapleClient c, String[] splitted) {
             ArrayList<Integer> mobid = new ArrayList<Integer>();
             ArrayList<MapleMonster> mob = new ArrayList<MapleMonster>();
-            c.getPlayer().dropMessage(5, "The current mobs in the map and their IDs are as follows:");
+            c.getPlayer().dropMessage(5, "현재 맵의 몬스터와 ID 목록입니다. : ");
 
             for (String strmob : c.getPlayer().getMap().getAllUniqueMobs()) {
                 c.getPlayer().dropMessage(5, "" + strmob);

